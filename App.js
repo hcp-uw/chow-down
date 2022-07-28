@@ -12,7 +12,7 @@ export default function App() {
 
       <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
-      
+         
       <BusinessPage
         name='sample restaurant'
         rating='4.5'
@@ -24,6 +24,7 @@ export default function App() {
         kids='no'
         vegetarian='yes'
       >
+
       </BusinessPage>
     </View>
   );
