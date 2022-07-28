@@ -33,7 +33,7 @@ const BusinessPage = (props) => {
 }
 
 export default BusinessPage;
-=======
+// =======
 // business page
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
