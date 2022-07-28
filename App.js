@@ -22,7 +22,7 @@ export default function App() {
         ApplePay='yes'
         alcohol='yes'
         kids='no'
-        vegetarian='yes'
+        vegetarian='no'
       >
 
       </BusinessPage>
