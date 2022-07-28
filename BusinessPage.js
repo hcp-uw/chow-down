@@ -82,4 +82,4 @@ const RestaurantItem = ({}) => ( // inside curly brace might be {restaurant, onC
     </TouchableOpacity>
   );
 
-  // end
+  // end - test for 9:14PM
