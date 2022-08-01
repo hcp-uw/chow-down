@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import RestarauntItem from './BusinessPage';
 import BusinessPage from './BusinessPage';
 
 /**
@@ -13,9 +14,10 @@ export default function App() {
       <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
          
-      <BusinessPage
+      <RestarauntItem
+        id='0'
         name='sample restaurant'
-        rating='4.5'
+        rating='3.7'
         tag='Late Night Grub'
         address='1234 Main Street, Random, CB, 00000'
         phone='777-777-7777'
@@ -25,7 +27,7 @@ export default function App() {
         vegetarian='no'
       >
 
-      </BusinessPage>
+      </RestarauntItem>
     </View>
   );
 } 
