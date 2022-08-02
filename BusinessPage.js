@@ -7,79 +7,59 @@
  */
 
 import React from 'react';
-import { View, Text } from 'react-native-web';
+import { View, Text, TouchableOpacity, onPress } from 'react-native';
+import Stars from 'react-native-stars'; // to display the stars for the rating :)
 
-const BusinessPage = (props) => {
+const BusinessPage = (Restaurant) => {
     return (
-        <View       
-            style={{
-                // flexDirection: "row",
-                // height: 100,
-                // padding: 20
-            }}
+      <TouchableOpacity       
+        activeOpacity={0.6}    
+        style={{
+              // flexDirection: "row",
+              // height: 100,
+              // padding: 20
+          }}
+      >
+
+        <View
+          key={Restaurant.id}
+          style={{
+            width: '100%',
+            minHeight: 220,
+            backgroundColor: '#fff',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            marginBottom: 30,
+            borderBottomWidth: 1,
+            borderBottomColor: '#eee',
+            alignItems:'center',
+          }}
         >
             <Text> This is a Sample Business Page. Doesn't need any improvements whatsoever lol </Text>
-            <h1> {props.name} </h1>
-            <Text> Rating: {props.rating} </Text>
-            <Text> Tags: {props.tag} </Text>
-            <Text> Address: {props.address} </Text>
-            <Text> Phone Number: {props.phone} </Text>
-            <Text> Apple Pay? {props.ApplePay} </Text>
-            <Text> Alcohol? {props.alcohol} </Text>
-            <Text> Kid Friendly? {props.kids} </Text>
-            <Text> Vegetarian Friendly? {props.vegetarian} </Text>
+            
+            <h1> {Restaurant.name} </h1>
+
+            <Stars
+              display={Restaurant.rating}
+              spacing={8}
+              count={5}
+              starSize={40}
+              fullStar= {require('./images/starFilled.png')}
+              emptyStar= {require('./images/starEmpty.png')}
+            /> 
+
+            <Text> Tags: {Restaurant.tag} </Text>
+            <Text> Address: {Restaurant.address} </Text>
+            <Text> Phone Number: {Restaurant.phone} </Text>
+            <Text> Apple Pay? {Restaurant.ApplePay} </Text>
+            <Text> Alcohol? {Restaurant.alcohol} </Text>
+            <Text> Kid Friendly? {Restaurant.kids} </Text>
+            <Text> Vegetarian Friendly? {Restaurant.vegetarian} </Text>
         </View>
+
+      </TouchableOpacity>
     )
 }
 
 export default BusinessPage;
-// =======
-// business page
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
 
-const RestaurantItem = ({}) => ( // inside curly brace might be {restaurant, onCLick} or something like that
-    <TouchableOpacity
-      onPress={onPress}
-      activeOpacity={0.6}
-    >
-      <View
-        key={restaurant._id}
-        style={{
-          width: '100%',
-          minHeight: 220,
-          backgroundColor: '#fff',
-          flexDirection: 'column',
-          justifyContent: 'space-between',
-          marginBottom: 30,
-          borderBottomWidth: 1,
-          borderBottomColor: '#eee',
-        }}
-      >
-        <Image
-          source={Assets.Images.placeholderRestaurant}
-          style={{
-            width: '100%',
-            height: 200,
-          }}
-          resizeMode="contain"
-        />
-        <View
-          style={{
-            flex: 1,
-            flexDirection: 'column',
-            padding: 15,
-          }}
-        >
-          <PrimaryText size={18} align="left" style={{ marginBottom: 5 }}>
-            {restaurant.name}
-          </PrimaryText>
-          <SecondaryText>
-            {restaurant.details}
-          </SecondaryText>
-        </View>
-      </View>
-    </TouchableOpacity>
-  );
-
-  // end - test for 9:14PM
