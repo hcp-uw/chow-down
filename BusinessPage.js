@@ -2,7 +2,6 @@
  * Business Page is the default template for a restaurant's page.
  * TO IMPLEMENT: The code below uses props to display a restaurant
  * given data from an array set.
- * TO DO: Style Sheet!
  * Exports to App.js
  */
 
