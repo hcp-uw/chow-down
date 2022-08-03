@@ -38,6 +38,4 @@ const styles = StyleSheet.create({
       backgroundColor: '#FFF4BE'
   
     }
-
-  
 })
