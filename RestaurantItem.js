@@ -6,38 +6,22 @@
  */
 
 import React from 'react';
-import { View, Text, TouchableOpacity, onPress } from 'react-native';
-import Stars from 'react-native-stars'; // to display the stars for the rating :)
+import { View, Text, TouchableOpacity, onPress, StyleSheet } from 'react-native';
+import Stars from 'react-native-stars'; // npm install react-native-stars --save
 
-const BusinessPage = (Restaurant) => {
+const RestaurantItem = (Restaurant) => {
     return (
       <TouchableOpacity       
         activeOpacity={0.6}    
-        style={{
-              // flexDirection: "row",
-              // height: 100,
-              // padding: 20
-          }}
+        style={styles.touchableOpacity}
       >
 
         <View
           key={Restaurant.id}
-          style={{
-            width: '100%',
-            minHeight: 220,
-            backgroundColor: '#fff',
-            flexDirection: 'column',
-            justifyContent: 'space-between',
-            marginBottom: 30,
-            borderBottomWidth: 1,
-            borderBottomColor: '#eee',
-            alignItems:'center',
-          }}
+          style={styles.restaurantView}
         >
-            <Text> This is a Sample Business Page. Doesn't need any improvements whatsoever lol </Text>
+            <Text style={styles.headerText} > {Restaurant.name} </Text>
             
-            <h1> {Restaurant.name} </h1>
-
             <Stars
               display={Restaurant.rating}
               spacing={8}
@@ -45,8 +29,7 @@ const BusinessPage = (Restaurant) => {
               starSize={40}
               fullStar= {require('./images/starFilled.png')}
               emptyStar= {require('./images/starEmpty.png')}
-            /> 
-
+            />
             <Text> Tags: {Restaurant.tag} </Text>
             <Text> Address: {Restaurant.address} </Text>
             <Text> Phone Number: {Restaurant.phone} </Text>
@@ -60,5 +43,28 @@ const BusinessPage = (Restaurant) => {
     )
 }
 
-export default BusinessPage;
+const styles = StyleSheet.create({
+    touchableOpacity: {
+        padding: 20,
+        backgroundColor: 'pink',
+    },
+    restaurantView: {
+        width: '100%',
+        minHeight: 220,
+        backgroundColor: 'white',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        marginBottom: 30,
+        borderBottomWidth: 1,
+        borderBottomColor: '#eee',
+        alignItems:'center',
+    },
+    headerText: {
+        fontSize: 24,
+        fontWeight: 'bold',
+    },
+})
+
+export default RestaurantItem;
+
 
