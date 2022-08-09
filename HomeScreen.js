@@ -10,6 +10,13 @@ function HomeScreen({ navigation }) {
     return (
         <View style={styles.container}>
             <Text>Home Screen</Text>
+            <View style={{
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                paddingHorizontal: 20,
+            }}>
+                <View style={styles.searchInputContainer}></View>
+            </View>
             <Button
             title="Go to Profile Page"
             onPress={() => navigation.navigate('Profile', { userId: 'jane' })}
@@ -29,6 +36,15 @@ const styles = StyleSheet.create({
         flex: 1, 
         alignItems: 'center', 
         justifyContent: 'center',
+    },
+    searchInputContainer: {
+        height: 50,
+        backgroundColor: '#FFFFFF',
+        flex: 1,
+        flexDirection: 'row',
+        alignItems: 'center',
+        paddingHorizontal: 20,
+        borderRadius: 10,
     }
 })
 
