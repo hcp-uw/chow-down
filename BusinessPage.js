@@ -1,3 +1,7 @@
+import React from 'react';
+import { View, Text, TouchableOpacity, StyleSheet, Button } from 'react-native';
+import Stars from 'react-native-stars'; // npm install react-native-stars --save
+
 /**
  * Business Page is the default template for a restaurant's page.
  * TO IMPLEMENT: The code below uses props to display a restaurant
@@ -5,38 +9,38 @@
  * Exports to App.js
  */
 
-import React from 'react';
-import { View, Text, TouchableOpacity, onPress, StyleSheet } from 'react-native';
-import Stars from 'react-native-stars'; // npm install react-native-stars --save
-
-const RestaurantItem = (Restaurant) => {
-    return (
+function BusinessPage({ route, navigation }) {
+  const { id, name, rating, tag, address, phone, ApplePay, alcohol, kids, vegetarian } = route.params;
+  return (
       <TouchableOpacity       
         activeOpacity={0.6}    
         style={styles.touchableOpacity}
       >
 
         <View
-          key={Restaurant.id}
+          key={JSON.stringify(id)}
           style={styles.restaurantView}
         >
-            <Text style={styles.headerText} > {Restaurant.name} </Text>
+            <Text style={styles.headerText} > {JSON.stringify(name)} </Text>
             
             <Stars
-              display={Restaurant.rating}
+              display={JSON.stringify(rating)}
               spacing={8}
               count={5}
               starSize={40}
               fullStar= {require('./images/starFilled.png')}
               emptyStar= {require('./images/starEmpty.png')}
             />
-            <Text> Tags: {Restaurant.tag} </Text>
-            <Text> Address: {Restaurant.address} </Text>
-            <Text> Phone Number: {Restaurant.phone} </Text>
-            <Text> Apple Pay? {Restaurant.ApplePay} </Text>
-            <Text> Alcohol? {Restaurant.alcohol} </Text>
-            <Text> Kid Friendly? {Restaurant.kids} </Text>
-            <Text> Vegetarian Friendly? {Restaurant.vegetarian} </Text>
+            <Text> Tags: {JSON.stringify(tag)} </Text>
+            <Text> Address: {JSON.stringify(address)} </Text>
+            <Text> Phone Number: {JSON.stringify(phone)} </Text>
+            <Text> Apple Pay? {JSON.stringify(ApplePay)} </Text>
+            <Text> Alcohol? {JSON.stringify(alcohol)} </Text>
+            <Text> Kid Friendly? {JSON.stringify(kids)} </Text>
+            <Text> Vegetarian Friendly? {JSON.stringify(vegetarian)} </Text>
+
+            <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
+            <Button title="Go back" onPress={() => navigation.goBack()} />
         </View>
 
       </TouchableOpacity>
@@ -65,6 +69,6 @@ const styles = StyleSheet.create({
     },
 })
 
-export default RestaurantItem;
+export default BusinessPage;
 
 
