@@ -17,19 +17,19 @@ const Stack = createNativeStackNavigator();
  * @returns Display for mobile device
  */
 export default function App() {
-    return (
-        <View style={styles.container}>
-            <StatusBar style="auto" />
-            <NavigationContainer>
-                <Stack.Navigator initialRouteName="Home">
-                    <Stack.Screen name="Home" component={HomeScreen} />
-                    <Stack.Screen name="Profile" component={Profile} />
-                    <Stack.Screen name="BusinessPage" component={BusinessPage} />
-                </Stack.Navigator>
-            </NavigationContainer>
-        </View>
-    );
-}
+  return (
+    <View style={styles.container}>
+        <StatusBar style="auto" />
+        <NavigationContainer>
+            <Stack.Navigator initialRouteName="Home">
+                <Stack.Screen name="Home" component={HomeScreen} />
+                <Stack.Screen name="Profile" component={Profile} />
+                <Stack.Screen name="BusinessPage" component={BusinessPage} />
+            </Stack.Navigator>
+        </NavigationContainer>
+    </View>
+  );
+} 
 
 const styles = StyleSheet.create({
     container: {

@@ -10,6 +10,7 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons/faMagnifyin
 
 // TODO: figure out how to make the search bar a separate component, and connect to HomeScreen.js
 
+
 /**
  * Home Screen display for App.js
  * @param {navigation} supports React Navigation
@@ -29,20 +30,19 @@ function HomeScreen({ navigation }) {
                     <TextInput style={styles.textSpace} placeholder="Search for..."/>
                 </View>
             </View>
-
             <View style={styles.smallSpace} />
 
             <Button
-                title="Go to Profile Page"
-                color='purple'
-                onPress={() => navigation.navigate('Profile', { userId: 'jane' })}
+            title="Go to Profile Page"
+            color='purple'
+            onPress={() => navigation.navigate('Profile', { userId: 'jane' })}
             />
 
             <View style={styles.smallSpace} />
 
             <Button
-                title="Go to Business Page Template"
-                onPress={() => navigation.navigate('BusinessPage', { ...sampleRestaurant })}
+            title="Go to Business Page Template"
+            onPress={() => navigation.navigate('BusinessPage', { ...sampleRestaurant })}
             />
         </View>
     );
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-    searchInputContainer: {
+searchInputContainer: {
         height: 50,
         backgroundColor: '#FFFFFF',
         flex: 1,
@@ -67,6 +67,7 @@ const styles = StyleSheet.create({
     textSpace: {
         marginLeft: 10,
     },
+
     /** Adds small space between objects for readability purposes */
     smallSpace: {
         marginVertical: 5,
