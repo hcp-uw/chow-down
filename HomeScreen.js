@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-searchInputContainer: {
+    searchInputContainer: {
         height: 50,
         backgroundColor: '#FFFFFF',
         flex: 1,
