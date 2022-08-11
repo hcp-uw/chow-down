@@ -25,6 +25,7 @@ export default function App() {
                 <Stack.Screen name="Home" component={HomeScreen} />
                 <Stack.Screen name="Profile" component={Profile} />
                 <Stack.Screen name="BusinessPage" component={BusinessPage} />
+                <Stack.Screen name="SearchBar" component=(SearchBar) />
             </Stack.Navigator>
         </NavigationContainer>
     </View>
