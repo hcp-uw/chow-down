@@ -1,8 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, ScrollView} from 'react-native';
+import { BottomTabBar } from '@react-navigation/bottom-tabs';
 
 const Profile = () => {
-    return (
+    return ( 
         <View style={styles.container}>
         <Text>Test</Text>
         <View style={styles.bottomContainer}>

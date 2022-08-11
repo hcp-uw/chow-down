@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Button } from 'react-native';
 import Stars from 'react-native-stars'; // npm install react-native-stars --save
 
+
 /**
  * Business Page is the default template for a restaurant's page.
  * TO IMPLEMENT: The code below uses props to display a restaurant
@@ -41,7 +42,7 @@ function BusinessPage({ route, navigation }) {
 
             <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
             <Button title="Go back" onPress={() => navigation.goBack()} />
-            <Button title="Go to Home" onPress={() => navigation.navigate('SearchPage')} />
+            <Button title="Go to Search Page" onPress={() => navigation.navigate('SearchPage')} />
         </View>
 
       </TouchableOpacity>
