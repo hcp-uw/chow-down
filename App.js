@@ -33,6 +33,7 @@ export default function App() {
                 <Tab.Screen name="Home" component={HomeScreen}/>
                 <Tab.Screen name="SearchBar" component={SearchBar} />
                 <Tab.Screen name="Profile" component={Profile} />
+                <Tab.Screen name="Business Template" component={BusinessPage} initialParams={{ ...sampleRestaurant }} />
             </Tab.Navigator>
         </NavigationContainer>
     </View>
@@ -45,3 +46,16 @@ const styles = StyleSheet.create({
         backgroundColor: '#FFF4BE'
     }
 })
+
+const sampleRestaurant = {
+    key: 0,
+    name: "Sample Restaurant",
+    rating: 4.4,
+    tag: 'Late Night Grub',
+    address: '1234 Main Street, Random, CB, 00000',
+    phone: '777-777-7777',
+    ApplePay: 'yes',
+    alcohol: 'yes',
+    kids: 'no',
+    vegetarian: 'no',
+}

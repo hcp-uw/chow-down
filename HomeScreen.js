@@ -29,15 +29,16 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; // use
 function HomeScreen({ navigation }) {
     const Stack = createNativeStackNavigator();
     const Tab = createBottomTabNavigator();
-    
+
     return (
         <View style={styles.container}>
-            {/* Causing Bugs - will fix later */}
-            <NavigationContainer independent={true}>
+            {/* Causing Bugs while trying to nest navigation containers - will fix later */}
+            {/* <NavigationContainer independent={true}>
                 <Stack.Navigator initialRouteName="BusinessNavigator">
-                    <Stack.Screen name="BusinessPage" component={BusinessPage}/>
+                    <Stack.Screen name="Home Screen" component={HomeScreen} />
+                    <Stack.Screen name="BusinessPage" component={BusinessPage} />
                 </Stack.Navigator>
-            </NavigationContainer>
+            </NavigationContainer> */}
 
             <View style={{
                 flexDirection: 'row',
@@ -45,18 +46,17 @@ function HomeScreen({ navigation }) {
                 paddingHorizontal: 20,
             }}>
                 <View style={styles.searchInputContainer}>
-                    <FontAwesomeIcon icon={ faMagnifyingGlass } />
-                    <TextInput style={styles.textSpace} placeholder="Search for..."/>
+                    <FontAwesomeIcon icon={faMagnifyingGlass} />
+                    <TextInput style={styles.textSpace} placeholder="Search for..." />
                 </View>
             </View>
 
             <View style={styles.smallSpace} />
 
-            <Button
-            title="Doesn't work: Go to Business Page Template"
-            onPress={() => navigation.navigate('BusinessPage')}
-            />
-
+            {/* <Button
+                title="Doesn't work: Go to Business Page Template"
+                onPress={() => navigation.navigate("BusinessPage")}
+            /> */}
         </View>
     );
 }
