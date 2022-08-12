@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TextInput, StyleSheet, Button } from 'react-native';
-import SearchBar from './SearchBar';
+import SearchBar from './components/SearchBar';
 import Profile from './Profile';
 import BusinessPage from './BusinessPage';
 
@@ -9,17 +9,11 @@ import BusinessPage from './BusinessPage';
 // i --save @fortawesome/free-solid-svg-icons
 // i --save @fortawesome/free-brands-svg-icons
 // i --save @fortawesome/free-regular-svg-icons
-// 
 
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons/faMagnifyingGlass'
 import { NavigationContainer, StackActions, TabActions } from '@react-navigation/native'; // use command ''
 import { createNativeStackNavigator } from '@react-navigation/native-stack'; // use command 'npm install @react-navigation/native-stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; // use command npm install @react-navigation/bottom-tabs
 
-
-
-// TODO: figure out how to make the search bar a separate component, and connect to HomeScreen.js
 
 /**
  * Home Screen display for App.js
@@ -45,10 +39,16 @@ function HomeScreen({ navigation }) {
                 justifyContent: 'space-between',
                 paddingHorizontal: 20,
             }}>
-                <View style={styles.searchInputContainer}>
-                    <FontAwesomeIcon icon={faMagnifyingGlass} />
-                    <TextInput style={styles.textSpace} placeholder="Search for..." />
+                <Tab.Navigator>
+                <View>
+                    <NavigationContainer>
+                    <SearchBar
+                        placeholder="Search For..."
+                        onPress={() => navigation.navigate('SearchPage')}
+                    />
+                    </NavigationContainer>
                 </View>
+                    </Tab.Navigator>
             </View>
 
             <View style={styles.smallSpace} />
@@ -68,19 +68,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-    searchInputContainer: {
-        height: 50,
-        backgroundColor: '#FFFFFF',
-        flex: 1,
-        flexDirection: 'row',
-        alignItems: 'center',
-        paddingHorizontal: 20,
-        borderRadius: 100,
-    },
-    textSpace: {
-        marginLeft: 10,
-    },
-
     /** Adds small space between objects for readability purposes */
     smallSpace: {
         marginVertical: 5,
