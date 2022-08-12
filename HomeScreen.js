@@ -39,16 +39,10 @@ function HomeScreen({ navigation }) {
                 justifyContent: 'space-between',
                 paddingHorizontal: 20,
             }}>
-                <Tab.Navigator>
-                <View>
-                    <NavigationContainer>
                     <SearchBar
                         placeholder="Search For..."
-                        onPress={() => navigation.navigate('SearchPage')}
+                        //onPress={() => navigation.navigate('SearchPage')}
                     />
-                    </NavigationContainer>
-                </View>
-                    </Tab.Navigator>
             </View>
 
             <View style={styles.smallSpace} />

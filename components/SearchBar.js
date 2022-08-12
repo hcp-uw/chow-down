@@ -5,12 +5,10 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons/faMagnifyin
 
 function SearchBar({ placeholder, data }) {
     return (
-        <div>
-            <View style={styles.searchInputContainer}>
+        <View style={styles.searchInputContainer}>
                 <FontAwesomeIcon icon={faMagnifyingGlass} />
                 <TextInput style={styles.textSpace} placeholder={placeholder} />
-            </View>
-        </div>
+        </View>
     )
 }
 
