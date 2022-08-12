@@ -6,6 +6,7 @@ function SearchBar() {
         <View style={styles.container}>
             <Text> To be developed </Text>
         </View>
+
     );
 }
 

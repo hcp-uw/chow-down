@@ -29,15 +29,8 @@ export default function App() {
     <View style={styles.container}>
         <StatusBar style="auto" />
         <NavigationContainer>
-            {/* <Stack.Navigator initialRouteName="Home">
-                <Stack.Screen name="Home" component={HomeScreen} />
-                <Stack.Screen name="Profile" component={Profile} />
-                <Stack.Screen name="BusinessPage" component={BusinessPage} />
-                <Stack.Screen name="SearchBar" component={SearchBar} />
-            </Stack.Navigator> */}
-            
             <Tab.Navigator>
-                <Tab.Screen name="Home" component={HomeScreen} />
+                <Tab.Screen name="Home" component={HomeScreen}/>
                 <Tab.Screen name="SearchBar" component={SearchBar} />
                 <Tab.Screen name="Profile" component={Profile} />
             </Tab.Navigator>

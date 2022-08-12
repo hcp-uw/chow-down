@@ -20,8 +20,6 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; // use
 
 
 // TODO: figure out how to make the search bar a separate component, and connect to HomeScreen.js
-const Stack = createNativeStackNavigator();
-const Tab = createBottomTabNavigator();
 
 /**
  * Home Screen display for App.js
@@ -29,9 +27,18 @@ const Tab = createBottomTabNavigator();
  * @returns the Home Screen for the app
  */
 function HomeScreen({ navigation }) {
+    const Stack = createNativeStackNavigator();
+    const Tab = createBottomTabNavigator();
+    
     return (
         <View style={styles.container}>
-            <Text>Home Screen</Text>
+            {/* Causing Bugs - will fix later */}
+            <NavigationContainer independent={true}>
+                <Stack.Navigator initialRouteName="BusinessNavigator">
+                    <Stack.Screen name="BusinessPage" component={BusinessPage}/>
+                </Stack.Navigator>
+            </NavigationContainer>
+
             <View style={{
                 flexDirection: 'row',
                 justifyContent: 'space-between',
@@ -42,29 +49,14 @@ function HomeScreen({ navigation }) {
                     <TextInput style={styles.textSpace} placeholder="Search for..."/>
                 </View>
             </View>
-            <View style={styles.smallSpace} />
-
-            <Button
-            title="Go to Profile Page"
-            color='purple'
-            onPress={() => navigation.navigate('Profile', { userId: 'jane' })}
-            />
 
             <View style={styles.smallSpace} />
 
             <Button
-            title="Go to Business Page Template"
-            onPress={() => navigation.navigate('BusinessPage', { ...sampleRestaurant })}
+            title="Doesn't work: Go to Business Page Template"
+            onPress={() => navigation.navigate('BusinessPage')}
             />
 
-            {/* Causing Bugs - will fix later */}
-            {/* <NavigationContainer independent={true}>
-                <Stack.Navigator initialRouteName="Home">
-                <Stack.Screen name="Home" component={HomeScreen} />    
-                <Stack.Screen name="BusinessPage" component={BusinessPage} />
-                </Stack.Navigator>
-            </NavigationContainer> */}
-            
         </View>
     );
 }
@@ -96,7 +88,7 @@ const styles = StyleSheet.create({
 })
 
 const sampleRestaurant = {
-    id: 0,
+    key: 0,
     name: 'Sample Restaurant',
     rating: 4.4,
     tag: 'Late Night Grub',

@@ -2,7 +2,6 @@ import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Button } from 'react-native';
 import Stars from 'react-native-stars'; // npm install react-native-stars --save
 
-
 /**
  * Business Page is the default template for a restaurant's page.
  * TO IMPLEMENT: The code below uses props to display a restaurant
@@ -10,42 +9,34 @@ import Stars from 'react-native-stars'; // npm install react-native-stars --save
  * Exports to App.js
  */
 
-function BusinessPage({ route, navigation }) {
-  const { id, name, rating, tag, address, phone, ApplePay, alcohol, kids, vegetarian } = route.params;
+const BusinessPage = ({ route, navigation, }) => {
+//   const { name } = route.params;
   return (
-      <TouchableOpacity       
-        activeOpacity={0.6}    
-        style={styles.touchableOpacity}
-      >
-
         <View
-          key={JSON.stringify(id)}
+          key={0}
           style={styles.restaurantView}
         >
-            <Text style={styles.headerText} > {JSON.stringify(name)} </Text>
+            <Text style={styles.headerText} > Sample Restaurant </Text>
             
             <Stars
-              display={JSON.stringify(rating)}
+              display={4.5}
               spacing={8}
               count={5}
               starSize={40}
               fullStar= {require('./images/starFilled.png')}
               emptyStar= {require('./images/starEmpty.png')}
             />
-            <Text> Tags: {JSON.stringify(tag)} </Text>
+            {/* <Text> Tags: {JSON.stringify(tag)} </Text>
             <Text> Address: {JSON.stringify(address)} </Text>
             <Text> Phone Number: {JSON.stringify(phone)} </Text>
             <Text> Apple Pay? {JSON.stringify(ApplePay)} </Text>
             <Text> Alcohol? {JSON.stringify(alcohol)} </Text>
             <Text> Kid Friendly? {JSON.stringify(kids)} </Text>
-            <Text> Vegetarian Friendly? {JSON.stringify(vegetarian)} </Text>
+            <Text> Vegetarian Friendly? {JSON.stringify(vegetarian)} </Text> */}
 
             <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
             <Button title="Go back" onPress={() => navigation.goBack()} />
-            <Button title="Go to Search Page" onPress={() => navigation.navigate('SearchPage')} />
         </View>
-
-      </TouchableOpacity>
     )
 }
 
@@ -70,4 +61,5 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
 })
+
 export default BusinessPage;
