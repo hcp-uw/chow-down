@@ -1,8 +1,9 @@
 import React from 'react';
 import { View, Text, TextInput, StyleSheet, Button } from 'react-native';
-import SearchBar from './components/SearchBar';
+import CustomSearchButton from './components/custom-buttons/CustomSearchButton';
 import Profile from './Profile';
 import BusinessPage from './BusinessPage';
+import SearchPage from './SearchPage';
 
 // to install the icon, use commands in this order:
 // i --save @fortawesome/react-native-fontawesome @fortawesome/fontawesome-svg-core react-native-svg
@@ -14,7 +15,6 @@ import { NavigationContainer, StackActions, TabActions } from '@react-navigation
 import { createNativeStackNavigator } from '@react-navigation/native-stack'; // use command 'npm install @react-navigation/native-stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; // use command npm install @react-navigation/bottom-tabs
 
-
 /**
  * Home Screen display for App.js
  * @param {navigation} supports React Navigation
@@ -23,6 +23,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; // use
 function HomeScreen({ navigation }) {
     const Stack = createNativeStackNavigator();
     const Tab = createBottomTabNavigator();
+
 
     return (
         <View style={styles.container}>
@@ -33,15 +34,14 @@ function HomeScreen({ navigation }) {
                     <Stack.Screen name="BusinessPage" component={BusinessPage} />
                 </Stack.Navigator>
             </NavigationContainer> */}
-
             <View style={{
                 flexDirection: 'row',
                 justifyContent: 'space-between',
                 paddingHorizontal: 20,
             }}>
-                    <SearchBar
-                        placeholder="Search For..."
-                        //onPress={() => navigation.navigate('SearchPage')}
+                    <CustomSearchButton
+                        title="Search For..."
+                        // onPress={() => navigation.navigate('SearchPage')}
                     />
             </View>
 
@@ -55,12 +55,22 @@ function HomeScreen({ navigation }) {
     );
 }
 
+
 const styles = StyleSheet.create({
     container: {
         backgroundColor: '#FFF4BE',
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
+    },
+    searchInputContainer: {
+        height: 50,
+        backgroundColor: '#FFFFFF',
+        flex: 1,
+        flexDirection: 'row',
+        alignItems: 'center',
+        paddingHorizontal: 20,
+        borderRadius: 100,
     },
     /** Adds small space between objects for readability purposes */
     smallSpace: {
