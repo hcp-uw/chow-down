@@ -1,25 +1,19 @@
 import React from 'react';
 import { View, Text, TextInput, StyleSheet, Button } from 'react-native';
-import SearchBar from './SearchBar';
+import CustomSearchButton from './components/custom-buttons/CustomSearchButton';
 import Profile from './Profile';
 import BusinessPage from './BusinessPage';
+import SearchPage from './SearchPage';
 
 // to install the icon, use commands in this order:
 // i --save @fortawesome/react-native-fontawesome @fortawesome/fontawesome-svg-core react-native-svg
 // i --save @fortawesome/free-solid-svg-icons
 // i --save @fortawesome/free-brands-svg-icons
 // i --save @fortawesome/free-regular-svg-icons
-// 
 
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons/faMagnifyingGlass'
 import { NavigationContainer, StackActions, TabActions } from '@react-navigation/native'; // use command ''
 import { createNativeStackNavigator } from '@react-navigation/native-stack'; // use command 'npm install @react-navigation/native-stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; // use command npm install @react-navigation/bottom-tabs
-
-
-
-// TODO: figure out how to make the search bar a separate component, and connect to HomeScreen.js
 
 /**
  * Home Screen display for App.js
@@ -30,6 +24,7 @@ function HomeScreen({ navigation }) {
     const Stack = createNativeStackNavigator();
     const Tab = createBottomTabNavigator();
 
+
     return (
         <View style={styles.container}>
             {/* Causing Bugs while trying to nest navigation containers - will fix later */}
@@ -39,16 +34,15 @@ function HomeScreen({ navigation }) {
                     <Stack.Screen name="BusinessPage" component={BusinessPage} />
                 </Stack.Navigator>
             </NavigationContainer> */}
-
             <View style={{
                 flexDirection: 'row',
                 justifyContent: 'space-between',
                 paddingHorizontal: 20,
             }}>
-                <View style={styles.searchInputContainer}>
-                    <FontAwesomeIcon icon={faMagnifyingGlass} />
-                    <TextInput style={styles.textSpace} placeholder="Search for..." />
-                </View>
+                    <CustomSearchButton
+                        title="Search For..."
+                        // onPress={() => navigation.navigate('SearchPage')}
+                    />
             </View>
 
             <View style={styles.smallSpace} />
@@ -60,6 +54,7 @@ function HomeScreen({ navigation }) {
         </View>
     );
 }
+
 
 const styles = StyleSheet.create({
     container: {
@@ -77,10 +72,6 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
         borderRadius: 100,
     },
-    textSpace: {
-        marginLeft: 10,
-    },
-
     /** Adds small space between objects for readability purposes */
     smallSpace: {
         marginVertical: 5,
