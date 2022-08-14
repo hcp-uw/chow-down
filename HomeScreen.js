@@ -13,7 +13,6 @@ import SearchPage from './SearchPage';
 
 import { NavigationContainer, StackActions, TabActions } from '@react-navigation/native'; // use command ''
 import { createNativeStackNavigator } from '@react-navigation/native-stack'; // use command 'npm install @react-navigation/native-stack'
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; // use command npm install @react-navigation/bottom-tabs
 
 /**
  * Home Screen display for App.js
@@ -22,18 +21,16 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; // use
  */
 function HomeScreen({ navigation }) {
     const Stack = createNativeStackNavigator();
-    const Tab = createBottomTabNavigator();
-
 
     return (
         <View style={styles.container}>
             {/* Causing Bugs while trying to nest navigation containers - will fix later */}
-            {/* <NavigationContainer independent={true}>
-                <Stack.Navigator initialRouteName="BusinessNavigator">
-                    <Stack.Screen name="Home Screen" component={HomeScreen} />
-                    <Stack.Screen name="BusinessPage" component={BusinessPage} />
-                </Stack.Navigator>
-            </NavigationContainer> */}
+            
+            {/* <Stack.Navigator>
+                <Stack.Screen name="HomeScreen" component={HomeScreen} />
+                <Stack.Screen name="BusinessPage" component={BusinessPage} />
+            </Stack.Navigator> */}
+
             <View style={{
                 flexDirection: 'row',
                 justifyContent: 'space-between',
@@ -45,7 +42,7 @@ function HomeScreen({ navigation }) {
                     />
             </View>
 
-            <View style={styles.smallSpace} />
+            {/* <View style={styles.smallSpace} /> */}
 
             {/* <Button
                 title="Doesn't work: Go to Business Page Template"
@@ -77,18 +74,5 @@ const styles = StyleSheet.create({
         marginVertical: 5,
     }
 })
-
-const sampleRestaurant = {
-    key: 0,
-    name: 'Sample Restaurant',
-    rating: 4.4,
-    tag: 'Late Night Grub',
-    address: '1234 Main Street, Random, CB, 00000',
-    phone: '777-777-7777',
-    ApplePay: 'yes',
-    alcohol: 'yes',
-    kids: 'no',
-    vegetarian: 'no',
-}
 
 export default HomeScreen;

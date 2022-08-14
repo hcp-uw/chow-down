@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Button, Text, View } from 'react-native';
-import { NavigationContainer, TabActions } from '@react-navigation/native'; // use command ''
+import { NavigationContainer } from '@react-navigation/native'; // use command ''
 import { createNativeStackNavigator } from '@react-navigation/native-stack'; // use command 'npm install @react-navigation/native-stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
 const sampleRestaurant = {
     key: 0,
     name: "Sample Restaurant",
-    rating: 4.4,
+    rating: 3.7,
     tag: 'Late Night Grub',
     address: '1234 Main Street, Random, CB, 00000',
     phone: '777-777-7777',

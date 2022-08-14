@@ -1,18 +1,23 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, ScrollView} from 'react-native';
-import { BottomTabBar } from '@react-navigation/bottom-tabs';
+import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
+import TermsAndConditions from './components/profile-drawer/TermsAndConditions';
+
+// const Drawer = createDrawerNavigator();
 
 const Profile = () => {
-    return ( 
+    return (
         <View style={styles.container}>
-        <Text>Test</Text>
-        <View style={styles.bottomContainer}>
-            <Image style={styles.profile} source={{
-                uri: "https://picsum.photos/200"
-            }} />
-            <Text style={styles.name}>Jane Doe</Text>
+            <Text>Test</Text>
+            <View style={styles.bottomContainer}>
+                <Image style={styles.profile} source={{
+                    uri: "https://picsum.photos/200"
+                }} />
+                <Text style={styles.name}>Jane Doe</Text>
             </View>
-         </View>
+            {/* <Drawer.Navigator>
+                <Drawer.Screen name="Terms and Conditions" component={TermsAndConditions}/>
+            </Drawer.Navigator> */}
+        </View>
     );
 }
 
@@ -42,7 +47,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         bottom: "8%"
     }
-    })
+})
 
 
 export default Profile;

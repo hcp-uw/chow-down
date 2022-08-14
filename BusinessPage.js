@@ -19,7 +19,7 @@ const BusinessPage = ({ route, navigation, }) => {
             <Text style={styles.headerText} > {JSON.stringify(name).replace(/\"/g, "")} </Text>
             
             <Stars
-              display={JSON.stringify(rating)}
+              display={parseFloat(JSON.stringify(rating))}
               spacing={8}
               count={5}
               starSize={40}
