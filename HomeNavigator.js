@@ -1,9 +1,7 @@
 import React from 'react';
 import { View, Text, TextInput, StyleSheet, Button } from 'react-native';
 import CustomSearchButton from './components/custom-buttons/CustomSearchButton';
-import Profile from './Profile';
 import BusinessPage from './BusinessPage';
-import SearchPage from './SearchPage';
 
 // to install the icon, use commands in this order:
 // i --save @fortawesome/react-native-fontawesome @fortawesome/fontawesome-svg-core react-native-svg
@@ -13,46 +11,55 @@ import SearchPage from './SearchPage';
 
 import { NavigationContainer, StackActions, TabActions } from '@react-navigation/native'; // use command ''
 import { createNativeStackNavigator } from '@react-navigation/native-stack'; // use command 'npm install @react-navigation/native-stack'
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; // use command npm install @react-navigation/bottom-tabs
 
 /**
- * Home Screen display for App.js
+ * Home Screen display for App.js. Previously named HomeScreen.js
  * @param {navigation} supports React Navigation
  * @returns the Home Screen for the app
  */
 function HomeScreen({ navigation }) {
-    const Stack = createNativeStackNavigator();
-    const Tab = createBottomTabNavigator();
-
+    const HomeStack = createNativeStackNavigator();
 
     return (
         <View style={styles.container}>
-            {/* Causing Bugs while trying to nest navigation containers - will fix later */}
-            {/* <NavigationContainer independent={true}>
-                <Stack.Navigator initialRouteName="BusinessNavigator">
-                    <Stack.Screen name="Home Screen" component={HomeScreen} />
-                    <Stack.Screen name="BusinessPage" component={BusinessPage} />
-                </Stack.Navigator>
-            </NavigationContainer> */}
+
             <View style={{
                 flexDirection: 'row',
                 justifyContent: 'space-between',
                 paddingHorizontal: 20,
             }}>
-                    <CustomSearchButton
-                        title="Search For..."
-                        // onPress={() => navigation.navigate('SearchPage')}
-                    />
+                <CustomSearchButton
+                    title="Search For..."
+                // onPress={() => navigation.navigate('SearchPage')}
+                />
             </View>
 
             <View style={styles.smallSpace} />
 
-            {/* <Button
+            <Button
                 title="Doesn't work: Go to Business Page Template"
                 onPress={() => navigation.navigate("BusinessPage")}
-            /> */}
+            />
         </View>
     );
+}
+
+function HomeNavigator() {
+    const HomeStack = createNativeStackNavigator();
+    return (
+        <HomeStack.Navigator initialRouteName='HomeScreen'>
+            <HomeStack.Screen
+                name='HomeScreen'
+                component={HomeScreen}
+                options={{ headerShown: false, }}
+            />
+            <HomeStack.Screen
+                name="BusinessPage"
+                component={BusinessPage}
+                initialParams={{ ...sampleRestaurant }}
+            />
+        </HomeStack.Navigator>
+    )
 }
 
 
@@ -80,8 +87,8 @@ const styles = StyleSheet.create({
 
 const sampleRestaurant = {
     key: 0,
-    name: 'Sample Restaurant',
-    rating: 4.4,
+    name: "Sample Restaurant",
+    rating: 3.7,
     tag: 'Late Night Grub',
     address: '1234 Main Street, Random, CB, 00000',
     phone: '777-777-7777',
@@ -91,4 +98,4 @@ const sampleRestaurant = {
     vegetarian: 'no',
 }
 
-export default HomeScreen;
+export default HomeNavigator;

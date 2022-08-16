@@ -1,6 +1,10 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native'
 
+/**
+ * Previously named SearchPage.js
+ * @returns The Search Bar Page!
+ */
 function SearchBar() {
     return (
         <View style={styles.container}>

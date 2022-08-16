@@ -1,13 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Button, Text, View } from 'react-native';
-import { NavigationContainer, TabActions } from '@react-navigation/native'; // use command ''
+import { NavigationContainer } from '@react-navigation/native'; // use command ''
 import { createNativeStackNavigator } from '@react-navigation/native-stack'; // use command 'npm install @react-navigation/native-stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import BusinessPage from './BusinessPage';
-import Profile from './Profile'
-import HomeScreen from './HomeScreen';
 import SearchPage from './SearchPage';
+import HomeNavigator from './HomeNavigator';
+import ProfileDrawer from './ProfileDrawer';
 
 
 // 8/11/22: npm install @react-navigation/bottom-tabs
@@ -30,10 +29,9 @@ export default function App() {
         <StatusBar style="auto" />
         <NavigationContainer>
             <Tab.Navigator>
-                <Tab.Screen name="Home" component={HomeScreen}/>
+                <Tab.Screen name="Home" component={HomeNavigator}/>
                 <Tab.Screen name="Search Page" component={SearchPage} />
-                <Tab.Screen name="Profile" component={Profile} />
-                <Tab.Screen name="Business Template" component={BusinessPage} initialParams={{ ...sampleRestaurant }} />
+                <Tab.Screen name="Profile" component={ProfileDrawer} />
             </Tab.Navigator>
         </NavigationContainer>
     </View>
@@ -47,15 +45,3 @@ const styles = StyleSheet.create({
     }
 })
 
-const sampleRestaurant = {
-    key: 0,
-    name: "Sample Restaurant",
-    rating: 4.4,
-    tag: 'Late Night Grub',
-    address: '1234 Main Street, Random, CB, 00000',
-    phone: '777-777-7777',
-    ApplePay: 'yes',
-    alcohol: 'yes',
-    kids: 'no',
-    vegetarian: 'no',
-}
