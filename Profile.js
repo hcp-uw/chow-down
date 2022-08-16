@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
-import TermsAndConditions from './components/profile-drawer/TermsAndConditions';
 
 // const Drawer = createDrawerNavigator();
 
