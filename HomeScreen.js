@@ -38,12 +38,19 @@ function HomeScreen({ navigation }) {
             onPress={() => navigation.navigate('Profile', { userId: 'jane' })}
             />
 
+            <Button
+            title="Go to SearchBar"
+            color='purple'
+            onPress={() => navigation.navigate('SearchBar')}
+            />
+
             <View style={styles.smallSpace} />
 
             <Button
             title="Go to Business Page Template"
             onPress={() => navigation.navigate('BusinessPage', { ...sampleRestaurant })}
             />
+            
         </View>
     );
 }

@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'; // 
 import BusinessPage from './BusinessPage';
 import Profile from './Profile'
 import HomeScreen from './HomeScreen';
+import SearchBar from './SearchBar';
 
 
 // The Screen component accepts a name prop which corresponds to the name of the route we will use to navigate,
