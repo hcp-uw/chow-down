@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, TextInput, StyleSheet, Button } from 'react-native';
 import CustomSearchButton from './components/custom-buttons/CustomSearchButton';
 import BusinessPage from './BusinessPage';
+import SearchBar from './components/search-bar/SearchBar'
 
 // to install the icon, use commands in this order:
 // i --save @fortawesome/react-native-fontawesome @fortawesome/fontawesome-svg-core react-native-svg
@@ -34,12 +35,19 @@ function HomeScreen({ navigation }) {
                 />
             </View>
 
+            <Button
+            title="Go to SearchBar"
+            color='purple'
+            onPress={() => navigation.navigate('Search Page')}
+            />
+
             <View style={styles.smallSpace} />
 
             <Button
                 title="Doesn't work: Go to Business Page Template"
                 onPress={() => navigation.navigate("BusinessPage")}
             />
+            
         </View>
     );
 }
@@ -58,6 +66,7 @@ function HomeNavigator() {
                 component={BusinessPage}
                 initialParams={{ ...sampleRestaurant }}
             />
+        <HomeStack.Screen name="Search Page" component={SearchBar} />
         </HomeStack.Navigator>
     )
 }

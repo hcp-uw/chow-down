@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Button, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native'; // use command ''
 import { createNativeStackNavigator } from '@react-navigation/native-stack'; // use command 'npm install @react-navigation/native-stack'
+
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import SearchPage from './SearchPage';
