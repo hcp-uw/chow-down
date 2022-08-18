@@ -32,15 +32,15 @@ function HomeScreen({ navigation }) {
             }}>
                 <CustomSearchButton
                     title="Search For..."
-                // onPress={() => navigation.navigate('SearchPage')}
+                    onPress={() => navigation.navigate('Search Page')}
                 />
             </View>
 
-            <Button
+            {/* <Button 
             title="Go to SearchBar"
             color='purple'
             onPress={() => navigation.navigate('Search Page')}
-            />
+            /> */}
 
             <View style={styles.smallSpace} />
 

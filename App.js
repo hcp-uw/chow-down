@@ -8,7 +8,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import SearchPage from './SearchPage';
 import HomeNavigator from './HomeNavigator';
 import ProfileDrawer from './ProfileDrawer';
-import SearchBar from './components/search-bar'
+import SearchBar from './components/search-bar/SearchBar'
 
 
 // 8/11/22: npm install @react-navigation/bottom-tabs
