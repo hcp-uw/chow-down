@@ -3,6 +3,7 @@ import { View, Text, TextInput, StyleSheet, Button } from 'react-native';
 import CustomSearchButton from './components/custom-buttons/CustomSearchButton';
 import BusinessPage from './BusinessPage';
 
+
 // to install the icon, use commands in this order:
 // i --save @fortawesome/react-native-fontawesome @fortawesome/fontawesome-svg-core react-native-svg
 // i --save @fortawesome/free-solid-svg-icons
@@ -44,6 +45,10 @@ function HomeScreen({ navigation }) {
     );
 }
 
+/**
+ * Home Navigator is the stack of pages nested within the Home Screen.
+ * @returns Nested Navigation (w/ Home Screen)
+ */
 function HomeNavigator() {
     const HomeStack = createNativeStackNavigator();
     return (

@@ -7,6 +7,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import SearchPage from './SearchPage';
 import HomeNavigator from './HomeNavigator';
 import ProfileDrawer from './ProfileDrawer';
+import SearchBar from './components/search-bar'
 
 
 // 8/11/22: npm install @react-navigation/bottom-tabs
@@ -30,7 +31,7 @@ export default function App() {
         <NavigationContainer>
             <Tab.Navigator>
                 <Tab.Screen name="Home" component={HomeNavigator}/>
-                <Tab.Screen name="Search Page" component={SearchPage} />
+                <Tab.Screen name="Search Page" component={SearchBar} />
                 <Tab.Screen name="Profile" component={ProfileDrawer} />
             </Tab.Navigator>
         </NavigationContainer>
