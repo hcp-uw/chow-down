@@ -1,42 +1,38 @@
 import React from 'react';
 import { View, Text, TextInput, StyleSheet, Button } from 'react-native';
+import CustomSearchButton from './components/custom-buttons/CustomSearchButton';
+import BusinessPage from './BusinessPage';
+
 // to install the icon, use commands in this order:
 // i --save @fortawesome/react-native-fontawesome @fortawesome/fontawesome-svg-core react-native-svg
 // i --save @fortawesome/free-solid-svg-icons
 // i --save @fortawesome/free-brands-svg-icons
 // i --save @fortawesome/free-regular-svg-icons
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons/faMagnifyingGlass'
 
-// TODO: figure out how to make the search bar a separate component, and connect to HomeScreen.js
-
+import { NavigationContainer, StackActions, TabActions } from '@react-navigation/native'; // use command ''
+import { createNativeStackNavigator } from '@react-navigation/native-stack'; // use command 'npm install @react-navigation/native-stack'
 
 /**
- * Home Screen display for App.js
+ * Home Screen display for App.js. Previously named HomeScreen.js
  * @param {navigation} supports React Navigation
  * @returns the Home Screen for the app
  */
 function HomeScreen({ navigation }) {
+    const HomeStack = createNativeStackNavigator();
+
     return (
         <View style={styles.container}>
-            <Text>Home Screen</Text>
+
             <View style={{
                 flexDirection: 'row',
                 justifyContent: 'space-between',
                 paddingHorizontal: 20,
             }}>
-                <View style={styles.searchInputContainer}>
-                    <FontAwesomeIcon icon={ faMagnifyingGlass } />
-                    <TextInput style={styles.textSpace} placeholder="Search for..."/>
-                </View>
+                <CustomSearchButton
+                    title="Search For..."
+                // onPress={() => navigation.navigate('SearchPage')}
+                />
             </View>
-            <View style={styles.smallSpace} />
-
-            <Button
-            title="Go to Profile Page"
-            color='purple'
-            onPress={() => navigation.navigate('Profile', { userId: 'jane' })}
-            />
 
             <Button
             title="Go to SearchBar"
@@ -47,13 +43,32 @@ function HomeScreen({ navigation }) {
             <View style={styles.smallSpace} />
 
             <Button
-            title="Go to Business Page Template"
-            onPress={() => navigation.navigate('BusinessPage', { ...sampleRestaurant })}
+                title="Doesn't work: Go to Business Page Template"
+                onPress={() => navigation.navigate("BusinessPage")}
             />
             
         </View>
     );
 }
+
+function HomeNavigator() {
+    const HomeStack = createNativeStackNavigator();
+    return (
+        <HomeStack.Navigator initialRouteName='HomeScreen'>
+            <HomeStack.Screen
+                name='HomeScreen'
+                component={HomeScreen}
+                options={{ headerShown: false, }}
+            />
+            <HomeStack.Screen
+                name="BusinessPage"
+                component={BusinessPage}
+                initialParams={{ ...sampleRestaurant }}
+            />
+        </HomeStack.Navigator>
+    )
+}
+
 
 const styles = StyleSheet.create({
     container: {
@@ -71,10 +86,6 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
         borderRadius: 100,
     },
-    textSpace: {
-        marginLeft: 10,
-    },
-
     /** Adds small space between objects for readability purposes */
     smallSpace: {
         marginVertical: 5,
@@ -82,9 +93,9 @@ const styles = StyleSheet.create({
 })
 
 const sampleRestaurant = {
-    id: 0,
-    name: 'Sample Restaurant',
-    rating: 4.4,
+    key: 0,
+    name: "Sample Restaurant",
+    rating: 3.7,
     tag: 'Late Night Grub',
     address: '1234 Main Street, Random, CB, 00000',
     phone: '777-777-7777',
@@ -94,4 +105,4 @@ const sampleRestaurant = {
     vegetarian: 'no',
 }
 
-export default HomeScreen;
+export default HomeNavigator;
