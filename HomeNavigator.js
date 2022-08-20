@@ -4,6 +4,7 @@ import CustomSearchButton from './components/custom-buttons/CustomSearchButton';
 import BusinessPage from './BusinessPage';
 import SearchBar from './components/search-bar/SearchBar'
 
+
 // to install the icon, use commands in this order:
 // i --save @fortawesome/react-native-fontawesome @fortawesome/fontawesome-svg-core react-native-svg
 // i --save @fortawesome/free-solid-svg-icons
@@ -31,15 +32,15 @@ function HomeScreen({ navigation }) {
             }}>
                 <CustomSearchButton
                     title="Search For..."
-                // onPress={() => navigation.navigate('SearchPage')}
+                    onPress={() => navigation.navigate('Search Page')}
                 />
             </View>
 
-            <Button
+            {/* <Button 
             title="Go to SearchBar"
             color='purple'
             onPress={() => navigation.navigate('Search Page')}
-            />
+            /> */}
 
             <View style={styles.smallSpace} />
 
@@ -52,6 +53,10 @@ function HomeScreen({ navigation }) {
     );
 }
 
+/**
+ * Home Navigator is the stack of pages nested within the Home Screen.
+ * @returns Nested Navigation (w/ Home Screen)
+ */
 function HomeNavigator() {
     const HomeStack = createNativeStackNavigator();
     return (
