@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
 
-// const Drawer = createDrawerNavigator();
 
 const Profile = () => {
     return (
@@ -13,9 +12,6 @@ const Profile = () => {
                 }} />
                 <Text style={styles.name}>Jane Doe</Text>
             </View>
-            {/* <Drawer.Navigator>
-                <Drawer.Screen name="Terms and Conditions" component={TermsAndConditions}/>
-            </Drawer.Navigator> */}
         </View>
     );
 }
