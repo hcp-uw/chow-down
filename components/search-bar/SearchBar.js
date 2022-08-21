@@ -47,7 +47,10 @@ function SearchBar() {
   
 
 const styles = StyleSheet.create({
-    searchInputContainer: {
+   container: {
+      backgroundColor: 'yellow',
+   },
+   searchInputContainer: {
         height: 50,
         backgroundColor: '#FFFFFF',
         flex: 1,

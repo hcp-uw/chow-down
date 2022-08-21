@@ -19,7 +19,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'; // 
  * @param {navigation} supports React Navigation
  * @returns the Home Screen for the app
  */
-function HomeScreen({ navigation }) {
+ function HomeScreen({ navigation }) {
     const HomeStack = createNativeStackNavigator();
 
     return (
@@ -36,46 +36,16 @@ function HomeScreen({ navigation }) {
                 />
             </View>
 
-            {/* <Button 
-            title="Go to SearchBar"
-            color='purple'
-            onPress={() => navigation.navigate('Search Page')}
-            /> */}
-
             <View style={styles.smallSpace} />
 
             <Button
-                title="Doesn't work: Go to Business Page Template"
+                title="Go to Business Page Template"
                 onPress={() => navigation.navigate("BusinessPage")}
             />
             
         </View>
     );
 }
-
-/**
- * Home Navigator is the stack of pages nested within the Home Screen.
- * @returns Nested Navigation (w/ Home Screen)
- */
-function HomeNavigator() {
-    const HomeStack = createNativeStackNavigator();
-    return (
-        <HomeStack.Navigator initialRouteName='HomeScreen'>
-            <HomeStack.Screen
-                name='HomeScreen'
-                component={HomeScreen}
-                options={{ headerShown: false, }}
-            />
-            <HomeStack.Screen
-                name="BusinessPage"
-                component={BusinessPage}
-                initialParams={{ ...sampleRestaurant }}
-            />
-        <HomeStack.Screen name="Search Page" component={SearchBar} />
-        </HomeStack.Navigator>
-    )
-}
-
 
 const styles = StyleSheet.create({
     container: {
@@ -99,17 +69,4 @@ const styles = StyleSheet.create({
     }
 })
 
-const sampleRestaurant = {
-    key: 0,
-    name: "Sample Restaurant",
-    rating: 3.7,
-    tag: 'Late Night Grub',
-    address: '1234 Main Street, Random, CB, 00000',
-    phone: '777-777-7777',
-    ApplePay: 'yes',
-    alcohol: 'yes',
-    kids: 'no',
-    vegetarian: 'no',
-}
-
-export default HomeNavigator;
+export default HomeScreen;
