@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Button } from 'react-native';
+import { View, Text, TouchableOpacity, TextInput, StyleSheet, Button } from 'react-native';
 import CustomSearchButton from './components/custom-buttons/CustomSearchButton';
 import { createNativeStackNavigator } from '@react-navigation/native-stack'; // use command 'npm install @react-navigation/native-stack'
 
@@ -8,6 +8,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'; // 
 // i --save @fortawesome/free-solid-svg-icons
 // i --save @fortawesome/free-brands-svg-icons
 // i --save @fortawesome/free-regular-svg-icons
+
+import { NavigationContainer, StackActions, TabActions } from '@react-navigation/native'; // use command ''
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import {FontAwesomeIcon} from "@fortawesome/react-native-fontawesome";
+import {faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons/faMagnifyingGlass"; // use command 'npm install @react-navigation/native-stack'
 
 /**
  * Home Screen display for App.js. Previously named HomeScreen.js
@@ -55,6 +60,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingHorizontal: 20,
         borderRadius: 100,
+    },
+    textSpace: {
+        marginLeft: 10,
+        color: '#A9A9A9',
     },
     /** Adds small space between objects for readability purposes */
     smallSpace: {
