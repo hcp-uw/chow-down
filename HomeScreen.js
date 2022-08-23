@@ -9,11 +9,6 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'; // 
 // i --save @fortawesome/free-brands-svg-icons
 // i --save @fortawesome/free-regular-svg-icons
 
-import { NavigationContainer, StackActions, TabActions } from '@react-navigation/native'; // use command ''
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import {FontAwesomeIcon} from "@fortawesome/react-native-fontawesome";
-import {faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons/faMagnifyingGlass"; // use command 'npm install @react-navigation/native-stack'
-
 /**
  * Home Screen display for App.js. Previously named HomeScreen.js
  * @param {navigation} supports React Navigation
