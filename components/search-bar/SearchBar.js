@@ -37,7 +37,7 @@ const SearchBar = () => {
              }
           }).map((val, key)=> { //Filter function and style for search results here
              return (
-             <View className="user" key={key} style={{
+             <TouchableOpacity className="user" key={key} style={{
                  height: 70,
                  width: '100%',
              }}>
@@ -50,7 +50,7 @@ const SearchBar = () => {
                          marginTop: 25,
                      }}
                 />
-             </View>
+             </TouchableOpacity>
              );
           })}
        </SafeAreaView>
