@@ -1,9 +1,7 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, TextInput, StyleSheet, Button } from 'react-native';
 import CustomSearchButton from './components/custom-buttons/CustomSearchButton';
-import BusinessPage from './BusinessPage';
-import SearchBar from './components/search-bar/SearchBar'
-
+import { createNativeStackNavigator } from '@react-navigation/native-stack'; // use command 'npm install @react-navigation/native-stack'
 
 // to install the icon, use commands in this order:
 // i --save @fortawesome/react-native-fontawesome @fortawesome/fontawesome-svg-core react-native-svg
@@ -11,19 +9,12 @@ import SearchBar from './components/search-bar/SearchBar'
 // i --save @fortawesome/free-brands-svg-icons
 // i --save @fortawesome/free-regular-svg-icons
 
-import { NavigationContainer, StackActions, TabActions } from '@react-navigation/native'; // use command ''
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import {FontAwesomeIcon} from "@fortawesome/react-native-fontawesome";
-import {faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons/faMagnifyingGlass"; // use command 'npm install @react-navigation/native-stack'
-
 /**
  * Home Screen display for App.js. Previously named HomeScreen.js
  * @param {navigation} supports React Navigation
  * @returns the Home Screen for the app
  */
  function HomeScreen({ navigation }) {
-    const HomeStack = createNativeStackNavigator();
-
     return (
         <View style={styles.container}>
 

@@ -9,7 +9,6 @@ import Stars from "react-native-stars"; // npm install react-native-stars --save
  * Exports to App.js
  */
 
-//testing if it works
 
 const BusinessPage = ({ route, navigation }) => {
   const {
@@ -23,7 +22,7 @@ const BusinessPage = ({ route, navigation }) => {
     alcohol,
     kids,
     vegetarian,
-  } = route.params;
+  } = route.params; 
   return (
     <View key={JSON.stringify(key)} style={styles.restaurantView}>
       <Text style={styles.headerText}>

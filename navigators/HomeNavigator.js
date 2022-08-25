@@ -34,7 +34,7 @@ function HomeNavigator() {
                 options={{ title: '' }}
                 initialParams={{ ...restaurantArray[0] }}
             />
-        <HomeStack.Screen name="Search Page" component={SearchBar} />
+            <HomeStack.Screen name="Search Page" component={SearchBar} />
         </HomeStack.Navigator>
     )
 }

@@ -3,8 +3,7 @@ import {StyleSheet, Keyboard, TouchableOpacity, KeyboardAvoidingView, SafeAreaVi
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons/faMagnifyingGlass'
 import JSONDATA from './MOCK_DATA.json';
-import {useState} from 'react';
-
+import { useState } from 'react';
 
 // NOTE: to test that Keyboard appearance works on SearchPage.js,
 // you have to use Expo Go on a separate device. Does not show up on emulator.
@@ -38,7 +37,7 @@ const SearchBar = () => {
              }
           }).map((val, key)=> { //Filter function and style for search results here
              return (
-             <View className="user" key={key} style={{
+             <TouchableOpacity className="user" key={key} style={{
                  height: 70,
                  width: '100%',
              }}>
@@ -51,13 +50,12 @@ const SearchBar = () => {
                          marginTop: 25,
                      }}
                 />
-             </View>
+             </TouchableOpacity>
              );
           })}
        </SafeAreaView>
     );
   }
-
 
 const styles = StyleSheet.create({
    container: {
