@@ -1,7 +1,6 @@
 import React from 'react';
 import {StyleSheet, Keyboard, TouchableOpacity, KeyboardAvoidingView, SafeAreaView, View, TextInput, Text} from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons/faMagnifyingGlass'
+//import CustomRestaurantButton from './components/custom-buttons/CustomRestaurantButton';
 import JSONDATA from './MOCK_DATA.json';
 import { useState } from 'react';
 
