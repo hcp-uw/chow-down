@@ -1,7 +1,5 @@
 import React from 'react';
-import { StyleSheet, Keyboard, TouchableOpacity, KeyboardAvoidingView, SafeAreaView, View, TextInput, Text } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons/faMagnifyingGlass'
+import { StyleSheet, Keyboard, TouchableOpacity, KeyboardAvoidingView, SafeAreaView, View, TextInput, Text, ScrollView } from 'react-native';
 import JSONDATA from './MOCK_DATA.json';
 import { useState } from 'react';
 
@@ -43,7 +41,7 @@ const SearchBar = ({ route, navigation }) => {
                      width: '100%',
                   }}
                   onPress={() => navigation.navigate('BusinessPage', { name: val.first_name + ' ' + val.last_name })}
-                  >
+               >
                   <Text> {val.first_name} </Text>
                   <View
                      style={{
@@ -54,8 +52,9 @@ const SearchBar = ({ route, navigation }) => {
                      }}
                   />
                </TouchableOpacity>
-            );
-         })}
+            )
+         }
+         )}
       </SafeAreaView>
    );
 }
