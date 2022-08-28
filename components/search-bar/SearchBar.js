@@ -9,14 +9,10 @@ const SearchBar = ({ route, navigation }) => {
    const [searchTerm, setSearchTerm] = useState('')
 
    return (
-      <SafeAreaView className="search">
-         <KeyboardAvoidingView>
+      <SafeAreaView className="search" >
+         <KeyboardAvoidingView style={styles.searchInputContainer}>
             <TouchableOpacity>
-               <TextInput style={{
-                  height: 50,
-                  backgroundColor: '#FFFFFF',
-                  marginBottom: 25,
-               }}
+               <TextInput style={styles.textInputSpace}
                   autoFocus={true}
                   //type="text"
                   placeholder="Search..."
@@ -44,12 +40,7 @@ const SearchBar = ({ route, navigation }) => {
                >
                   <Text> {val.first_name} </Text>
                   <View
-                     style={{
-                        height: 0.5,
-                        width: '100%',
-                        backgroundColor: '#C8C8C8',
-                        marginTop: 25,
-                     }}
+                     style={styles.horizontalLine}
                   />
                </TouchableOpacity>
             )
@@ -64,11 +55,23 @@ const styles = StyleSheet.create({
       backgroundColor: 'yellow',
    },
    searchInputContainer: {
-      height: 50,
-      paddingHorizontal: 20,
+      padding: 15,
+      backgroundColor: '#FFFFCC'
+   },
+   textInputSpace: {
+      height: 40,
+      backgroundColor: '#FFFFFF',
+      borderRadius: 50,
+      paddingLeft: 20,
    },
    textSpace: {
       marginLeft: 10,
+   },
+   horizontalLine: {
+      height: 0.5,
+      width: '100%',
+      backgroundColor: '#C8C8C8',
+      marginTop: 25,
    },
 })
 
