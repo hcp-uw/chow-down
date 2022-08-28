@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, TextInput, StyleSheet, Button } from 'react-native';
 import CustomSearchButton from './components/custom-buttons/CustomSearchButton';
+import CustomRestaurantButton from './components/custom-buttons/CustomRestaurantButton';
 import { createNativeStackNavigator } from '@react-navigation/native-stack'; // use command 'npm install @react-navigation/native-stack'
 
 // to install the icon, use commands in this order:

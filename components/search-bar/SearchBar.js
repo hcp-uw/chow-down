@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, Keyboard, TouchableOpacity, KeyboardAvoidingView, SafeAreaView, View, TextInput, Text, ScrollView } from 'react-native';
+import {StyleSheet, Keyboard, TouchableOpacity, KeyboardAvoidingView, SafeAreaView, View, TextInput, Text} from 'react-native';
+//import CustomRestaurantButton from './components/custom-buttons/CustomRestaurantButton';
 import JSONDATA from './MOCK_DATA.json';
 import { useState } from 'react';
 
