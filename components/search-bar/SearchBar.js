@@ -1,12 +1,12 @@
 import React from 'react';
-import {StyleSheet, Keyboard, TouchableOpacity, KeyboardAvoidingView, SafeAreaView, View, TextInput, Text} from 'react-native';
-//import CustomRestaurantButton from './components/custom-buttons/CustomRestaurantButton';
+import { StyleSheet, Keyboard, TouchableOpacity, KeyboardAvoidingView, SafeAreaView, View, TextInput, Text } from 'react-native';
 import JSONDATA from './MOCK_DATA.json';
 import { useState } from 'react';
+import CustomRestaurantButton from '../custom-buttons/CustomRestaurantButton';
 
 // NOTE: to test that Keyboard appearance works on SearchPage.js,
 // you have to use Expo Go on a separate device. Does not show up on emulator.
-const SearchBar = ({ route, navigation }) => {
+const SearchBar = ({ navigation }) => {
    const [searchTerm, setSearchTerm] = useState('')
 
    return (
@@ -29,21 +29,20 @@ const SearchBar = ({ route, navigation }) => {
                return val
             }
          }).map((val, key) => { //Filter function and style for search results here
-            return (
-               <TouchableOpacity
-                  className="user"
-                  key={key}
-                  style={{
-                     height: 70,
-                     width: '100%',
-                  }}
-                  onPress={() => navigation.navigate('BusinessPage', { name: val.first_name + ' ' + val.last_name })}
-               >
-                  <Text> {val.first_name} </Text>
-                  <View
-                     style={styles.horizontalLine}
+            return ( // maybe --> Switch .map to something more compatiable for React Native- FlatList
+               <View key={key}>
+                  <CustomRestaurantButton
+                     className="user"
+                     key={key}
+                     title={val.first_name}
+                     address={val.ip_address}
+                     // style={{
+                     //    height: 70,
+                     //    width: '100%',
+                     // }}
+                     onPress={() => navigation.navigate('BusinessPage', { name: val.first_name + ' ' + val.last_name })}
                   />
-               </TouchableOpacity>
+               </View>
             )
          }
          )}
