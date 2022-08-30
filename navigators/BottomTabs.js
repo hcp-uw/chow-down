@@ -14,7 +14,8 @@ function BottomTabs() {
         <Tab.Navigator             
             screenOptions={{
                 headerShown: false,
-                tabBarActiveTintColor: 'purple'
+                tabBarActiveTintColor: 'purple',
+                tabBarHideOnKeyboard: true,
             }}
         >
             <Tab.Screen name="Home" component={HomeNavigator} 
