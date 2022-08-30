@@ -15,7 +15,6 @@ const styles = StyleSheet.create({
     resultContainer: {
         height: 70,
         backgroundColor: '#DDC5F5',
-        flex: 1,
         paddingHorizontal: 20,
     },
     nameSpace: {
