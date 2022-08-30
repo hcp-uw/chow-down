@@ -15,6 +15,7 @@ const BusinessPage = ({ route, navigation }) => {
     key,
     name,
     rating,
+    numRating, 
     tag,
     address,
     phone,
@@ -39,7 +40,7 @@ const BusinessPage = ({ route, navigation }) => {
           fullStar={require("./images/starFilled.png")}
           emptyStar={require("./images/starEmpty.png")}
         />
-        <Text> (117) </Text>
+        <Text> {JSON.stringify(numRating)} </Text>
       </View>
 
       <View style={styles.largeSpace} />

@@ -1,6 +1,9 @@
 import { NavigationContainer } from '@react-navigation/native'; // use command ''
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+// from icons.expo.fyi
+import { FontAwesome } from '@expo/vector-icons';
+
 import HomeNavigator from '../navigators/HomeNavigator';
 import ProfileDrawer from '../navigators/ProfileDrawer';
 
@@ -10,11 +13,16 @@ function BottomTabs() {
         <NavigationContainer>
         <Tab.Navigator             
             screenOptions={{
-                headerShown: false
+                headerShown: false,
+                tabBarActiveTintColor: 'purple'
             }}
         >
-            <Tab.Screen name="Home" component={HomeNavigator}/>
-            <Tab.Screen name="Profile" component={ProfileDrawer} />
+            <Tab.Screen name="Home" component={HomeNavigator} 
+                        options={{ tabBarIcon: () => (<FontAwesome name="home" size={24} color="black" />)}}
+            />
+            <Tab.Screen name="Profile" component={ProfileDrawer} 
+                        options={{ tabBarIcon: () => { return <FontAwesome name="user" size={24} color="black" />}}}
+            />
         </Tab.Navigator>
         </NavigationContainer>
     )
