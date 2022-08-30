@@ -30,19 +30,17 @@ const SearchBar = ({ navigation }) => {
             }
          }).map((val, key) => { //Filter function and style for search results here
             return ( // maybe --> Switch .map to something more compatiable for React Native- FlatList
-               <View key={key}>
-                  <CustomRestaurantButton
-                     className="user"
-                     key={key}
-                     title={val.first_name}
-                     address={val.ip_address}
-                     // style={{
-                     //    height: 70,
-                     //    width: '100%',
-                     // }}
-                     onPress={() => navigation.navigate('BusinessPage', { name: val.first_name + ' ' + val.last_name })}
-                  />
-               </View>
+               <CustomRestaurantButton
+                  className="user"
+                  key={key}
+                  title={val.first_name}
+                  address={val.ip_address}
+                  // style={{
+                  //    height: 70,
+                  //    width: '100%',
+                  // }}
+                  onPress={() => navigation.navigate('BusinessPage', { name: val.first_name + ' ' + val.last_name })}
+               />
             )
          }
          )}
