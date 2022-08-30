@@ -22,6 +22,7 @@ const SearchBar = ({ navigation }) => {
                </TextInput>
             </TouchableOpacity>
          </KeyboardAvoidingView>
+         {/* TODO: Ask Jonny how below code works: What is val? */}
          {JSONDATA.filter((val) => {
             if (searchTerm == "") {
                return val
@@ -29,7 +30,7 @@ const SearchBar = ({ navigation }) => {
                return val
             }
          }).map((val, key) => { //Filter function and style for search results here
-            return ( // maybe --> Switch .map to something more compatiable for React Native- FlatList
+            return ( // TODO: maybe --> Switch .map to something more compatiable for React Native- FlatList
                <CustomRestaurantButton
                   className="user"
                   key={key}
@@ -50,11 +51,11 @@ const SearchBar = ({ navigation }) => {
 
 const styles = StyleSheet.create({
    container: {
-      backgroundColor: 'yellow',
+      backgroundColor: '#FFF4BE',
    },
    searchInputContainer: {
       padding: 15,
-      backgroundColor: '#FFFFCC'
+      backgroundColor: '#FFF4BE'
    },
    textInputSpace: {
       height: 40,
