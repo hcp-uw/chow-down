@@ -2,9 +2,6 @@ import { View, Button, StyleSheet, TouchableOpacity, Text } from "react-native";
 
 const CustomRestaurantButton = ({ onPress, title, address }) => (
     <TouchableOpacity onPress={onPress} style={styles.resultContainer}>
-        <View>
-
-        </View>
        <View>
         <Text style={styles.nameSpace}>{title}</Text>
        </View>
@@ -18,7 +15,6 @@ const styles = StyleSheet.create({
     resultContainer: {
         height: 70,
         backgroundColor: '#DDC5F5',
-        flex: 1,
         paddingHorizontal: 20,
     },
     nameSpace: {
