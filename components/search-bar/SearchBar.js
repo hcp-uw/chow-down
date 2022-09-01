@@ -22,7 +22,6 @@ const SearchBar = ({ navigation }) => {
                </TextInput>
             </TouchableOpacity>
          </KeyboardAvoidingView>
-         {/* TODO: Ask Jonny how below code works: What is val? */}
          {JSONDATA.filter((val) => {
             if (searchTerm == "") {
                return val
