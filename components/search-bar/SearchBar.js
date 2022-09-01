@@ -33,13 +33,13 @@ const SearchBar = ({ navigation }) => {
                <CustomRestaurantButton
                   className="user"
                   key={key}
-                  title={val.first_name}
-                  address={val.ip_address}
+                  title={val.restaurantName}
+                  address={val.addresslocation}
                   // style={{
                   //    height: 70,
                   //    width: '100%',
                   // }}
-                  onPress={() => navigation.navigate('BusinessPage', { name: val.first_name + ' ' + val.last_name })}
+                  onPress={() => navigation.navigate('BusinessPage', { ...val })}
                />
             )
          }
