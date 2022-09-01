@@ -3,6 +3,7 @@ import { StyleSheet, Keyboard, TouchableOpacity, KeyboardAvoidingView, SafeAreaV
 import JSONDATA from './MOCK_DATA.json';
 import { useState } from 'react';
 import CustomRestaurantButton from '../custom-buttons/CustomRestaurantButton';
+import { ScrollView } from 'react-native-gesture-handler';
 
 // NOTE: to test that Keyboard appearance works on SearchPage.js,
 // you have to use Expo Go on a separate device. Does not show up on emulator.
@@ -10,7 +11,7 @@ const SearchBar = ({ navigation }) => {
    const [searchTerm, setSearchTerm] = useState('')
 
    return (
-      <SafeAreaView className="search" >
+      <ScrollView>
          <KeyboardAvoidingView style={styles.searchInputContainer}>
             <TouchableOpacity>
                <TextInput style={styles.textInputSpace}
@@ -25,7 +26,7 @@ const SearchBar = ({ navigation }) => {
          {JSONDATA.filter((val) => {
             if (searchTerm == "") {
                return val
-            } else if (val.first_name.toLowerCase().includes(searchTerm.toLowerCase())) {
+            } else if (val.restaurantName.toLowerCase().includes(searchTerm.toLowerCase())) {
                return val
             }
          }).map((val, key) => { //Filter function and style for search results here
@@ -44,7 +45,7 @@ const SearchBar = ({ navigation }) => {
             )
          }
          )}
-      </SafeAreaView>
+      </ScrollView>
    );
 }
 
