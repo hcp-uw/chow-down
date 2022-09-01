@@ -41,6 +41,7 @@ const SearchBar = ({ navigation }) => {
                   key={key}
                   title={val.restaurantName}
                   address={val.addresslocation}
+                  img={'../alladins.jpg'}
                   // style={{
                   //    height: 70,
                   //    width: '100%',
