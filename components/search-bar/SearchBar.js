@@ -28,7 +28,7 @@ const SearchBar = ({ navigation }) => {
          {JSONDATA.filter((val) => {
             if (searchTerm == "") {
                return val
-            } else if (val.first_name.toLowerCase().includes(searchTerm.toLowerCase())) {
+            } else if (val.restaurantName.toLowerCase().includes(searchTerm.toLowerCase())) {
                return val
             }
          }).map((val, key) => 
@@ -39,13 +39,13 @@ const SearchBar = ({ navigation }) => {
                <CustomRestaurantButton
                   className="user"
                   key={key}
-                  title={val.first_name}
-                  address={val.ip_address}
+                  title={val.restaurantName}
+                  address={val.addresslocation}
                   // style={{
                   //    height: 70,
                   //    width: '100%',
                   // }}
-                  onPress={() => navigation.navigate('BusinessPage', { name: val.first_name + ' ' + val.last_name })}
+                  onPress={() => navigation.navigate('BusinessPage', { ...val })}
                />
             )
          

@@ -10,25 +10,22 @@ import Stars from "react-native-stars"; // npm install react-native-stars --save
  */
 
 
-const BusinessPage = ({ route, navigation }) => {
+const BusinessPage = ({ route }) => {
   const {
     key,
-    name,
+    restaurantName,
     rating,
     numRating, 
-    tag,
-    address,
-    phone,
-    ApplePay,
-    alcohol,
-    kids,
-    vegetarian,
+    cuisine,
+    addresslocation,
+    phoneNumber,
+    acceptsApplePay,
   } = route.params; 
   return (
     <View key={JSON.stringify(key)} style={styles.restaurantView}>
       <Text style={styles.headerText}>
         {" "}
-        {JSON.stringify(name).replace(/\"/g, "")}{" "}
+        {JSON.stringify(restaurantName).replace(/\"/g, "")}{" "}
       </Text>
       <View style={styles.smallSpace} />
       <View style={styles.starDisplay}>
@@ -46,13 +43,13 @@ const BusinessPage = ({ route, navigation }) => {
       <View style={styles.largeSpace} />
 
       <View style={styles.restaurantDetails}>
-        <Text> Tags: {JSON.stringify(tag).replace(/\"/g, "")} </Text>
-        <Text> Address: {JSON.stringify(address).replace(/\"/g, "")} </Text>
-        <Text> Phone Number: {JSON.stringify(phone).replace(/\"/g, "")} </Text>
-        <Text> Apple Pay? {JSON.stringify(ApplePay)} </Text>
-        <Text> Alcohol? {JSON.stringify(alcohol)} </Text>
+        <Text> Tags: {JSON.stringify(cuisine).replace(/\"/g, "")} </Text>
+        <Text> Address: {JSON.stringify(addresslocation).replace(/\"/g, "")} </Text>
+        <Text> Phone Number: {JSON.stringify(phoneNumber).replace(/\"/g, "")} </Text>
+        <Text> Apple Pay? {JSON.stringify(acceptsApplePay)} </Text>
+        {/* <Text> Alcohol? {JSON.stringify(alcohol)} </Text>
         <Text> Kid Friendly? {JSON.stringify(kids)} </Text>
-        <Text> Vegetarian Friendly? {JSON.stringify(vegetarian)} </Text>
+        <Text> Vegetarian Friendly? {JSON.stringify(vegetarian)} </Text> */}
       </View>
 
       <View style={styles.largeSpace} />
@@ -77,7 +74,9 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     textAlignVertical: "bottom",
   },
-  restaurantDetails: {},
+  restaurantDetails: {
+
+  },
   /** Adds small space between objects for readability purposes */
   smallSpace: {
     marginVertical: 5,
