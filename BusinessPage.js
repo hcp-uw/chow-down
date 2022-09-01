@@ -9,7 +9,6 @@ import Stars from "react-native-stars"; // npm install react-native-stars --save
  * Exports to App.js
  */
 
-
 const BusinessPage = ({ route }) => {
   const {
     key,
