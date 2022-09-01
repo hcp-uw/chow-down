@@ -5,7 +5,6 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons/faMagnifyin
 import JSONDATA from './MOCK_DATA.json';
 import {useState} from 'react';
 
-
 // function SearchBar({ placeholder, data }) {
 //     return (
 //         <View style={styles.searchInputContainer}>
@@ -19,14 +18,11 @@ import {useState} from 'react';
 function SearchBar() {
     const [searchTerm, setSearchTerm] = useState('')
     return(
-       <View className="search">
+       <View style={styles.searchInputContainer} className="search">
           <TextInput
              type="text"
              placeholder="Search..."
-             onChangeText={setSearchTerm} //</View>=>
-                // this.setState({setSearchTerm: event})
-                // {setSearchTerm(this.setState({event}))  
-             >
+             onChangeText={setSearchTerm}>
           </TextInput>
           {JSONDATA.filter((val)=> {
              if (searchTerm == "") {
@@ -43,7 +39,7 @@ function SearchBar() {
           })}
        </View>
     );
-  }
+}
   
 
 const styles = StyleSheet.create({
@@ -51,7 +47,7 @@ const styles = StyleSheet.create({
         height: 50,
         backgroundColor: '#FFFFFF',
         flex: 1,
-        flexDirection: 'row',
+        flexDirection: 'column',
         alignItems: 'center',
         paddingHorizontal: 20,
         borderRadius: 100,
