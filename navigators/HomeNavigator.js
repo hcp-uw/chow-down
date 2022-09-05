@@ -42,6 +42,6 @@ function HomeNavigator() {
 
 const blankRestaurant = { key: 0, restaurantName: 'Restaurant Name', rating: 0.0, numRating: 0, 
                         cuisine: ' ', addresslocation: '', phoneNumber: '', 
-                        img: require("../images/RESTAURANT.jpg")}
+                        img: 'https://upload.wikimedia.org/wikipedia/commons/b/b4/RESTAURANT.jpg'}
 
 export default HomeNavigator;

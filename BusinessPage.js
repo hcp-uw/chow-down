@@ -1,13 +1,12 @@
 import React from "react";
-import { View, Text, StyleSheet, Button, ImageBackground } from "react-native";
-import { ScrollView } from "react-native-gesture-handler";
+import { ScrollView, View, Text, StyleSheet, Button, ImageBackground } from "react-native";
 import Stars from "react-native-stars"; // npm install react-native-stars --save
-import { Ionicons } from '@expo/vector-icons'; // for icons
-import { FontAwesome5 } from '@expo/vector-icons'; // for icons
+import { Ionicons, FontAwesome5 } from '@expo/vector-icons'; // for icons
 
 /**
  * Business Page is the default template for a restaurant's page.
- * Pass in the desired restaurant through React Navigation.
+ * @requires props passed in through React Navigation. 
+ * @returns Business/Restaurant Page Display
  */
 
 function BusinessPage({ route }) {
@@ -21,7 +20,7 @@ function BusinessPage({ route }) {
     <ScrollView key={JSON.stringify(key)} style={styles.restaurantView}>
 
       {/** Displays an image behind restaurant text */}
-      <ImageBackground source={img} resizeMode="cover" style={styles.imageBox}>
+      <ImageBackground source={{ uri: img }} resizeMode="cover" style={styles.imageBox}>
         
         <Text style={styles.headerText}>
           {JSON.stringify(restaurantName).replace(/\"/g, "")}
@@ -51,7 +50,9 @@ function BusinessPage({ route }) {
 
       <View style={styles.smallSpace} />
 
-      {/** Displays some details about the restaurant (address, phone number etc.) */}
+      {/** Displays some details about the restaurant (address, phone number etc.) 
+       * ToDo (low priority): rewrite this code to make more readable
+      */}
       <View style={styles.detailsBox}>
         <View style={styles.restaurantDetails}>
           <Ionicons name="location" size={20} color="black" />
@@ -72,78 +73,85 @@ function BusinessPage({ route }) {
       </View>
 
       <View style={styles.largeSpace} />
+
       <Button title="Doesn't Work: Add Your Review" />
     </ScrollView>
   );
 };
 
+
+// Text to display on whether a restaurant accepts Apple Pay
 const mobilePayments = (acceptsApplePay) => {
   if (JSON.stringify(acceptsApplePay) == undefined) {
     return (<Text>No Data about Mobile Payments </Text>)
   } else if (JSON.stringify(acceptsApplePay).replace(/\"/g, "") == "Yes") {
-    return (
-      <Text>Accepts Apple Pay </Text>
-    )
+    return (<Text>Accepts Apple Pay </Text>)
   } else {
-    return (
-      <Text>No Mobile Payments </Text>
-    )
+    return (<Text>No Data about Mobile Payments </Text>)
   }
 }
 
 const styles = StyleSheet.create({
+  // Top-level container
   restaurantView: {
     flex: 1,
     backgroundColor: "#FFF4BE",
     flexDirection: "column",
     alignContent: "center",
   },
+  // Image Background component
+  // TODO: get entire image to show up (not vertically cropped)
   imageBox: {
     flex: 1,
     justifyContent: 'center',
   },
+  // Restaurant Name text
   headerText: {
     fontSize: 32,
     fontWeight: "bold",
     color: 'white',
     textAlign: 'center',
   },
-  numCountText: {
-    fontSize: 12,
+  // Displays cuisine text
+  cuisineText: {
+    fontSize: 14,
+    fontWeight: 'bold',
     color: 'white',
+    textAlign: 'center'
   },
+  // line with stars & num of reviews
   starDisplay: {
     flexDirection: "row",
     justifyContent: "center",
   },
-  cuisineText: {
-    fontsize: 14,
+  // nested within starDisplay - num of reviews text
+  numCountText: {
+    fontSize: 12,
     color: 'white',
-    textAlign: 'center'
   },
+  // Box with restaurant details
   detailsBox: {
     paddingLeft: 20,
     borderRadius: 10,
     marginHorizontal: 30,
     backgroundColor: "white",
   },
+  // individual restaurant detail categories
   restaurantDetails: {
     flex: 1,
     flexDirection: 'row',
     marginVertical: 3,
     alignContent: 'center',
   },
+  // text nested within above component
   restaurantDetailsText: {
     paddingLeft: 10,
   },
-  writeReview: {
-    height: 200,
-    backgroundColor: "white",
-  },
-  /** Adds small space between objects for readability purposes */
+  // Adds small space between objects for readability purposes 
   smallSpace: {
     marginVertical: 5,
   },
+  // Adds "large" vertical space between objects
   largeSpace: {
     marginVertical: 20,
   },
