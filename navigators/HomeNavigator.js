@@ -5,6 +5,7 @@ import SearchBar from '../components/search-bar/SearchBar'
 import HomeScreen from '../HomeScreen'
 
 
+
 // to install the icon, use commands in this order:
 // i --save @fortawesome/react-native-fontawesome @fortawesome/fontawesome-svg-core react-native-svg
 // i --save @fortawesome/free-solid-svg-icons
@@ -39,6 +40,8 @@ function HomeNavigator() {
     )
 }
 
-const blankRestaurant = { key: 0, name: 'Restaurant Name', rating: 0.0, numRating: 0, tag: '', address: '', phone: '' }
+const blankRestaurant = { key: 0, restaurantName: 'Restaurant Name', rating: 0.0, numRating: 0, 
+                        cuisine: ' ', addresslocation: '', phoneNumber: '', 
+                        img: require("../images/RESTAURANT.jpg")}
 
 export default HomeNavigator;

@@ -1,5 +1,5 @@
 import React from "react";
-import { createDrawerNavigator } from "@react-navigation/drawer";
+import { createDrawerNavigator, DrawerToggleButton } from "@react-navigation/drawer";
 import TermsAndConditions from '../components/profile-drawer/TermsAndConditions';
 import Profile from "../components/profile-drawer/Profile";
 
@@ -8,7 +8,9 @@ function ProfileDrawer() {
 
     return (
         <ProfileDrawer.Navigator 
-            initialRouteName="Profile Page">
+            initialRouteName="Profile Page"
+            screenOptions={{ drawerPosition: 'right', headerLeft: false, headerRight: () => <DrawerToggleButton />, }}
+        >
             <ProfileDrawer.Screen name="Profile Page" component={Profile}/>
             <ProfileDrawer.Screen name="Terms and Conditions" component={TermsAndConditions} />
         </ProfileDrawer.Navigator>
