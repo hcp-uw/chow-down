@@ -1,8 +1,5 @@
 [
     {
-        "restaurantName": "On Campus Options"
-    },
-    {
         "restaurantName": "Center Table",
         "addresslocation": "Willow Hall, 294 Whitman Ln NE",
         "cuisine": "Dining Hall",
@@ -202,9 +199,6 @@
         "acceptsApplePay": "Yes",
         "rating": 3.3,
         "numberOfRatings": 7
-    },
-    {
-        "restaurantName": "U District"
     },
     {
         "restaurantName": "Portage Bay Café",
@@ -1582,9 +1576,6 @@
         "acceptsApplePay": "yes",
         "rating": 4.4,
         "numberOfRatings": 303
-    },
-    {
-        "restaurantName": "UVillage"
     },
     {
         "restaurantName": "Ma’ono Fried Chicken",
