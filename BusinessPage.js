@@ -21,29 +21,30 @@ function BusinessPage({ route }) {
 
       {/** Displays an image behind restaurant text */}
       <ImageBackground source={{ uri: img }} resizeMode="cover" style={styles.imageBox}>
-        
-        <Text style={styles.headerText}>
-          {JSON.stringify(restaurantName).replace(/\"/g, "")}
-        </Text>
+        <View style={ styles.imageBackgroundText }> 
+            <Text style={styles.headerText}>
+              {JSON.stringify(restaurantName).replace(/\"/g, "")}
+            </Text>
 
-        <Text style={styles.cuisineText}>
-          {JSON.stringify(cuisine).replace(/\"/g, "")}
-        </Text>
+            <Text style={styles.cuisineText}>
+              {JSON.stringify(cuisine).replace(/\"/g, "")}
+            </Text>
 
-        <View style={styles.smallSpace} />
+            <View style={styles.largeSpace} />
 
-        {/** Stars to display restaurant rating */}
-        <View style={styles.starDisplay}>
-          <Stars
-            display={parseFloat(JSON.stringify(rating))}
-            spacing={8}
-            count={5}
-            starSize={40}
-            fullStar={require("./images/starFilled.png")}
-            emptyStar={require("./images/starEmpty.png")}
-          />
-          {/** TODO: get num count and stars to align vertically */}
-          <Text style={styles.numCountText}> ({JSON.stringify(numRating)}) </Text>
+            {/** Stars to display restaurant rating */}
+            <View style={styles.starDisplay}>
+              <Stars
+                display={parseFloat(JSON.stringify(rating))}
+                spacing={8}
+                count={5}
+                starSize={40}
+                fullStar={require("./images/starFilled.png")}
+                emptyStar={require("./images/starEmpty.png")}
+              />
+              {/** TODO: get num count and stars to align vertically */}
+              <Text style={styles.numCountText}> ({JSON.stringify(numRating)}) </Text>
+            </View>
         </View>
 
       </ImageBackground>
@@ -103,7 +104,13 @@ const styles = StyleSheet.create({
   // TODO: get entire image to show up (not vertically cropped)
   imageBox: {
     flex: 1,
-    justifyContent: 'center',
+    // justifyContent: 'center',
+    aspectRatio: 1,
+  },
+  // Text that is above image background
+  imageBackgroundText: {
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    paddingTop: 10,
   },
   // Restaurant Name text
   headerText: {
