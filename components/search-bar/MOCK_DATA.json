@@ -5,7 +5,8 @@
         "cuisine": "Dining Hall",
         "website": "https://hfs.uw.edu/Eat/dining-hours/Center-Table",
         "phoneNumber": "206-685-6760 or 206-616-8026",
-        "acceptsApplePay": "Yes"
+        "acceptsApplePay": "Yes",
+        "img": "https://hfs.uw.edu/getmedia/fa0117f4-43bc-481e-aeb6-db4082c04494/LOC-Center-Table-logo-card.jpg.aspx?width=800&height=449&ext=.jpg"
     },
     {
         "restaurantName": "Local Point",
@@ -13,7 +14,9 @@
         "cuisine": "Dining Hall",
         "website": "https://hfs.uw.edu/Eat/dining-hours/Local-Point",
         "phoneNumber": "206-543-6975",
-        "acceptsApplePay": "Yes"
+        "acceptsApplePay": "Yes",
+        "img": "https://hfs.uw.edu/getmedia/3d40434a-89f6-4b7a-a2d5-8aff98f6be2e/LOC-LP-card-with-logo.jpg.aspx?width=800&height=450&ext=.jpg"
+
     },
     {
         "restaurantName": "Husky Den Food Court",

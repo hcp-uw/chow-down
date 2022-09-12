@@ -11,7 +11,7 @@ const SearchBar = ({ navigation }) => {
    const [searchTerm, setSearchTerm] = useState('')
 
    return (
-      <ScrollView>
+      <ScrollView style={styles.container}>
          <KeyboardAvoidingView style={styles.searchInputContainer}>
             <TouchableOpacity>
                <TextInput style={styles.textInputSpace}
@@ -52,6 +52,7 @@ const SearchBar = ({ navigation }) => {
 const styles = StyleSheet.create({
    container: {
       backgroundColor: '#FFF4BE',
+      flex: 1,
    },
    searchInputContainer: {
       padding: 15,
