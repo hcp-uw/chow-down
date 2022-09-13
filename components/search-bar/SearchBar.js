@@ -10,7 +10,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 const SearchBar = ({ navigation }) => { 
    const [searchTerm, setSearchTerm] = useState('')
 
-   return (
+   return ( 
       <ScrollView style={styles.container}>
          <KeyboardAvoidingView style={styles.searchInputContainer}>
             <TouchableOpacity>
@@ -23,6 +23,7 @@ const SearchBar = ({ navigation }) => {
                </TextInput>
             </TouchableOpacity>
          </KeyboardAvoidingView>
+         {/** Powers the search bar */}
          {JSONDATA.filter((val) => {
             if (searchTerm == "") {
                return val
