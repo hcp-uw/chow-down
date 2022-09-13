@@ -7,10 +7,10 @@ import { ScrollView } from 'react-native-gesture-handler';
 
 // NOTE: to test that Keyboard appearance works on SearchPage.js,
 // you have to use Expo Go on a separate device. Does not show up on emulator.
-const SearchBar = ({ navigation }) => {
+const SearchBar = ({ navigation }) => { 
    const [searchTerm, setSearchTerm] = useState('')
 
-   return (
+   return ( 
       <ScrollView style={styles.container}>
          <KeyboardAvoidingView style={styles.searchInputContainer}>
             <TouchableOpacity>
@@ -23,6 +23,7 @@ const SearchBar = ({ navigation }) => {
                </TextInput>
             </TouchableOpacity>
          </KeyboardAvoidingView>
+         {/** Powers the search bar */}
          {JSONDATA.filter((val) => {
             if (searchTerm == "") {
                return val
