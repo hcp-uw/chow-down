@@ -1,8 +1,7 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, TextInput, StyleSheet, Button } from 'react-native';
+import { View, Text, TouchableOpacity, TextInput, StyleSheet, Button, Image, Dimensions } from 'react-native';
 import CustomSearchButton from './components/custom-buttons/CustomSearchButton';
-import CustomRestaurantButton from './components/custom-buttons/CustomRestaurantButton';
-import { createNativeStackNavigator } from '@react-navigation/native-stack'; // use command 'npm install @react-navigation/native-stack'
+import MapView from 'react-native-maps';
 
 // to install the icon, use commands in this order:
 // i --save @fortawesome/react-native-fontawesome @fortawesome/fontawesome-svg-core react-native-svg
@@ -18,12 +17,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'; // 
  function HomeScreen({ navigation }) {
     return (
         <View style={styles.container}>
+            <Image style={styles.logo} source={require('./images/ChowDownLogo.png')}/>
 
-            <View style={{
-                flexDirection: 'row',
-                justifyContent: 'space-between',
-                paddingHorizontal: 20,
-            }}>
+            <View style={styles.largeSpace} />
+
+            <View style={styles.searchInputContainer}>
                 <CustomSearchButton
                     title="Search For..."
                     onPress={() => navigation.navigate('Search Page')}
@@ -32,11 +30,12 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'; // 
 
             <View style={styles.smallSpace} />
 
+            <MapView style={styles.map}/>
+
             <Button
                 title="Go to Business Page Template"
                 onPress={() => navigation.navigate("BusinessPage")}
             />
-            
         </View>
     );
 }
@@ -46,16 +45,17 @@ const styles = StyleSheet.create({
         backgroundColor: '#FFF4BE',
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
+    },
+    logo: {
+        height: 100, 
+        aspectRatio: 1, 
+        marginTop: 50,
     },
     searchInputContainer: {
-        height: 50,
-        backgroundColor: '#FFFFFF',
-        flex: 1,
         flexDirection: 'row',
-        alignItems: 'center',
+        justifyContent: 'space-between',
         paddingHorizontal: 20,
-        borderRadius: 100,
     },
     textSpace: {
         marginLeft: 10,
@@ -64,7 +64,14 @@ const styles = StyleSheet.create({
     /** Adds small space between objects for readability purposes */
     smallSpace: {
         marginVertical: 5,
-    }
+    },
+    largeSpace: {
+        marginVertical: 20,
+    },
+    map: {
+        width: Dimensions.get('window').width,
+        height: Dimensions.get('window').height,
+    },
 })
 
 export default HomeScreen;
