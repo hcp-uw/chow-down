@@ -3,6 +3,7 @@ import { View, Text, TextInput, StyleSheet, Button } from 'react-native';
 import BusinessPage from '../BusinessPage';
 import SearchBar from '../components/search-bar/SearchBar'
 import HomeScreen from '../HomeScreen'
+import AddReview from '../AddReview';
 
 
 
@@ -36,6 +37,7 @@ function HomeNavigator() {
                 initialParams={{ ...blankRestaurant }}
             />
             <HomeStack.Screen name="Search Page" component={SearchBar} />
+            <HomeStack.Screen name="Add Review" component={AddReview}/>
         </HomeStack.Navigator>
     )
 }

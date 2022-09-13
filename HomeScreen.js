@@ -30,8 +30,8 @@ import CustomSearchButton from './components/custom-buttons/CustomSearchButton';
             <View style={styles.smallSpace} />
 
             <Button
-                title="Go to Business Page Template"
-                onPress={() => navigation.navigate("BusinessPage")}
+                title="Go to Add Review Template"
+                onPress={() => navigation.navigate("Add Review")}
             />
             
         </View>
