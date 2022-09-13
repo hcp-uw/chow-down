@@ -2,6 +2,7 @@ import React from "react";
 import { ScrollView, View, Text, StyleSheet, Button, ImageBackground } from "react-native";
 import Stars from "react-native-stars"; // npm install react-native-stars --save
 import { Ionicons, FontAwesome5 } from '@expo/vector-icons'; // for icons
+import CustomAddReviewButton from './components/custom-buttons/CustomAddReviewButton';
 
 /**
  * Business Page is the default template for a restaurant's page.
@@ -9,7 +10,7 @@ import { Ionicons, FontAwesome5 } from '@expo/vector-icons'; // for icons
  * @returns Business/Restaurant Page Display
  */
 
-function BusinessPage({ route }) {
+function BusinessPage({ route, navigation }) {
 
   // props passed in from React Navigation
   const { key, restaurantName, rating, numRating, cuisine,
@@ -75,7 +76,9 @@ function BusinessPage({ route }) {
 
       <View style={styles.largeSpace} />
 
-      <Button title="Doesn't Work: Add Your Review" />
+      <CustomAddReviewButton title="Add Your Review"
+      onPress={() => navigation.navigate('Add Review')}
+      />
     </ScrollView>
   );
 };
@@ -156,11 +159,11 @@ const styles = StyleSheet.create({
   },
   // Adds small space between objects for readability purposes 
   smallSpace: {
-    marginVertical: 5,
+    marginVertical: 8,
   },
   // Adds "large" vertical space between objects
   largeSpace: {
-    marginVertical: 20,
+    marginVertical: 10,
   },
 });
 

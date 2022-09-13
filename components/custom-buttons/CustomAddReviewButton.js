@@ -9,11 +9,12 @@ const CustomAddReviewButton = ({ onPress, title }) => (
 const styles = StyleSheet.create({
     container: {
         height: 50,
+        width: 340,
         backgroundColor: '#AF9BD5',
-        flex: 1,
         flexDirection: 'row',
         alignItems: 'center',
-        paddingHorizontal: 110,
+        paddingHorizontal: 90,
+        marginLeft: 16,
         borderRadius: 100,
     },
     textSpace: {

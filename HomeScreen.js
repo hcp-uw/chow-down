@@ -33,8 +33,8 @@ import MapView from 'react-native-maps';
             <MapView style={styles.map}/>
 
             <Button
-                title="Go to Business Page Template"
-                onPress={() => navigation.navigate("BusinessPage")}
+                title="Go to Add Review Template"
+                onPress={() => navigation.navigate("Add Review")}
             />
         </View>
     );
