@@ -8,6 +8,7 @@ const CustomRestaurantButton = ({ onPress, title, address }) => (
         <View>
             <Text style={styles.addressSpace}>{address}</Text>
         </View>
+        <View style={styles.divider}/>
     </TouchableOpacity>
 );
 
@@ -16,6 +17,11 @@ const styles = StyleSheet.create({
         height: 70,
         backgroundColor: '#DDC5F5',
         paddingHorizontal: 20,
+    },
+    divider: {
+        marginTop: 15,
+        borderBottomColor: 'black',
+        borderBottomWidth: StyleSheet.hairlineWidth,
     },
     nameSpace: {
         marginLeft: 70,
