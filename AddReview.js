@@ -1,21 +1,20 @@
-import react from "react";
+import React from "react";
 import { View, Text } from "react-native"
 import * as FileSystem from 'expo-file-system';
 import JSONDATA from './components/search-bar/MOCK_DATA.json'
 
 const AddReview = () => {
+    async function readReviews() {
     // Storing the JSON format data in myObject
     try {
-        const restaurantObject = FileSystem.readAsStringAsync(JSONDATA);
-        console.log(restaurantObject);
+        const data = FileSystem.readAsStringAsync(JSONDATA);
+        console.log("reading data");
         // const restaurantObject = JSON.parse(data);
-        restaurantObject.array.forEach(element => {
-            element.restaurantObject.push('hello');
-        });
+        const dataAwait= await data;
     } catch (error) {
         console.log(error)
     }
-
+}
     // restaurantObject.array.forEach(element => {
     //     element.restaurantObject.push('hello');
     // });
@@ -29,7 +28,7 @@ const AddReview = () => {
 
     return (
         <View>
-            <Text> Hello </Text>
+            <Text> {readReviews()} </Text>
         </View>
     )
 }
