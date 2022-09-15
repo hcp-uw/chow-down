@@ -3,6 +3,8 @@ import { View, Text, TextInput, StyleSheet, Button } from 'react-native';
 import BusinessPage from '../BusinessPage';
 import SearchBar from '../components/search-bar/SearchBar'
 import HomeScreen from '../HomeScreen'
+import AddReview from '../AddReview';
+
 
 
 // to install the icon, use commands in this order:
@@ -35,10 +37,13 @@ function HomeNavigator() {
                 initialParams={{ ...blankRestaurant }}
             />
             <HomeStack.Screen name="Search Page" component={SearchBar} />
+            <HomeStack.Screen name="Add Review" component={AddReview}/>
         </HomeStack.Navigator>
     )
 }
 
-const blankRestaurant = { key: 0, name: 'Restaurant Name', rating: 0.0, numRating: 0, tag: '', address: '', phone: '' }
+const blankRestaurant = { key: 0, restaurantName: 'Restaurant Name', rating: 0.0, numRating: 0, 
+                        cuisine: ' ', addresslocation: '', phoneNumber: '', 
+                        img: 'https://upload.wikimedia.org/wikipedia/commons/b/b4/RESTAURANT.jpg'}
 
 export default HomeNavigator;

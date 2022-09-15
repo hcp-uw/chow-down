@@ -5,7 +5,10 @@
         "cuisine": "Dining Hall",
         "website": "https://hfs.uw.edu/Eat/dining-hours/Center-Table",
         "phoneNumber": "206-685-6760 or 206-616-8026",
-        "acceptsApplePay": "Yes"
+        "acceptsApplePay": "Yes",
+        "rating": 3.1,
+        "numberOfRatings": 94,
+        "img": "https://hfs.uw.edu/getmedia/fa0117f4-43bc-481e-aeb6-db4082c04494/LOC-Center-Table-logo-card.jpg.aspx?width=800&height=449&ext=.jpg"
     },
     {
         "restaurantName": "Local Point",
@@ -13,7 +16,10 @@
         "cuisine": "Dining Hall",
         "website": "https://hfs.uw.edu/Eat/dining-hours/Local-Point",
         "phoneNumber": "206-543-6975",
-        "acceptsApplePay": "Yes"
+        "acceptsApplePay": "Yes",
+        "rating": 3.1,
+        "numberOfRatings": 308,
+        "img": "https://hfs.uw.edu/getmedia/3d40434a-89f6-4b7a-a2d5-8aff98f6be2e/LOC-LP-card-with-logo.jpg.aspx?width=800&height=450&ext=.jpg"
     },
     {
         "restaurantName": "Husky Den Food Court",
@@ -21,7 +27,9 @@
         "cuisine": "Dining Hall",
         "website": "https://hfs.uw.edu/Eat/dining-hours/Husky-Den",
         "phoneNumber": "206-221-3361",
-        "acceptsApplePay": "Yes"
+        "acceptsApplePay": "Yes",
+        "rating": 3.5,
+        "numberOfRatings": 72
     },
     {
         "restaurantName": "Motosurf",
@@ -29,7 +37,9 @@
         "cuisine": "Pacific Island-style",
         "website": "https://hfs.uw.edu/Eat/dining-hours/Husky-Den",
         "phoneNumber": "206-221-3361",
-        "acceptsApplePay": "Yes"
+        "acceptsApplePay": "Yes",
+        "rating": 4.2,
+        "numberOfRatings": 19
     },
     {
         "restaurantName": "Ace Sushi",
@@ -37,7 +47,9 @@
         "cuisine": "Sushi",
         "website": "https://hfs.uw.edu/Eat/dining-hours/Husky-Den",
         "phoneNumber": "206-221-3361",
-        "acceptsApplePay": "Yes"
+        "acceptsApplePay": "Yes",
+        "rating": 2.5,
+        "numberOfRatings": 4
     },
     {
         "restaurantName": "Crafted",
@@ -45,7 +57,9 @@
         "cuisine": "Sandwiches",
         "website": "https://hfs.uw.edu/Eat/dining-hours/Husky-Den",
         "phoneNumber": "206-221-3361",
-        "acceptsApplePay": "Yes"
+        "acceptsApplePay": "Yes",
+        "rating": 3,
+        "numberOfRatings": 4
     },
     {
         "restaurantName": "DUB Street Burgers",
@@ -53,7 +67,9 @@
         "cuisine": "Burgers",
         "website": "https://hfs.uw.edu/Eat/dining-hours/Husky-Den",
         "phoneNumber": "206-221-3361",
-        "acceptsApplePay": "Yes"
+        "acceptsApplePay": "Yes",
+        "rating": 2.7,
+        "numberOfRatings": 32
     },
     {
         "restaurantName": "Firecracker",
@@ -61,7 +77,9 @@
         "cuisine": "Chinese",
         "website": "https://hfs.uw.edu/Eat/dining-hours/Husky-Den",
         "phoneNumber": "206-221-3361",
-        "acceptsApplePay": "Yes"
+        "acceptsApplePay": "Yes",
+        "rating": 2.7,
+        "numberOfRatings": 3
     },
     {
         "restaurantName": "Red Radish",
@@ -69,7 +87,9 @@
         "cuisine": "Deli",
         "website": "https://hfs.uw.edu/Eat/dining-hours/Husky-Den",
         "phoneNumber": "206-221-3361",
-        "acceptsApplePay": "Yes"
+        "acceptsApplePay": "Yes",
+        "rating": 4,
+        "numberOfRatings": 2
     },
     {
         "restaurantName": "Noodle",
@@ -77,7 +97,9 @@
         "cuisine": "Pasta",
         "website": "https://hfs.uw.edu/Eat/dining-hours/Husky-Den",
         "phoneNumber": "206-221-3361",
-        "acceptsApplePay": "Yes"
+        "acceptsApplePay": "Yes",
+        "rating": 1.8,
+        "numberOfRatings": 4
     },
     {
         "restaurantName": "Pagliacci Pizza, HUB",
@@ -85,15 +107,19 @@
         "cuisine": "Pizza",
         "website": "https://hfs.uw.edu/Eat/dining-hours/Husky-Den",
         "phoneNumber": "206-221-3361",
-        "acceptsApplePay": "Yes"
+        "acceptsApplePay": "Yes",
+        "rating": 3.3,
+        "numberOfRatings": 11
     },
     {
         "restaurantName": "Orin's Place",
         "addresslocation": "Paccar Hall, 4277 NE Stevens Way",
-        "cuisine": "Café",
+        "cuisine": "Cafe",
         "website": "https://hfs.uw.edu/Eat/dining-hours/Orins-Place",
         "phoneNumber": "206-616-8992",
-        "acceptsApplePay": "Yes"
+        "acceptsApplePay": "Yes",
+        "rating": 3.8,
+        "numberOfRatings": 19
     },
     {
         "restaurantName": "Pagliacci Pizza, North Campus",
@@ -101,536 +127,687 @@
         "cuisine": "Pizza",
         "website": "https://hfs.uw.edu/Eat/dining-hours/Pagliacci-Pizza-North-Campus",
         "phoneNumber": "206-616-4329",
-        "acceptsApplePay": "Yes"
+        "acceptsApplePay": "Yes",
+        "rating": 3.3,
+        "numberOfRatings": 11
     },
     {
         "restaurantName": "Parnassus Café ",
         "addresslocation": "Art Building, 4000 15th Ave NE",
-        "cuisine": "Café",
+        "cuisine": "Cafe",
         "website": "https://hfs.uw.edu/Eat/dining-hours/Parnassus",
         "phoneNumber": "206-543-7737",
-        "acceptsApplePay": "Yes"
+        "acceptsApplePay": "Yes",
+        "rating": 4.6,
+        "numberOfRatings": 98
     },
     {
         "restaurantName": "Denny Café",
         "addresslocation": "Oak Hall, 4295 Whitman Ln NE",
-        "cuisine": "Café",
+        "cuisine": "Cafe",
         "website": "https://hfs.uw.edu/Eat/dining-hours/Denny-Cafe",
         "phoneNumber": "206-221-7796",
-        "acceptsApplePay": "Yes"
+        "acceptsApplePay": "Yes",
+        "rating": 4,
+        "numberOfRatings": 1
     },
     {
         "restaurantName": "Husky Grind Café, District Market",
         "addresslocation": "Alder Hall, 1315 NE Campus Pkwy",
-        "cuisine": "Café",
+        "cuisine": "Cafe",
         "website": "https://hfs.uw.edu/Eat/dining-hours/Husky-Grind-Cafe-DM-Alder",
         "phoneNumber": "206-221-7796",
-        "acceptsApplePay": "Yes"
+        "acceptsApplePay": "Yes",
+        "rating": 4,
+        "numberOfRatings": 1
     },
     {
         "restaurantName": "Husky Grind Café, Mercer Court",
         "addresslocation": "Mercer Court, 3925 Adams Ln NE",
-        "cuisine": "Café",
+        "cuisine": "Cafe",
         "website": "https://hfs.uw.edu/Eat/dining-hours/Husky-Grind-Cafe-Mercer-Court",
         "phoneNumber": "206-221-2398",
-        "acceptsApplePay": "Yes"
+        "acceptsApplePay": "Yes",
+        "rating": 4.2,
+        "numberOfRatings": 72
     },
     {
         "restaurantName": "Microsoft Café",
         "addresslocation": "3785 Jefferson Rd NE",
-        "cuisine": "Café",
+        "cuisine": "Cafe",
         "website": "https://hfs.uw.edu/Eat/dining-hours/Microsoft-Cafe",
         "phoneNumber": "206-543-7737",
-        "acceptsApplePay": "Yes"
+        "acceptsApplePay": "Yes",
+        "rating": 3.8,
+        "numberOfRatings": 20
     },
     {
         "restaurantName": "Suzzalo Starbucks",
         "addresslocation": "Suzzalo Library, 4000 15th Ave NE",
-        "cuisine": "Café",
+        "cuisine": "Cafe",
         "website": "https://hfs.uw.edu/Eat/dining-hours/Starbucks-Coffee-Suzzallo",
         "phoneNumber": "206-685-2709",
-        "acceptsApplePay": "Yes"
+        "acceptsApplePay": "Yes",
+        "rating": 3.6,
+        "numberOfRatings": 44,
+        "undefined": "-1 from steven (reasonable"
     },
     {
         "restaurantName": "Overpass Espresso",
         "addresslocation": "1705 NE Pacific St",
-        "cuisine": "Café",
+        "cuisine": "Cafe",
         "website": "https://hfs.uw.edu/Eat/dining-hours/Overpass-Espresso",
         "phoneNumber": "206-616-7623",
-        "acceptsApplePay": "Yes"
+        "acceptsApplePay": "Yes",
+        "rating": 3.3,
+        "numberOfRatings": 7
     },
-
     {
         "restaurantName": "Portage Bay Café",
         "addresslocation": "4130 Roosevelt Way NE",
         "cuisine": "Breakfast, Brunch",
         "website": "https://www.portagebaycafe.com/roosevelt",
-        "phoneNumber": "(206) 547-8230"
+        "phoneNumber": "(206) 547-8230",
+        "rating": 4.3,
+        "numberOfRatings": 1983
     },
     {
         "restaurantName": "Little Duck",
         "addresslocation": "4100 Roosevelt Way NE",
         "cuisine": "Chinese",
         "website": "https://littleduckwa.com/",
-        "phoneNumber": "(206) 695-2564"
+        "phoneNumber": "(206) 695-2564",
+        "rating": 4.5,
+        "numberOfRatings": 12
     },
     {
         "restaurantName": "Henry's Taiwan Kitchen",
         "addresslocation": "4106 Brooklyn Ave NE #102B",
         "cuisine": "Taiwanese",
         "website": "http://www.henrysseattle.com/",
-        "phoneNumber": "(206) 547-8899"
+        "phoneNumber": "(206) 547-8899",
+        "rating": 3.5,
+        "numberOfRatings": 256
     },
     {
         "restaurantName": "Basil Viet Kitchen",
         "addresslocation": "4002 University Way NE",
         "cuisine": "Vietnamese",
         "website": "https://food.google.com/chooseprovider?restaurantId=/g/11fkttc606&g2lbs=AL1YbfV9ElbHs4oWiO5RrqTTWyNWeDPlLidUTs1tw5fbATaKognCfkDOk5yHeN133BV0TAY9RC4eIfnJg3KtuKdwkSY0Sx7l_vV8RjAbvN6S4181J9O4fwjZR6NBZ2OkSZMADk60eSkv&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=Bw4PY_-3LePu9AOJzpyYBA&ei=Bw4PY_-3LePu9AOJzpyYBA&fo_s=OA,AH&sa=X&ved=2ahUKEwi_19a-x_D5AhVjN30KHQknB0MQjYwDKAF6BAhtEAI&sei=Cfi2BVF5pzu8EfMlxO_HF_dC&utm_campaign&utm_source=search",
-        "phoneNumber": "(206) 566-5136"
+        "phoneNumber": "(206) 566-5136",
+        "rating": 4.4,
+        "numberOfRatings": 77
     },
     {
         "restaurantName": "Café Happy",
         "addresslocation": "1408 NE 40th St",
         "cuisine": "Bubble Tea",
         "website": " https://www.cafe-happy.com/seattlemenu.html",
-        "phoneNumber": "(425) 822-9696"
+        "phoneNumber": "(425) 822-9696",
+        "rating": 3.9,
+        "numberOfRatings": 59
     },
     {
         "restaurantName": "Green House Korean Restaurant",
         "addresslocation": "4106 Brooklyn Ave NE",
         "cuisine": "Korean",
         "website": "https://uwkoreanrestaurant.com/",
-        "phoneNumber": "(206) 632-2600"
+        "phoneNumber": "(206) 632-2600",
+        "rating": 3.9,
+        "numberOfRatings": 195
     },
     {
         "restaurantName": "Guanaco's Tacos Pupuseria",
         "addresslocation": " 4106 Brooklyn Ave NE #12-A",
         "cuisine": "Salvadoran",
         "website": "https://guanacostacos.weebly.com/",
-        "phoneNumber": "(206) 547-2369"
+        "phoneNumber": "(206) 547-2369",
+        "rating": 4.3,
+        "numberOfRatings": 579
     },
     {
         "restaurantName": "Saigon Deli",
         "addresslocation": "4142 Brooklyn Ave NE",
         "cuisine": "Vietnamese",
         "website": "https://saigondeliuw.com/",
-        "phoneNumber": "(206) 634-2866"
+        "phoneNumber": "(206) 634-2866",
+        "rating": 4.6,
+        "numberOfRatings": 229
     },
     {
         "restaurantName": "Korean Tofu House",
         "addresslocation": "4142 Brooklyn Ave NE",
         "cuisine": "Korean",
         "website": "https://koreantofuhouse.com/",
-        "phoneNumber": "(206) 632-3119"
+        "phoneNumber": "(206) 632-3119",
+        "rating": 4.3,
+        "numberOfRatings": 838
     },
     {
         "restaurantName": "Little Thai",
         "addresslocation": "4142 Brooklyn Ave NE #105",
         "cuisine": "Thai",
         "website": "https://littlethaiseattle.com/",
-        "phoneNumber": "(206) 548-8009"
+        "phoneNumber": "(206) 548-8009",
+        "rating": 4.3,
+        "numberOfRatings": 331
     },
     {
         "restaurantName": "Sizzle & Crunch",
         "addresslocation": "1313 NE 42nd St",
         "cuisine": "Vietnamese",
         "website": "http://sizzleandcrunch.com/",
-        "phoneNumber": "(206) 547-2723"
+        "phoneNumber": "(206) 547-2723",
+        "rating": 4.5,
+        "numberOfRatings": 411
     },
     {
         "restaurantName": "Hey I am Yogost",
         "addresslocation": "4106 Brooklyn Ave NE Suite 103A",
         "cuisine": "Frozen Yogurt",
         "website": "https://www.yogost.com.au/",
-        "phoneNumber": "(206) 402-6171"
+        "phoneNumber": "(206) 402-6171",
+        "rating": 3.9,
+        "numberOfRatings": 52
     },
     {
         "restaurantName": "University Teriyaki",
         "addresslocation": "4108 University Way NE",
         "cuisine": "Asian",
         "website": "http://places.singleplatform.com/university-teriyaki/menu?ref=google",
-        "phoneNumber": "(206) 632-5688"
+        "phoneNumber": "(206) 632-5688",
+        "rating": 3.8,
+        "numberOfRatings": 263
     },
     {
         "restaurantName": "Shultzy's Bar & Grill",
         "addresslocation": " 4114 University Way NE",
         "cuisine": "German",
         "website": "https://www.shultzys.com/menus",
-        "phoneNumber": "(206) 548-9461"
+        "phoneNumber": "(206) 548-9461",
+        "rating": 4.3,
+        "numberOfRatings": 1046
     },
     {
         "restaurantName": "Café Solstice",
         "addresslocation": "4116 University Way NE",
-        "cuisine": "Café",
+        "cuisine": "Cafe",
         "website": "https://www.facebook.com/cafesolstice",
-        "phoneNumber": "(206) 675-0850"
+        "phoneNumber": "(206) 675-0850",
+        "rating": 4.4,
+        "numberOfRatings": 648
     },
     {
         "restaurantName": "U DupBop",
         "addresslocation": "4124 University Way NE",
         "cuisine": "Korean",
         "website": "https://www.seamless.com/menu/u-dupbop-4124-university-way-ne-seattle/2329611",
-        "phoneNumber": "(206) 632-6975"
+        "phoneNumber": "(206) 632-6975",
+        "rating": 4.5,
+        "numberOfRatings": 130
     },
     {
         "restaurantName": "The Alley",
         "addresslocation": "4129 University Way NE",
         "cuisine": "Korean",
         "website": "https://food.google.com/chooseprovider?restaurantId=/g/11ft5703kl&g2lbs=AL1YbfX194a5MQezLQoRpAVw7FWqvDJr9xEh7GWKMhoYycCgC8oVrE_gcQa_p9Brt11kr9hps4k_JKWehaYW1G5F0C8iMcZA803NVeuzBmojP_6_nHAKjeK7OWv_EZswkkb9jzwBHQ7P&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=fRUPY_jcMd-L0PEPi-6T-Ao&ei=fRUPY_jcMd-L0PEPi-6T-Ao&fo_s=OA,AH&sa=X&ved=2ahUKEwi4j7zNzvD5AhXfBTQIHQv3BK8QjYwDKAB6BAhkEAE&sei=CaWauBtDHDmkEfespq4eLJ46&utm_campaign&utm_source=search",
-        "phoneNumber": "(206) 545-6968"
+        "phoneNumber": "(206) 545-6968",
+        "rating": 4.1,
+        "numberOfRatings": 116
     },
     {
         "restaurantName": "The BoB",
         "addresslocation": "4131 University Way NE",
         "cuisine": "Korean",
         "website": "https://thebob.business.site/?utm_source=gmb&utm_medium=referral",
-        "phoneNumber": "(206) 633-6582"
+        "phoneNumber": "(206) 633-6582",
+        "rating": 4.2,
+        "numberOfRatings": 147
     },
     {
         "restaurantName": "Big Time Brewery",
         "addresslocation": "4133 University Way NE",
         "cuisine": "Brewpub",
         "website": "http://bigtimebrewery.com/",
-        "phoneNumber": "(206) 545-4509"
+        "phoneNumber": "(206) 545-4509",
+        "rating": 4.3,
+        "numberOfRatings": 393
     },
     {
         "restaurantName": "Aladdin Char Burger",
         "addresslocation": "4135 University Way NE",
         "cuisine": "Burgers",
         "website": "https://www.aladdincharburger.com/",
-        "phoneNumber": "(206) 545-3858"
+        "phoneNumber": "(206) 545-3858",
+        "rating": 4.9,
+        "numberOfRatings": 29
     },
     {
         "restaurantName": "Aladdin Gyro-Cery",
         "addresslocation": "4139 University Way NE",
         "cuisine": "Mediterranean",
         "website": "https://www.aladdingyro.com/",
-        "phoneNumber": "(206) 632-5253"
+        "phoneNumber": "(206) 632-5253",
+        "rating": 4.5,
+        "numberOfRatings": 1636
     },
     {
         "restaurantName": "Boba Up",
         "addresslocation": " 4141 University Way NE # 103",
         "cuisine": "Bubble Tea",
         "website": "https://bobaupseattle.com/",
-        "phoneNumber": "(206) 547-8800"
+        "phoneNumber": "(206) 547-8800",
+        "rating": 4.6,
+        "numberOfRatings": 694
     },
     {
         "restaurantName": "Sushi Burrito",
         "addresslocation": "4141 University Way NE",
         "cuisine": "Sushi",
         "website": "https://www.ijsushiburrito.com/",
-        "phoneNumber": "(206) 547-2168"
+        "phoneNumber": "(206) 547-2168",
+        "rating": 4,
+        "numberOfRatings": 67
     },
     {
         "restaurantName": "Samurai Noodle",
         "addresslocation": "4138 University Way NE",
         "cuisine": "Japanese, Ramen",
         "website": "http://www.samurainoodle.com/",
-        "phoneNumber": "(206) 547-1774"
+        "phoneNumber": "(206) 547-1774",
+        "rating": 4.1,
+        "numberOfRatings": 631
     },
     {
         "restaurantName": "Burger and Kabob Hut",
         "addresslocation": "4142 University Way NE",
         "cuisine": "Burgers, Halal",
         "website": "https://burgerhut.godaddysites.com/",
-        "phoneNumber": "(206) 632-0324"
+        "phoneNumber": "(206) 632-0324",
+        "rating": 4.4,
+        "numberOfRatings": 2037
     },
     {
         "restaurantName": "Starbucks, UDistrict",
         "addresslocation": "4147 University Way NE",
         "cuisine": "Coffee",
         "website": "https://www.starbucks.com/store-locator/store/13739/4147-university-way-avenue-4147-university-way-ne-seattle-wa-981056213-us",
-        "phoneNumber": "(206) 547-3280"
+        "phoneNumber": "(206) 547-3280",
+        "rating": 4.2,
+        "numberOfRatings": 696
     },
     {
         "restaurantName": "Café on the Ave",
         "addresslocation": "4201 University Way NE",
         "cuisine": "Cafe",
         "website": "https://www.facebook.com/Cafe-on-the-Ave-123777417636859/",
-        "phoneNumber": "(206) 632-6001"
+        "phoneNumber": "(206) 632-6001",
+        "rating": 4.1,
+        "numberOfRatings": 972
     },
     {
         "restaurantName": "Bulldog News",
         "addresslocation": "4208 University Way NE",
-        "cuisine": "Newsstand",
+        "cuisine": "Cafe/Coffee",
         "website": "http://www.bulldognews.com/",
-        "phoneNumber": "(206) 632-6397"
+        "phoneNumber": "(206) 632-6397",
+        "rating": 4.6,
+        "numberOfRatings": 103
     },
     {
         "restaurantName": "University Food & Beverages Market",
         "addresslocation": "4203 University Way NE",
         "cuisine": "Convenience Store",
         "website": "https://www.facebook.com/pages/category/Food---beverage/University-Food-Beverage-Market-105403677512338/",
-        "phoneNumber": "(206) 547-9887"
+        "phoneNumber": "(206) 547-9887",
+        "rating": 3.9,
+        "numberOfRatings": 7
     },
     {
         "restaurantName": "Phở Than Brothers",
         "addresslocation": "4207 University Way NE",
         "cuisine": "Vietnamese",
         "website": "http://thanbrothers.com/",
-        "phoneNumber": "(206) 632-7272"
+        "phoneNumber": "(206) 632-7272",
+        "rating": 4.2,
+        "numberOfRatings": 337
     },
     {
         "restaurantName": "Mama's Viet Kitchen",
         "addresslocation": "4213 University Way NE",
         "cuisine": "Vietnamese",
         "website": "http://mamasvietkitchen.com/",
-        "phoneNumber": "(206) 545-6992"
+        "phoneNumber": "(206) 545-6992",
+        "rating": 4.7,
+        "numberOfRatings": 48
     },
     {
         "restaurantName": "Byrek & Baguette",
         "addresslocation": "4209 University Way NE",
         "cuisine": "Cafe",
         "website": "http://www.byrekandbaguette.org/",
-        "phoneNumber": "(206) 632-3864"
+        "phoneNumber": "(206) 632-3864",
+        "rating": 4.6,
+        "numberOfRatings": 407
     },
     {
         "restaurantName": "Café Allegro",
         "addresslocation": "Alleyway, 4214 University Way NE,",
         "cuisine": "Coffee",
         "website": "http://www.seattleallegro.com/",
-        "phoneNumber": "(206) 633-3030"
+        "phoneNumber": "(206) 633-3030",
+        "rating": 4.5,
+        "numberOfRatings": 622
     },
     {
         "restaurantName": "Boba Gem Tea House",
         "addresslocation": "4213 University Way NE",
-        "cuisine": "Boba",
+        "cuisine": "Bubble Tea",
         "website": "https://www.bobagemteahouse.com/",
-        "phoneNumber": "(206) 545-3866"
+        "phoneNumber": "(206) 545-3866",
+        "rating": 4.5,
+        "numberOfRatings": 69
     },
     {
         "restaurantName": "Finn Maccools",
         "addresslocation": "4217 University Way NE",
         "cuisine": "Irish Pub",
         "website": "https://www.finnmaccools.com/",
-        "phoneNumber": "(206) 675-0885"
+        "phoneNumber": "(206) 675-0885",
+        "rating": 4.1,
+        "numberOfRatings": 461
     },
     {
         "restaurantName": "Jai Thai ",
         "addresslocation": "4214 University Way NE",
         "cuisine": "Thai",
         "website": "https://jaithairestaurant.com/",
-        "phoneNumber": "(206) 547-9999"
+        "phoneNumber": "(206) 547-9999",
+        "rating": 4.1,
+        "numberOfRatings": 114
     },
     {
         "restaurantName": "Fresh Café",
         "addresslocation": "4214 University Way NE",
         "cuisine": "Korean, Cafe",
-        "website": "https://www.yelp.com/biz/fresh-cafe-seattle",
-        "phoneNumber": "(206) 547-0611"
+        "website": "https://www.mapquest.com/us/washington/fresh-cafe-431691501",
+        "phoneNumber": "(206) 547-0611",
+        "rating": 4.6,
+        "numberOfRatings": 38
     },
     {
         "restaurantName": "BB's Teriyaki & Grill",
         "addresslocation": "4221 University Way NE",
         "cuisine": "Teriyaki",
         "website": "http://bbsteriyaki.com/",
-        "phoneNumber": "(206) 876-9105"
+        "phoneNumber": "(206) 876-9105",
+        "rating": 4.2,
+        "numberOfRatings": 333
     },
     {
         "restaurantName": "H-Mart",
         "addresslocation": "4216 University Way NE",
         "cuisine": "Grocery Store",
         "website": "https://www.hmartus.com/",
-        "phoneNumber": "(206) 547-0767"
+        "phoneNumber": "(206) 547-0767",
+        "rating": 4.4,
+        "numberOfRatings": 802
     },
     {
         "restaurantName": "bb.q Chicken",
         "addresslocation": "4223 University Way NE",
         "cuisine": "Fried Chicken",
         "website": "https://bbq-chicken-uw-chicken-restaurant.business.site",
-        "phoneNumber": "(206) 822-6338"
+        "phoneNumber": "(206) 822-6338",
+        "rating": 3.3,
+        "numberOfRatings": 191
     },
     {
         "restaurantName": "Chilli's South Indian Cuisine",
         "addresslocation": "4220 University Way NE",
         "cuisine": "Indian",
         "website": "chilissouthindianrestaurant.com",
-        "phoneNumber": "(206) 633-1458"
+        "phoneNumber": "(206) 633-1458",
+        "rating": 4.1,
+        "numberOfRatings": 1018
     },
     {
         "restaurantName": "Sultan Gryo & Shawarma",
         "addresslocation": "4222 University Way NE",
         "cuisine": "Mediterranean",
-        "website": "https://www.yelp.com/biz/sultan-gyro-grill-and-shawarma-seattle",
-        "phoneNumber": "(206) 632-7844"
+        "website": "https://food.google.com/chooseprovider?restaurantId=/g/11xb886hv&g2lbs=AL1YbfWAVeRpT7-vNiJz1nPyTKYR8YaIPEG1QI6mw3rR238hjQIcP1SiHQmcnXOmEp7OxzLKEy21eg0lqqygHv9xjO5l1aRLBXddTuog3hawkNPPM0Sn_R4%3D&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=7TgQY8mhGr3H0PEP1dWs0AI&ei=7TgQY8mhGr3H0PEP1dWs0AI&fo_s=OA,AH&orderType=2&sa=X&ved=2ahUKEwiJzJPF5PL5AhW9IzQIHdUqCyoQjYwDKAB6BAhlEAE&sei=CYZXUMrl5PmgEd3FARoCmRi4&utm_campaign&utm_source=search",
+        "phoneNumber": "(206) 632-7844",
+        "rating": 4.4,
+        "numberOfRatings": 571
     },
     {
         "restaurantName": "Thanh Vi ",
         "addresslocation": "4226 University Way NE",
         "cuisine": "Vietnamese",
         "website": "http://www.thanhvi.net/",
-        "phoneNumber": "(206) 633-7867"
+        "phoneNumber": "(206) 633-7867",
+        "rating": 4.3,
+        "numberOfRatings": 333
     },
     {
         "restaurantName": "Thaiger Room",
         "addresslocation": "4228 University Way NE",
         "cuisine": "Thai",
         "website": "thaigerroomseattle.com",
-        "phoneNumber": "(206) 632-9299"
+        "phoneNumber": "(206) 632-9299",
+        "rating": 3.7,
+        "numberOfRatings": 355
     },
     {
         "restaurantName": "Chipotle Mexican Grill",
         "addresslocation": "4229 University Way NE",
         "cuisine": "Mexican",
         "website": "https://locations.chipotle.com/wa/seattle/4229-university-way-ne",
-        "phoneNumber": "(206) 547-4644"
+        "phoneNumber": "(206) 547-4644",
+        "rating": 3.7,
+        "numberOfRatings": 838
     },
     {
         "restaurantName": "Noodle Nation ",
         "addresslocation": "4232 University Way NE",
         "cuisine": "Thai",
-        "website": "https://www.yelp.com/biz/noodle-nation-seattle",
+        "website": "https://www.noodlenationmlt.com/",
         "phoneNumber": "(206) 632-5833",
-        "acceptsApplePay": "CLOSED"
+        "acceptsApplePay": "CLOSED",
+        "rating": 4.5,
+        "numberOfRatings": 146
     },
     {
         "restaurantName": "A Burger Place",
         "addresslocation": "4234 University Way NE",
         "cuisine": "Hamburger",
-        "website": "https://www.yelp.com/biz/a-burger-place-seattle",
+        "website": "https://foursquare.com/v/a-burger-place/4a7a22e4f964a520a3e81fe3",
         "phoneNumber": "(206) 547-5096",
-        "acceptsApplePay": "CLOSED"
+        "acceptsApplePay": "CLOSED",
+        "rating": 4.6,
+        "numberOfRatings": 272
     },
     {
         "restaurantName": "Phở Shizzle",
         "addresslocation": "4235 University Way NE",
         "cuisine": "Vietnamese",
         "website": "https://www.phoshizzlerestaurant.com/",
-        "phoneNumber": "(206) 632-1078"
+        "phoneNumber": "(206) 632-1078",
+        "rating": 4.2,
+        "numberOfRatings": 566
     },
     {
         "restaurantName": "Call A Chicken",
         "addresslocation": "4237 University Way NE",
         "cuisine": "Fried Chicken",
         "website": "https://calledachicken.com",
-        "phoneNumber": "(206) 545-6979"
+        "phoneNumber": "(206) 545-6979",
+        "rating": 3.5,
+        "numberOfRatings": 25
     },
     {
         "restaurantName": "Bugis",
         "addresslocation": "4241 University Way NE",
         "cuisine": "Korean",
         "website": "https://app.cheqplease.com/partner/5689",
-        "phoneNumber": "(206) 547-1918"
+        "phoneNumber": "(206) 547-1918",
+        "rating": 4.5,
+        "numberOfRatings": 167
     },
     {
         "restaurantName": "Nuodle Express",
         "addresslocation": "4245 University Way NE",
         "cuisine": "Chinese",
-        "website": "https://www.yelp.com/biz/nuodle-express-seattle",
-        "phoneNumber": "(206) 775-3333"
+        "website": "https://www.instagram.com/nuodle.seattle/?hl=en",
+        "phoneNumber": "(206) 775-3333",
+        "rating": 2.9,
+        "numberOfRatings": 15
     },
     {
         "restaurantName": "Cedar's of Lebanon",
         "addresslocation": "1319 NE 43rd St",
         "cuisine": "Lebanese",
         "website": "https://cedarsoflebanonuw.com/",
-        "phoneNumber": "(206) 632-7708"
+        "phoneNumber": "(206) 632-7708",
+        "rating": 4.6,
+        "numberOfRatings": 257
     },
     {
         "restaurantName": "Flowers Bar & Restaurant",
         "addresslocation": "4247 University Way NE",
         "cuisine": "Bar",
-        "website": "https://www.yelp.com/biz/flowers-bar-and-restaurant-seattle",
-        "phoneNumber": "(206) 633-1903"
+        "website": "https://m.facebook.com/profile.php?id=111624532206948",
+        "phoneNumber": "(206) 633-1903",
+        "rating": 4,
+        "numberOfRatings": 337
     },
     {
         "restaurantName": "Mark Thai Food Box",
         "addresslocation": "1313 NE 43rd St",
         "cuisine": "Thai",
         "website": "http://www.markhomemadethai.com/",
-        "phoneNumber": "(206) 432-5902"
+        "phoneNumber": "(206) 432-5902",
+        "rating": 4.6,
+        "numberOfRatings": 131
     },
     {
         "restaurantName": "Ugly Mug Café",
         "addresslocation": "1309 NE 43rd St",
         "cuisine": "Coffee",
         "website": "http://www.uglymugseattle.com",
-        "phoneNumber": "(206) 547-3219"
+        "phoneNumber": "(206) 547-3219",
+        "rating": 4.6,
+        "numberOfRatings": 361
     },
     {
         "restaurantName": "Samir's Mediterranean Grill",
         "addresslocation": "1316 NE 43rd St",
         "cuisine": "Mediterranean",
         "website": "https://samirsmediterranean.com/",
-        "phoneNumber": "(206) 633-1778"
+        "phoneNumber": "(206) 633-1778",
+        "rating": 4.5,
+        "numberOfRatings": 39
     },
     {
         "restaurantName": "Sweet Alchemy",
         "addresslocation": "4301 University Way NE",
         "cuisine": "Ice Cream",
         "website": "http://sweetalchemyicecreamery.com/",
-        "phoneNumber": "(206) 632-0243"
+        "phoneNumber": "(206) 632-0243",
+        "rating": 4.5,
+        "numberOfRatings": 710
     },
     {
         "restaurantName": "Nasai Teriyaki",
         "addresslocation": "4305 University Way N E",
         "cuisine": "Teriyaki",
-        "website": "https://www.yelp.com/biz/nasai-teriyaki-at-uw-seattle-3",
-        "phoneNumber": "(206) 632-3572"
+        "website": "https://www.nasaiteriyaki.com/",
+        "phoneNumber": "(206) 632-3572",
+        "imageSourceLink": ".images/name'",
+        "rating": 4.2,
+        "numberOfRatings": 211
     },
     {
         "restaurantName": "The Bookstore Café",
         "addresslocation": "4326 University Way NE",
         "cuisine": "Bookstore",
         "website": "https://www.ubookstore.com",
-        "phoneNumber": "(800) 335-7323"
+        "phoneNumber": "(800) 335-7323",
+        "rating": 4.2,
+        "numberOfRatings": 363
     },
     {
         "restaurantName": "Pauly's at Earl's",
         "addresslocation": "4333 University Way NE",
         "cuisine": "Bar",
         "website": "https://www.earlsontheave.com/",
-        "phoneNumber": "(206) 525-4493"
+        "phoneNumber": "(206) 525-4493",
+        "rating": 4.2,
+        "numberOfRatings": 77
     },
     {
         "restaurantName": "Earl's on the Ave",
         "addresslocation": "4333 University Way NE",
         "cuisine": "Bar",
         "website": "https://paulysatearls.com/",
-        "phoneNumber": "(206) 525-4493"
+        "phoneNumber": "(206) 525-4493",
+        "rating": 4.1,
+        "numberOfRatings": 463
     },
     {
         "restaurantName": "Shawarma King",
         "addresslocation": "4337 University Way NE",
         "cuisine": "Mediterranean",
         "website": "http://www.shawarmakingus.com/",
-        "phoneNumber": "(206) 420-1484"
+        "phoneNumber": "(206) 420-1484",
+        "rating": 4.4,
+        "numberOfRatings": 1.1
     },
     {
         "restaurantName": "Just Poké",
         "addresslocation": "4339 University Way NE",
         "cuisine": "Poke",
         "website": "https://justpoke.com/",
-        "phoneNumber": "(206) 566-6156"
+        "phoneNumber": "(206) 566-6156",
+        "rating": 4.4,
+        "numberOfRatings": 125
     },
     {
         "restaurantName": "Boba Smoothies",
         "addresslocation": "1409 NE 45th St",
-        "cuisine": "Boba",
+        "cuisine": "Bubble Tea",
         "website": "http://bobasmoothies.com/",
-        "phoneNumber": "(425) 214-1267"
+        "phoneNumber": "(425) 214-1267",
+        "rating": 4.3,
+        "numberOfRatings": 53
     },
     {
         "restaurantName": "Mee Sum Pastry",
         "addresslocation": "4343 University Way NE",
         "cuisine": "Chinese",
         "website": "http://www.meesumpastryseattle.com/?utm_source=gmb&utm_medium=website",
-        "phoneNumber": "(206) 632-7298"
+        "phoneNumber": "(206) 632-7298",
+        "rating": 4.4,
+        "numberOfRatings": 51
     },
     {
         "restaurantName": "Leon Coffee House",
         "addresslocation": "1309 NE 45th St",
         "cuisine": "Coffee",
         "website": "http://leoncoffeehouse.com/",
-        "phoneNumber": "(206) 537-3660"
+        "phoneNumber": "(206) 537-3660",
+        "rating": 4.7,
+        "numberOfRatings": 87
     },
     {
         "restaurantName": "TP Tea",
         "addresslocation": "1312 NE 45th St",
-        "cuisine": "Boba",
+        "cuisine": "Bubble Tea",
         "website": "en.tp-tea.com",
         "phoneNumber": "(206) 327-9811",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.6,
+        "numberOfRatings": 45
     },
     {
         "restaurantName": "Panda Noodle Bar",
@@ -638,7 +815,9 @@
         "cuisine": "Chinese noodles",
         "website": "pandanoodlebarwa.com",
         "phoneNumber": "(206) 547-2445",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.5,
+        "numberOfRatings": 64
     },
     {
         "restaurantName": "Just Burgers",
@@ -646,7 +825,9 @@
         "cuisine": "Burgers",
         "website": "http://justburgersco.com",
         "phoneNumber": "(425) 276-1824",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.3,
+        "numberOfRatings": 902
     },
     {
         "restaurantName": "Capsule Café",
@@ -654,7 +835,9 @@
         "cuisine": "Taiwanese cafe",
         "website": "https://www.instagram.com/ilovecapsule_cafe/",
         "phoneNumber": "(206) 535-7458",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 5,
+        "numberOfRatings": 31
     },
     {
         "restaurantName": "Tasty Pot",
@@ -662,7 +845,9 @@
         "cuisine": "Taiwanese hotpot",
         "website": "https://www.tastypotusa.com",
         "phoneNumber": "(206) 397-3746",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.1,
+        "numberOfRatings": 105
     },
     {
         "restaurantName": "Don't Yell At Me",
@@ -670,7 +855,9 @@
         "cuisine": "Bubble Tea",
         "website": "https://www.dontyellatme.com/",
         "phoneNumber": "(206) 588-0719",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.5,
+        "numberOfRatings": 328
     },
     {
         "restaurantName": "U:Don Noodle Station",
@@ -678,7 +865,9 @@
         "cuisine": "Japanese, Ramen",
         "website": "http://freshudon.com/",
         "phoneNumber": "(206) 466-1471",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.4,
+        "numberOfRatings": 856
     },
     {
         "restaurantName": "Korean Tofu House Express",
@@ -686,7 +875,9 @@
         "cuisine": "Korean",
         "website": "https://koreantofuhouseexpress.com/",
         "phoneNumber": "(206) 922-3562",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.2,
+        "numberOfRatings": 27
     },
     {
         "restaurantName": "Oasis Tea Zone",
@@ -694,7 +885,9 @@
         "cuisine": "Boba/coffee/bar",
         "website": "http://www.oasisteazone.com",
         "phoneNumber": "(206) 447-8098",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.3,
+        "numberOfRatings": 478
     },
     {
         "restaurantName": "Palmi Korean BBQ",
@@ -702,7 +895,9 @@
         "cuisine": "Korean BBQ",
         "website": "https://uwkoreanbbq.com",
         "phoneNumber": "(206) 633-9993",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4,
+        "numberOfRatings": 489
     },
     {
         "restaurantName": "Taste of Xi'an",
@@ -710,7 +905,9 @@
         "cuisine": "Chinese noodles",
         "website": "http://www.tasteofxianusa.com",
         "phoneNumber": "(206) 231-9999",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4,
+        "numberOfRatings": 500
     },
     {
         "restaurantName": "Chi Mac",
@@ -718,7 +915,9 @@
         "cuisine": "Korean wings",
         "website": "http://www.chimacseattle.com",
         "phoneNumber": "(206) 888-8947",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.2,
+        "numberOfRatings": 526
     },
     {
         "restaurantName": "Tea Republik",
@@ -726,7 +925,9 @@
         "cuisine": "Teas",
         "website": "https://tearepublik.square.site/",
         "phoneNumber": "(206) 485-2314",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.7,
+        "numberOfRatings": 397
     },
     {
         "restaurantName": "Supreme",
@@ -734,23 +935,29 @@
         "cuisine": "Pizza/Bar",
         "website": "http://www.supreme.bar",
         "phoneNumber": "(206) 257-4767",
-        "acceptsApplePay": "no"
+        "acceptsApplePay": "no",
+        "rating": 4.5,
+        "numberOfRatings": 177
     },
     {
         "restaurantName": "Zen Noodle & Café",
         "addresslocation": "4537A University Way NE",
-        "cuisine": "Taiwaneese noodles",
+        "cuisine": "Taiwaneese Noodles",
         "website": "https://zennoodlecafewa.com",
         "phoneNumber": "(206) 632-7792",
-        "acceptsApplePay": "no"
+        "acceptsApplePay": "no",
+        "rating": 4.1,
+        "numberOfRatings": 115
     },
     {
         "restaurantName": "Time Bistro",
         "addresslocation": "4537B University Way NE",
-        "cuisine": "Vietnamese noodle/Vegeterian",
+        "cuisine": "Vietnamese Noodle/Vegeterian",
         "website": "https://www.timebistro.us",
         "phoneNumber": "(206) 420-8826",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.6,
+        "numberOfRatings": 118
     },
     {
         "restaurantName": "Aladdin Falafel Corner",
@@ -758,7 +965,9 @@
         "cuisine": "Mediterranean",
         "website": "https://m.facebook.com/AdminAladdinFalafelCorner/",
         "phoneNumber": "(206) 548-9539",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.4,
+        "numberOfRatings": 497
     },
     {
         "restaurantName": "Thai Tom",
@@ -766,7 +975,9 @@
         "cuisine": "Thai",
         "website": "missing",
         "phoneNumber": "(206) 548-9548",
-        "acceptsApplePay": "no"
+        "acceptsApplePay": "no",
+        "rating": 4.3,
+        "numberOfRatings": 1619
     },
     {
         "restaurantName": "Red Pepper",
@@ -774,7 +985,9 @@
         "cuisine": "Chinese",
         "website": "https://www.redpepperusa.com",
         "phoneNumber": "(206) 906-9679",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.2,
+        "numberOfRatings": 387
     },
     {
         "restaurantName": "Hawaii BBQ Restaurant",
@@ -782,7 +995,9 @@
         "cuisine": "Hawaii BBQ",
         "website": "https://hawaiibbqrestaurant-uw.com/",
         "phoneNumber": "(206) 522-7740",
-        "acceptsApplePay": "no"
+        "acceptsApplePay": "no",
+        "rating": 3.9,
+        "numberOfRatings": 289
     },
     {
         "restaurantName": "Costa's Restaurant",
@@ -790,7 +1005,9 @@
         "cuisine": "Greek/Mediterranean",
         "website": "https://www.costasseattle.com",
         "phoneNumber": "(206) 633-2751",
-        "acceptsApplePay": "no"
+        "acceptsApplePay": "no",
+        "rating": 4,
+        "numberOfRatings": 598
     },
     {
         "restaurantName": "YangGuoFu YGF MalaTang",
@@ -798,15 +1015,19 @@
         "cuisine": "Chinese Hotpot",
         "website": "https://www.instagram.com/yangguofuusa/",
         "phoneNumber": "(206) 922-3496",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.2,
+        "numberOfRatings": 99
     },
     {
         "restaurantName": "Sharetea",
         "addresslocation": "530 Broadway",
-        "cuisine": "Bubble Tea & coffee",
+        "cuisine": "Bubble Tea & Coffee",
         "website": "https://www.1992sharetea.com",
         "phoneNumber": "(425) 829-8644",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.4,
+        "numberOfRatings": 66
     },
     {
         "restaurantName": "Ate O'Clock Thai",
@@ -814,15 +1035,19 @@
         "cuisine": "Thai",
         "website": "https://ateoclock-thairestaurant.square.site/",
         "phoneNumber": "(206) 524-6339",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.5,
+        "numberOfRatings": 150
     },
     {
         "restaurantName": "Mr. Lu's Seafood & Burgers",
         "addresslocation": "4752 University Way NE",
-        "cuisine": "Seafood/burgers",
+        "cuisine": "Seafood/Burgers",
         "website": "https://www.facebook.com/people/Mr-Lus-Seafood-Burgers/100063553754029/",
         "phoneNumber": "(206) 525-0365",
-        "acceptsApplePay": "no"
+        "acceptsApplePay": "no",
+        "rating": 4.5,
+        "numberOfRatings": 277
     },
     {
         "restaurantName": " Arepa Venezuelan Kitchen",
@@ -830,15 +1055,19 @@
         "cuisine": "Venezuelan",
         "website": "https://www.facebook.com/ArepaVen/",
         "phoneNumber": "(206) 556-4879",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.6,
+        "numberOfRatings": 906
     },
     {
         "restaurantName": "Café O Dessert",
         "addresslocation": "4727 University Way NE",
-        "cuisine": "Coffee/tea",
+        "cuisine": "Coffee/Tea",
         "website": "https://cafeodessert.com",
         "phoneNumber": "(206) 522-5266",
-        "acceptsApplePay": "no"
+        "acceptsApplePay": "no",
+        "rating": 4.3,
+        "numberOfRatings": 109
     },
     {
         "restaurantName": "Jewel of India",
@@ -846,7 +1075,9 @@
         "cuisine": "Indian",
         "website": "seattlejewelofindia.com",
         "phoneNumber": "(206) 859-8946",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.1,
+        "numberOfRatings": 552
     },
     {
         "restaurantName": "Memos Mexican Restaurant",
@@ -854,7 +1085,9 @@
         "cuisine": "Mexican",
         "website": "https://memosmexicanrestaurant.net/",
         "phoneNumber": "(206) 729-5071",
-        "acceptsApplePay": "no"
+        "acceptsApplePay": "no",
+        "rating": 3.7,
+        "numberOfRatings": 1041
     },
     {
         "restaurantName": "Jack in the Box",
@@ -862,7 +1095,9 @@
         "cuisine": "Fast food",
         "website": "https://locations.jackinthebox.com/us/wa/seattle/1907-4th-ave-s",
         "phoneNumber": "(206) 628-9028",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 3.3,
+        "numberOfRatings": 869
     },
     {
         "restaurantName": "Six Pack Foods Company",
@@ -870,7 +1105,9 @@
         "cuisine": "Chinese",
         "website": "https://sixpackfoodsco.com/",
         "phoneNumber": "(206) 695-2883",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 3.9,
+        "numberOfRatings": 96
     },
     {
         "restaurantName": "Roji Monster Ice Cream",
@@ -878,31 +1115,39 @@
         "cuisine": "Ice Cream",
         "website": "https://www.instagram.com/roji_seattle/?hl=en",
         "phoneNumber": "(206) 331-4442",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.3,
+        "numberOfRatings": 80
     },
     {
         "restaurantName": "Yi Fang Taiwan Fruit Tea",
         "addresslocation": "5000 University Way NE Ste C",
-        "cuisine": "Taiwanese bubble tea",
+        "cuisine": "Taiwanese Bubble Tea",
         "website": "https://www.yifangteapnw.com",
         "phoneNumber": "(206) 420-2369",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.3,
+        "numberOfRatings": 169
     },
     {
         "restaurantName": "Morsel",
         "addresslocation": "5000 University Way NE Ste D",
-        "cuisine": "Coffee&tea",
+        "cuisine": "Coffee & Tea",
         "website": "http://www.morselseattle.com",
         "phoneNumber": "(206) 268-0154",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.7,
+        "numberOfRatings": 886
     },
     {
         "restaurantName": "Urban Dinner Market",
         "addresslocation": "5201 University Way NE Ste B",
-        "cuisine": "Fish&chips",
+        "cuisine": "Fish & Chips",
         "website": "https://www.instagram.com/urbandinnermarketseattle/?hl=en",
         "phoneNumber": "(206) 535-8925",
-        "acceptsApplePay": "no"
+        "acceptsApplePay": "no",
+        "rating": 3.7,
+        "numberOfRatings": 15
     },
     {
         "restaurantName": " Bok A Bok Fried Chicken",
@@ -910,7 +1155,9 @@
         "cuisine": "Fried Chicken",
         "website": "http://bokabokchicken.com",
         "phoneNumber": "(206) 669-5976",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4,
+        "numberOfRatings": 208
     },
     {
         "restaurantName": "Village Sushi",
@@ -918,31 +1165,39 @@
         "cuisine": "Sushi",
         "website": "https://villagesushi.business.site/",
         "phoneNumber": "(206) 985-6870",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.6,
+        "numberOfRatings": 305
     },
     {
         "restaurantName": "Ku Sushi & Izakaya",
         "addresslocation": "5210 University Way NE",
-        "cuisine": "Sushi bar",
+        "cuisine": "Sushi Bar",
         "website": "http://www.kusushiizakaya.com",
         "phoneNumber": "(206) 524-6101",
-        "acceptsApplePay": "no"
+        "acceptsApplePay": "no",
+        "rating": 4.2,
+        "numberOfRatings": 378
     },
     {
         "restaurantName": "Araya's Place",
         "addresslocation": "5240 University Way NE",
-        "cuisine": "Thai/vegeterian",
+        "cuisine": "Thai/Vegetarian",
         "website": "http://www.arayasplace.com",
         "phoneNumber": "(206) 524-4332",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.5,
+        "numberOfRatings": 809
     },
     {
         "restaurantName": "Cold Plate",
         "addresslocation": "5240 University Way NE Ste- B",
-        "cuisine": "Ice Cream/bubble tea",
+        "cuisine": "Ice Cream/Bubble Tea",
         "website": "https://sweethouse263863728.wordpress.com/",
         "phoneNumber": "(206) 294-5938",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.3,
+        "numberOfRatings": 180
     },
     {
         "restaurantName": "Tig Kitchen & Bar",
@@ -950,15 +1205,19 @@
         "cuisine": "Korean",
         "website": "https://www.facebook.com/tigbarseattle/",
         "phoneNumber": "(206) 522-4274",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 3.7,
+        "numberOfRatings": 104
     },
     {
         "restaurantName": "A Pizza Mart Bar & Grill",
         "addresslocation": "5240 University Way NE Ste D",
-        "cuisine": "PIzza/Bar",
+        "cuisine": "Pizza/Bar",
         "website": "http://pizzamartdelivery.com",
         "phoneNumber": "(206) 517-4000",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4,
+        "numberOfRatings": 357
     },
     {
         "restaurantName": "Snowy Village",
@@ -966,7 +1225,9 @@
         "cuisine": "Desserts",
         "website": "https://www.facebook.com/snowyvillageuw/",
         "phoneNumber": "(206) 708-1111",
-        "acceptsApplePay": "no"
+        "acceptsApplePay": "no",
+        "rating": 4.6,
+        "numberOfRatings": 378
     },
     {
         "restaurantName": "Tanuki Izakaya",
@@ -974,7 +1235,9 @@
         "cuisine": "Japanese",
         "website": "https://www.tanukiseattle.com/",
         "phoneNumber": "(206) 708-6852",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.1,
+        "numberOfRatings": 102
     },
     {
         "restaurantName": "Shawarma King",
@@ -982,7 +1245,9 @@
         "cuisine": "Mediterranean/Greek/Egyptian",
         "website": "http://www.shawarmakingus.com",
         "phoneNumber": "(206) 420-1484",
-        "acceptsApplePay": "no"
+        "acceptsApplePay": "no",
+        "rating": 4.4,
+        "numberOfRatings": "1.1k"
     },
     {
         "restaurantName": "The Kraken Bar & Lounge",
@@ -990,7 +1255,9 @@
         "cuisine": "Dive Bar",
         "website": "https://www.facebook.com/KrakenBarSeattle",
         "phoneNumber": "(206) 522-5334",
-        "acceptsApplePay": "no"
+        "acceptsApplePay": "no",
+        "rating": 4.5,
+        "numberOfRatings": 387
     },
     {
         "restaurantName": "Xi'an Noodles",
@@ -998,7 +1265,9 @@
         "cuisine": "Chinese noodles",
         "website": "http://www.xiannoodles.com",
         "phoneNumber": "(206) 522-8888",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.5,
+        "numberOfRatings": 1351
     },
     {
         "restaurantName": "Fat Ducks Deli & Bakery",
@@ -1006,7 +1275,9 @@
         "cuisine": "Delis/Sandwich",
         "website": "http://fatducksdeli.com",
         "phoneNumber": "(206) 257-4798",
-        "acceptsApplePay": "no"
+        "acceptsApplePay": "no",
+        "rating": 4.5,
+        "numberOfRatings": 353
     },
     {
         "restaurantName": "Persepolis Grill",
@@ -1014,7 +1285,9 @@
         "cuisine": "Persian/Iranian",
         "website": "https://persepolis-grill.com/",
         "phoneNumber": "(206) 524-3434",
-        "acceptsApplePay": "no"
+        "acceptsApplePay": "no",
+        "rating": 4.3,
+        "numberOfRatings": 792
     },
     {
         "restaurantName": "Bombay Grill",
@@ -1022,15 +1295,19 @@
         "cuisine": "Indian",
         "website": "missing",
         "phoneNumber": "(206) 557-0006",
-        "acceptsApplePay": "no"
+        "acceptsApplePay": "no",
+        "rating": 2.5,
+        "numberOfRatings": 110
     },
     {
         "restaurantName": "Herkimer Coffee",
-        "addresslocation": "2101 4th Ave",
+        "addresslocation": "5611 University Way NE",
         "cuisine": "Coffee",
         "website": "https://herkimercoffee.com",
         "phoneNumber": "(206) 627-0626",
-        "acceptsApplePay": "no"
+        "acceptsApplePay": "no",
+        "rating": 4.7,
+        "numberOfRatings": 478
     },
     {
         "restaurantName": "Taste of India",
@@ -1038,15 +1315,19 @@
         "cuisine": "Indian/Halal",
         "website": "https://www.tasteofindiaseattle.com/",
         "phoneNumber": "(206) 528-1575",
-        "acceptsApplePay": "no"
+        "acceptsApplePay": "no",
+        "rating": 4.4,
+        "numberOfRatings": 2456
     },
     {
         "restaurantName": "Pi Vegan Pizzeria",
         "addresslocation": "5301 Roosevelt Way NE",
-        "cuisine": "Pizza/vegan",
+        "cuisine": "Pizza/Vegan",
         "website": "https://www.pizzapivegan.com",
         "phoneNumber": "(206) 343-1415",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.6,
+        "numberOfRatings": 701
     },
     {
         "restaurantName": "YAN Tea",
@@ -1054,7 +1335,9 @@
         "cuisine": "Bubble Tea/Coffee",
         "website": "https://yanteaseattle.com/",
         "phoneNumber": "(206) 257-0168",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.3,
+        "numberOfRatings": 105
     },
     {
         "restaurantName": "Mei Mei Café",
@@ -1062,23 +1345,29 @@
         "cuisine": "Chinese/Seafood",
         "website": "https://www.meimeicafeseattle.com/",
         "phoneNumber": "(206) 729-2218",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.4,
+        "numberOfRatings": 87
     },
     {
         "restaurantName": "Timeless Tea",
         "addresslocation": "1000 NE 50th St",
-        "cuisine": "Bubble tea/desserts",
+        "cuisine": "Bubble Tea/Desserts",
         "website": "https://www.timelessteaseattle.com/",
         "phoneNumber": "(360) 889-6666",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.4,
+        "numberOfRatings": 330
     },
     {
         "restaurantName": "Sip House",
         "addresslocation": "5001 Brooklyn Ave NE Ste 101",
-        "cuisine": "Coffee/tea/bubble tea",
+        "cuisine": "Coffee/Tea/Bubble Tea",
         "website": "https://www.siphousewa.com/",
         "phoneNumber": "(206) 468-5358",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.5,
+        "numberOfRatings": 170
     },
     {
         "restaurantName": "Cedars Restaurant",
@@ -1086,7 +1375,9 @@
         "cuisine": "Mediterranean",
         "website": "https://cedarsseattle.com/",
         "phoneNumber": "(206) 527-4000",
-        "acceptsApplePay": "no"
+        "acceptsApplePay": "no",
+        "rating": 4.3,
+        "numberOfRatings": 1371
     },
     {
         "restaurantName": "Itadakimasu",
@@ -1094,7 +1385,9 @@
         "cuisine": "Korean/Japanese/Hawaii",
         "website": "http://www.itadakimasu-restaurant.com/",
         "phoneNumber": "(206) 659-0722",
-        "acceptsApplePay": "no"
+        "acceptsApplePay": "no",
+        "rating": 4.4,
+        "numberOfRatings": 277
     },
     {
         "restaurantName": "Domino's Pizza",
@@ -1102,71 +1395,189 @@
         "cuisine": "Pizza",
         "website": "dominos.com",
         "phoneNumber": "(206) 525-9551",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.2,
+        "numberOfRatings": 218
     },
     {
         "restaurantName": "Meraki Tea Bar",
-        "cuisine": "Bubble tea/coffee/desserts"
+        "addresslocation": "4701 BROOKLYN AVE NE",
+        "cuisine": "Bubble Tea/Coffee/Desserts",
+        "website": "https://www.clover.com/online-ordering/meraki-tea-bar-seattle",
+        "phoneNumber": "(206) 906-9213",
+        "acceptsApplePay": "Yes",
+        "rating": 4.5,
+        "numberOfRatings": 80
     },
     {
-        "restaurantName": "Royal Gaming Café"
+        "restaurantName": "Qdoba Mexican Eats",
+        "addresslocation": "1200 NE 45th St",
+        "cuisine": "Mexican ",
+        "website": "https://locations.qdoba.com/us/wa/seattle/1200-ne-45th-st.html",
+        "phoneNumber": "(206)547-0803",
+        "acceptsApplePay": "yes",
+        "rating": 4,
+        "numberOfRatings": 461
     },
     {
-        "restaurantName": "Qdoba Mexican Eats"
+        "restaurantName": "Subway",
+        "addresslocation": "4336 Roosevelt Way NE",
+        "cuisine": "Sandwich/Fast food",
+        "website": "https://restaurants.subway.com/united-states/wa/seattle/4336-roosevelt-way-ne?utm_source=yxt-goog&utm_medium=local&utm_term=acq&utm_content=1616&utm_campaign=evergreen-2020&y_source=1_MTQ4OTcwODMtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+        "phoneNumber": "(206)545-7851",
+        "acceptsApplePay": "yes",
+        "rating": 3.1,
+        "numberOfRatings": 308
     },
     {
-        "restaurantName": "Donut Factory"
+        "restaurantName": "Big Tuna",
+        "addresslocation": "4336 Roosevelt Way NE",
+        "cuisine": "Fast food/Fish Bowl/Poke",
+        "website": "https://orderbigtuna.com",
+        "phoneNumber": "(206)-633-0378",
+        "acceptsApplePay": "yes",
+        "rating": 4.2,
+        "numberOfRatings": 117
     },
     {
-        "restaurantName": "Subway"
+        "restaurantName": "Pineapple Café",
+        "addresslocation": "4242 Roosevelt Way NE",
+        "cuisine": "Cafe/Brunch",
+        "website": "http://places.singleplatform.com/pineapple-cafe/menu?ref=google",
+        "phoneNumber": "(206)-826-4242",
+        "acceptsApplePay": "yes",
+        "rating": 3.6,
+        "numberOfRatings": 28
     },
     {
-        "restaurantName": "Big Tuna"
+        "restaurantName": "Trinity Market",
+        "addresslocation": "4301 Roosevelt Way NE",
+        "cuisine": "Grocery/Deli",
+        "website": "https://www.facebook.com/profile.php?id=100079225527089",
+        "phoneNumber": "(206) 659-0934",
+        "acceptsApplePay": "yes",
+        "rating": 4.6,
+        "numberOfRatings": 263
     },
     {
-        "restaurantName": "Pineapple Café"
+        "restaurantName": "Jake's Coffee",
+        "addresslocation": " 1116 NE 47th St",
+        "cuisine": "Coffee/Cafe",
+        "website": "https://www.instagram.com/accounts/login/",
+        "phoneNumber": "(515) 494-0889",
+        "acceptsApplePay": "yes",
+        "rating": 4.6,
+        "numberOfRatings": 171
     },
     {
-        "restaurantName": "Trinity Market"
+        "restaurantName": "Hiroshi's Poké",
+        "addresslocation": "4712 11th Ave NE",
+        "cuisine": "Hawaiian/Poke",
+        "website": "https://www.facebook.com/Furikakekona/",
+        "phoneNumber": "(206) 466-1083",
+        "acceptsApplePay": "yes",
+        "rating": 4.7,
+        "numberOfRatings": 560
     },
     {
-        "restaurantName": "Jake's Coffee"
+        "restaurantName": "OH Bear Café & Teahouse",
+        "addresslocation": "4708 11th Ave NE",
+        "cuisine": "Cafe/Teahouse",
+        "website": "https://www.ohbearcafe.com/",
+        "phoneNumber": "(206) 453-3097",
+        "acceptsApplePay": "yes",
+        "rating": 4.4,
+        "numberOfRatings": 160
     },
     {
-        "restaurantName": "Hiroshi's Poké"
+        "restaurantName": "Sichuan Hot Pot",
+        "addresslocation": "4741 12th Ave NE",
+        "cuisine": "Hotpot/Chinese",
+        "website": "https://www.sichuanhotpotseattle.com/order/",
+        "phoneNumber": "(206)-420-7167",
+        "acceptsApplePay": "yes",
+        "rating": 4,
+        "numberOfRatings": 166
     },
     {
-        "restaurantName": "OH Bear Café & Teahouse"
+        "restaurantName": "Broadfork Café",
+        "addresslocation": "111 Queen Anne Ave N Ste 102",
+        "cuisine": "cafe/sandwich",
+        "website": "http://broadforkcafe.com/",
+        "phoneNumber": "(206) 858-6487",
+        "acceptsApplePay": "yes",
+        "rating": 4.4,
+        "numberOfRatings": 199
     },
     {
-        "restaurantName": "Kiki's Coco Beans "
+        "restaurantName": "Full Tilt Ice Cream",
+        "addresslocation": "5453 Leary Ave NW",
+        "cuisine": "ice cream",
+        "website": "https://www.fulltilticecream.com/#full-tilt",
+        "phoneNumber": "(206) 297-3000",
+        "acceptsApplePay": "no",
+        "rating": 4.7,
+        "numberOfRatings": 176
     },
     {
-        "restaurantName": "Sichuan Hot Pot"
+        "restaurantName": "BobaLust",
+        "addresslocation": "5453 Leary Ave NW",
+        "cuisine": "Café/bubble tea",
+        "website": "https://www.bobalustteahouse.com/",
+        "phoneNumber": "missing",
+        "acceptsApplePay": "yes",
+        "rating": 4.9,
+        "numberOfRatings": 9
     },
     {
-        "restaurantName": "Broadfork Café"
+        "restaurantName": "MOD Pizza",
+        "addresslocation": "1414 NE 42nd St",
+        "cuisine": "fast food/pizza",
+        "website": "https://modpizza.com/",
+        "phoneNumber": "(206) 632-7111",
+        "acceptsApplePay": "no",
+        "rating": 4.3,
+        "numberOfRatings": 679
     },
     {
-        "restaurantName": "Full Tilt Ice Cream"
+        "restaurantName": "Kong Tofu House",
+        "addresslocation": "1414 NE 42nd St Ste 103A",
+        "cuisine": "korean",
+        "website": "http://www.kongtofuhouse.com/",
+        "phoneNumber": "(206) 545-6783",
+        "acceptsApplePay": "no",
+        "rating": 4,
+        "numberOfRatings": 177
     },
     {
-        "restaurantName": "BobaLust"
+        "restaurantName": "R&B Tea",
+        "addresslocation": "1100 NE 45th St Ste 100",
+        "cuisine": "bubble tea",
+        "website": "https://www.instagram.com/rbteauw/?hl=en",
+        "phoneNumber": "(206) 397-4721",
+        "acceptsApplePay": "yes",
+        "rating": 3.7,
+        "numberOfRatings": 27
     },
     {
-        "restaurantName": "MOD Pizza"
+        "restaurantName": "Kitanda Espresso & Açai",
+        "addresslocation": "1121 NE 45th St",
+        "cuisine": "coffee/tea/Acai",
+        "website": "https://www.kitanda.com/",
+        "phoneNumber": "(206) 866-4158",
+        "acceptsApplePay": "yes",
+        "rating": 4.6,
+        "numberOfRatings": 147
     },
     {
-        "restaurantName": "Kong Tofu House"
-    },
-    {
-        "restaurantName": "R&B Tea"
-    },
-    {
-        "restaurantName": "Kitanda"
-    },
-    {
-        "restaurantName": "Ding Tea"
+        "restaurantName": "Ding Tea",
+        "addresslocation": "4725 University Way NE",
+        "cuisine": "bubble tea/dessert/cafe",
+        "website": "https://ding-tea-seattle.business.site/",
+        "phoneNumber": "(206) 456-7192",
+        "acceptsApplePay": "yes",
+        "rating": 4.4,
+        "numberOfRatings": 303
     },
     {
         "restaurantName": "Ma’ono Fried Chicken",
@@ -1174,6 +1585,218 @@
         "cuisine": "Fried Chicken",
         "website": "https://www.maonoseattle.com/u-village",
         "phoneNumber": "(206) 499-5470",
-        "acceptsApplePay": "yes"
+        "acceptsApplePay": "yes",
+        "rating": 4.3,
+        "numberOfRatings": 266
+    },
+    {
+        "restaurantName": "Ba Bar",
+        "addresslocation": "2685 NE 46th St",
+        "cuisine": "Vietnamese/bar",
+        "website": "https://babarseattle.com/university-village/",
+        "phoneNumber": "(206) 328-1112",
+        "acceptsApplePay": "yes",
+        "rating": 4.2,
+        "numberOfRatings": 658
+    },
+    {
+        "restaurantName": "Bamboo Sushi",
+        "addresslocation": "2675 NE Village Ln",
+        "cuisine": "Sushi/Japanese",
+        "website": "https://bamboosushi.com/location/university-village",
+        "phoneNumber": "(206) 556-3449",
+        "acceptsApplePay": "yes",
+        "rating": 4.3,
+        "numberOfRatings": 317
+    },
+    {
+        "restaurantName": "Chill",
+        "addresslocation": "4609 NE University Village St",
+        "cuisine": "Frozen yogurt",
+        "website": "https://chillfroyo.com/",
+        "phoneNumber": "(206) 900-9871",
+        "acceptsApplePay": "yes",
+        "rating": 4.1,
+        "numberOfRatings": 141
+    },
+    {
+        "restaurantName": "Chipotle ",
+        "addresslocation": "2626 NE 46th St",
+        "cuisine": "Mexican",
+        "website": "https://www.chipotle.com/",
+        "phoneNumber": "(206) 525-2147",
+        "acceptsApplePay": "yes",
+        "rating": 4,
+        "numberOfRatings": 462
+    },
+    {
+        "restaurantName": "Delfino’s Chicago Style Pizza",
+        "addresslocation": "2631 NE University Village St",
+        "cuisine": "Pizza",
+        "website": "https://delfinospizza.com/",
+        "phoneNumber": "(206) 522-3466",
+        "acceptsApplePay": "yes",
+        "rating": 4.4,
+        "numberOfRatings": 914
+    },
+    {
+        "restaurantName": "Ding Tai Fung",
+        "addresslocation": "2621 NE 46th St",
+        "cuisine": "Dim Sum",
+        "website": "https://www.dintaifungusa.com/us/locations/seattle-university-village.html",
+        "phoneNumber": "(206) 525-0958",
+        "acceptsApplePay": "no",
+        "rating": 4.6,
+        "numberOfRatings": 2923
+    },
+    {
+        "restaurantName": "Elemental Wood Fired Pizza",
+        "addresslocation": "2634 NE University Village St",
+        "cuisine": "Italian/Pizza",
+        "website": "https://elementalpizza.com/",
+        "phoneNumber": "(206) 524-4930",
+        "acceptsApplePay": "yes",
+        "rating": 4,
+        "numberOfRatings": 372
+    },
+    {
+        "restaurantName": "Eureka!",
+        "addresslocation": "2614 NE 46th St",
+        "cuisine": "Burgers/Bar",
+        "website": "https://eurekarestaurantgroup.com/locations/seattle-u-village",
+        "phoneNumber": "(206) 812-9655",
+        "acceptsApplePay": "yes",
+        "rating": 4.2,
+        "numberOfRatings": 743
+    },
+    {
+        "restaurantName": "Evergreen",
+        "addresslocation": "4609 Village Ter NE",
+        "cuisine": "Salad",
+        "website": "https://evergreens.com/",
+        "phoneNumber": "(206) 524-0741",
+        "acceptsApplePay": "yes",
+        "rating": 4.3,
+        "numberOfRatings": 159
+    },
+    {
+        "restaurantName": "Fran's Chocolate",
+        "addresslocation": "2626 NE University Village St",
+        "cuisine": "Chocolate/Candy",
+        "website": "https://frans.com/",
+        "phoneNumber": "(206) 528-9969",
+        "acceptsApplePay": "yes",
+        "rating": 4.7,
+        "numberOfRatings": 195
+    },
+    {
+        "restaurantName": "Shake Shack",
+        "addresslocation": "2580 NE University Village St",
+        "cuisine": "Fast food/Burger",
+        "website": "https://shakeshack.com/home#/",
+        "phoneNumber": "(206) 487-1283",
+        "acceptsApplePay": "yes",
+        "rating": 3.7,
+        "numberOfRatings": 381
+    },
+    {
+        "restaurantName": "Homegrown",
+        "addresslocation": "2650 NE Village Ln",
+        "cuisine": "Sandwich/Salad",
+        "website": "https://eathomegrown.com/",
+        "phoneNumber": "(877) 567-9240",
+        "acceptsApplePay": "yes",
+        "rating": 4.2,
+        "numberOfRatings": 71
+    },
+    {
+        "restaurantName": "Hokkaido Ramen Santouka",
+        "addresslocation": "2626 NE Village Ln",
+        "cuisine": "Ramen",
+        "website": "https://santouka-usa.com/",
+        "phoneNumber": "(206) 524-4431",
+        "acceptsApplePay": "yes",
+        "rating": 4.4,
+        "numberOfRatings": 765
+    },
+    {
+        "restaurantName": "Mr West Cafe Bar",
+        "addresslocation": "2685 NE Village Ln",
+        "cuisine": "Breakfast/Brunch/Coffee",
+        "website": "https://mrwestcafebar.com/",
+        "phoneNumber": "(206) 900-9378",
+        "acceptsApplePay": "yes",
+        "rating": 4.5,
+        "numberOfRatings": 274
+    },
+    {
+        "restaurantName": "Piatti",
+        "addresslocation": "2695 NE Village Ln",
+        "cuisine": "Italian/Pizza/Seafood",
+        "website": "https://seattle.piatti.com/",
+        "phoneNumber": "(206) 524-9088",
+        "acceptsApplePay": "no",
+        "rating": 4.2,
+        "numberOfRatings": 537
+    },
+    {
+        "restaurantName": "JOEY Kitchen",
+        "addresslocation": "2603 NE 46th St",
+        "cuisine": "Steakhouse/Sandwich",
+        "website": "https://joeyrestaurants.com/location/joey-university-village",
+        "phoneNumber": "(206) 527-6188",
+        "acceptsApplePay": "no",
+        "rating": 4.1,
+        "numberOfRatings": 949
+    },
+    {
+        "restaurantName": "Veggie Grill",
+        "addresslocation": "2681 NE University Village St",
+        "cuisine": "Vegan/Vegetarian",
+        "website": "https://veggiegrill.com/locations/university-village/",
+        "phoneNumber": "(206) 523-1961",
+        "acceptsApplePay": "no",
+        "rating": 4.3,
+        "numberOfRatings": 702
+    },
+    {
+        "restaurantName": "Juice Press",
+        "addresslocation": "2620 NE University Village St",
+        "cuisine": "Smoothies/Vegan",
+        "website": "https://order.juicepress.com/university-village/menu",
+        "phoneNumber": "(646) 901-1436",
+        "acceptsApplePay": "yes",
+        "rating": 3.8,
+        "numberOfRatings": 74
+    },
+    {
+        "restaurantName": "Jamba Juice",
+        "addresslocation": "2690 NE 49th St",
+        "cuisine": "Smoothies/Coffee",
+        "website": "https://locations.jamba.com/wa/seattle/2690-ne-49th-street",
+        "phoneNumber": "(206) 457-3946",
+        "acceptsApplePay": "yes",
+        "rating": 4.3,
+        "numberOfRatings": 174
+    },
+    {
+        "restaurantName": "Molly Moon's Homemade Ice Cream",
+        "addresslocation": "2615 NE 46th St",
+        "cuisine": "Ice Cream",
+        "website": "https://www.mollymoon.com/locations/u-village",
+        "phoneNumber": "(206) 525-5140",
+        "acceptsApplePay": "yes",
+        "rating": 4.5,
+        "numberOfRatings": 711
+    },
+    {
+        "restaurantName": "Frankie & Jo's",
+        "addresslocation": "4619 Village Terrace Dr",
+        "cuisine": "Ice Cream/Gluten free",
+        "website": "https://frankieandjos.com/",
+        "phoneNumber": "(206) 453-3135",
+        "acceptsApplePay": "yes",
+        "rating": 4.6,
+        "numberOfRatings": 131
     }
 ]

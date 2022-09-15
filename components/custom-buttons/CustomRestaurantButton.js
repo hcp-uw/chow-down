@@ -12,6 +12,7 @@ const CustomRestaurantButton = ({ onPress, title, address, img }) => (
         <View>
             <Image style={styles.restaurantImg} source={require('../search-bar/alladins.png')} />
         </View>
+        <View style={styles.divider}/>
     </TouchableOpacity>
 );
 
@@ -20,6 +21,11 @@ const styles = StyleSheet.create({
         height: 70,
         backgroundColor: '#DDC5F5',
         paddingHorizontal: 20,
+    },
+    divider: {
+        marginTop: 15,
+        borderBottomColor: 'black',
+        borderBottomWidth: StyleSheet.hairlineWidth,
     },
     nameSpace: {
         marginLeft: 70,
