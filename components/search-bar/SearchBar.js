@@ -11,7 +11,7 @@ const SearchBar = ({ navigation }) => {
    const [searchTerm, setSearchTerm] = useState('')
 
    return ( 
-      <ScrollView style={styles.container}>
+      <ScrollView className="search" style={styles.container}>
          <KeyboardAvoidingView style={styles.searchInputContainer}>
             <TouchableOpacity>
                <TextInput style={styles.textInputSpace}
@@ -23,6 +23,7 @@ const SearchBar = ({ navigation }) => {
                </TextInput>
             </TouchableOpacity>
          </KeyboardAvoidingView>
+         
          {/** Powers the search bar */}
          {JSONDATA.filter((val) => {
             if (searchTerm == "") {
@@ -30,13 +31,17 @@ const SearchBar = ({ navigation }) => {
             } else if (val.restaurantName.toLowerCase().includes(searchTerm.toLowerCase())) {
                return val
             }
-         }).map((val, key) => { //Filter function and style for search results here
+         }).map((val, key) => 
+         
+         { //Filter function and style for search results here
+            
             return ( // TODO: maybe --> Switch .map to something more compatiable for React Native- FlatList
                <CustomRestaurantButton
                   className="user"
                   key={key}
                   title={val.restaurantName}
                   address={val.addresslocation}
+                  img={'../alladins.jpg'}
                   // style={{
                   //    height: 70,
                   //    width: '100%',
@@ -44,7 +49,9 @@ const SearchBar = ({ navigation }) => {
                   onPress={() => navigation.navigate('BusinessPage', { ...val })}
                />
             )
+         
          }
+         
          )}
       </ScrollView>
    );
