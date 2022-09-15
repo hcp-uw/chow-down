@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import { View, Text } from "react-native"
 import * as FileSystem from 'expo-file-system';
 import JSONDATA from './components/search-bar/MOCK_DATA.json'
