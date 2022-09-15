@@ -3,6 +3,7 @@ import { View, Text } from "react-native"
 import * as FileSystem from 'expo-file-system';
 import JSONDATA from './components/search-bar/MOCK_DATA.json'
 
+
 const AddReview = () => {
     // Attempting to use FileSystem (from expo-file-system) to read JSONDATA
     async function readReviews() {
@@ -29,23 +30,9 @@ const AddReview = () => {
         }
     }
 
-
-
-    // restaurantObject.array.forEach(element => {
-    //     element.restaurantObject.push('hello');
-    // });
-
-    // var newData2 = JSON.stringify(restaurantObject);
-    // FileSystem.writeFile("random.json", newData2, (err) => {
-    //     // Error checking
-    //     if (err) throw err;
-    //     console.log("New data added");
-    // });
-
     return (
         <View>
             <Text> {readReviews()} </Text>
-
         </View>
     )
 }
