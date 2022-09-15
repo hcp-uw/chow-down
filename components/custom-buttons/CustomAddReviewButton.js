@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: 'white',
         fontSize: 18,
-        // fontFamily: 'Helvetica',
+        fontFamily: 'Helvetica',
     },
 });
 
