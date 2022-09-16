@@ -12,7 +12,7 @@ const CustomSearchButton = ({ onPress, title }) => (
 const styles = StyleSheet.create({
     searchInputContainer: {
         height: 50,
-        backgroundColor: '#FFFFFF',
+        backgroundColor: '#FFFFFF', 
         flex: 1,
         flexDirection: 'row',
         alignItems: 'center',
