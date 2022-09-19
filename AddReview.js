@@ -35,20 +35,19 @@ const AddReview = ({route, navigation}) => {
     }
 
     return (
-        <ScrollView>
-        <View>
-            <Text>{restaurantName}</Text>
+        <ScrollView style={styles.body}>
+        <View >
+            <Text style={styles.name}>{restaurantName}</Text>
         </View>
-        <View>
-            <Stars
-            spacing={8}
+        <View style={styles.starPlacement}>
+            <Stars 
             count={5}
-            starSize={40}
+            starSize={35}
             fullStar={require("./images/starFilled.png")}
             emptyStar={require("./images/starEmpty.png")}
             />
+            <Text style={styles.ratingText}>Select your rating.</Text>
         </View>
-        <Text>Select your rating.</Text>
         <View>
             <ScrollView>
             <TextInput    
@@ -67,6 +66,20 @@ const AddReview = ({route, navigation}) => {
 }
 
 const styles = StyleSheet.create({
+    body: {
+        backgroundColor: "#FFF4BE",
+    },
+    name: {
+        fontWeight: 'bold',
+        fontSize: 30,
+        marginTop: 45,
+        marginLeft: 25,
+    },
+    starPlacement: {
+        flexDirection: 'row',
+        marginLeft: 20,
+        marginTop: 10,
+    },
     container: {
         height: 50,
         width: 340,
@@ -83,11 +96,21 @@ const styles = StyleSheet.create({
         fontSize: 18,
         // fontFamily: 'Helvetica',
     },
+    ratingText: {
+        flexDirection: 'row',
+        marginLeft: 18,
+        marginTop: 9,
+        fontWeight: 'bold',
+    },
     textInputContainer: {
         width: '90%',
-        borderColor: 'gray',
-        borderWidth: 1,
-        padding: 2,
+        height: '50%',
+        justifyContent: 'center',
+        borderColor: 'black',
+        borderWidth: 2,
+        padding: 10,
+        marginTop: 20,
+        marginLeft: 20,
     },
 });
 
