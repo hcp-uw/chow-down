@@ -77,7 +77,7 @@ function BusinessPage({ route, navigation }) {
       <View style={styles.largeSpace} />
 
       <CustomAddReviewButton title="Add Your Review"
-      onPress={() => navigation.navigate('Add Review')}
+      onPress={() => navigation.navigate('Add Review', {restaurantName})}
       />
     </ScrollView>
   );
