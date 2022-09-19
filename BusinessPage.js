@@ -14,7 +14,8 @@ function BusinessPage({ route, navigation }) {
 
   // props passed in from React Navigation
   const { key, restaurantName, rating, numRating, cuisine,
-    addresslocation, phoneNumber, acceptsApplePay, img, } = route.params;
+    addresslocation, phoneNumber, acceptsApplePay, img, reviews } = route.params;
+    console.log(reviews);
 
   return (
     // Allows for scrolling
@@ -77,7 +78,7 @@ function BusinessPage({ route, navigation }) {
       <View style={styles.largeSpace} />
 
       <CustomAddReviewButton title="Add Your Review"
-      onPress={() => navigation.navigate('Add Review')}
+      onPress={reviews => navigation.navigate('Add Review')}
       />
     </ScrollView>
   );

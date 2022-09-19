@@ -8,7 +8,8 @@
         "acceptsApplePay": "Yes",
         "rating": 3.1,
         "numberOfRatings": 94,
-        "img": "https://hfs.uw.edu/getmedia/fa0117f4-43bc-481e-aeb6-db4082c04494/LOC-Center-Table-logo-card.jpg.aspx?width=800&height=449&ext=.jpg"
+        "img": "https://hfs.uw.edu/getmedia/fa0117f4-43bc-481e-aeb6-db4082c04494/LOC-Center-Table-logo-card.jpg.aspx?width=800&height=449&ext=.jpg",
+        "reviews": [{"name": "Bob", "stars": 2, "text": "Monopoly"}, {"name": "Sam", "stars": 1, "text": "small portions"}]
     },
     {
         "restaurantName": "Local Point",
