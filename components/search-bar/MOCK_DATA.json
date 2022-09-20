@@ -9,7 +9,7 @@
         "rating": 3.1,
         "numberOfRatings": 94,
         "img": "https://hfs.uw.edu/getmedia/fa0117f4-43bc-481e-aeb6-db4082c04494/LOC-Center-Table-logo-card.jpg.aspx?width=800&height=449&ext=.jpg",
-        "reviews": [{"name": "Bob", "stars": 2, "text": "Monopoly"}, {"name": "Sam", "stars": 1, "text": "small portions"}]
+        "reviews": [{"stars": 2, "text": "My favorite monopoly to support as an HFS resident. Who doesn't love a mandatory dining plan?"}, {"stars": 1, "text": "small portions, overpriced food. Would not recommend."}]
     },
     {
         "restaurantName": "Local Point",

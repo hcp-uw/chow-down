@@ -13,8 +13,8 @@ import CustomAddReviewButton from './components/custom-buttons/CustomAddReviewBu
 function BusinessPage({ route, navigation }) {
 
   // props passed in from React Navigation
-  const { key, restaurantName, rating, numRating, cuisine,
-    addresslocation, phoneNumber, acceptsApplePay, img, reviews } = route.params;
+  const { key, restaurantName, rating, numberOfRatings, cuisine,
+    addresslocation, phoneNumber, acceptsApplePay, img, reviews} = route.params;
 
   return (
     // Allows for scrolling
@@ -44,7 +44,7 @@ function BusinessPage({ route, navigation }) {
                 emptyStar={require("./images/starEmpty.png")}
               />
               {/** TODO: get num count and stars to align vertically */}
-              <Text style={styles.numCountText}> ({JSON.stringify(numRating)}) </Text>
+              <Text style={styles.numCountText}> ({JSON.stringify(numberOfRatings)}) </Text>
             </View>
         </View>
 
@@ -72,12 +72,16 @@ function BusinessPage({ route, navigation }) {
           <Ionicons name="phone-portrait-outline" size={20} color="black" />
           <Text style={styles.restaurantDetailsText}> {mobilePayments(acceptsApplePay)} </Text>
         </View>
+        {/** Below lines are for testing purposes. Will turn into review "components" in future meetings */}
+        <View style={styles.restaurantDetails}>
+          <Text style={styles.restaurantDetailsText}> {JSON.stringify(reviews)} </Text>
+        </View>
       </View>
 
       <View style={styles.largeSpace} />
 
       <CustomAddReviewButton title="Add Your Review"
-      onPress={reviews => navigation.navigate('Add Review', route.params)}
+      onPress={() => navigation.navigate('Add Review', {restaurantName, reviews})}
       />
     </ScrollView>
   );

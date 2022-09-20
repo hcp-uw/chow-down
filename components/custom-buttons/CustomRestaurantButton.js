@@ -10,7 +10,7 @@ const CustomRestaurantButton = ({ onPress, title, address, img }) => (
             <Text style={styles.addressSpace}>{address}</Text>
         </View>
         <View>
-            <Image style={styles.restaurantImg} source={require('../search-bar/alladins.png')} />
+            <Image style={styles.restaurantImg} source={require('../search-bar/meal.png')} />
         </View>
         <View style={styles.divider}/>
     </TouchableOpacity>
