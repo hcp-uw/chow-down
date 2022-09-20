@@ -1,66 +1,75 @@
 import React from "react";
-import { ScrollView, StyleSheet, View, Text, TextInput, TouchableOpacity } from "react-native"
-import * as FileSystem from 'expo-file-system';
-import JSONDATA from './components/search-bar/MOCK_DATA.json';
+import { ScrollView, StyleSheet, View, Text, TextInput, TouchableOpacity, Alert } from "react-native"
 import Stars from "react-native-stars";
 
 
 
-const AddReview = ({route, navigation}) => {
-    // Attempting to use FileSystem (from expo-file-system) to read JSONDATA
-    const { restaurantName } = route.params;
+const AddReview = ({ route, navigation }) => {
+    const { restaurantName, reviews } = route.params;
+    const [stars, setStars] = React.useState('');
+    const [text, setText] = React.useState('');
 
-    async function readReviews() {
-        try {
-            console.log("entered function")
-            // console.log(JSONDATA)
-            // const data = FileSystem.readAsStringAsync(JSONDATA);
-            // console.log("reading data");
-            // console.log(data);
-            // currently "data" is this: Promise {
-            // "_U": 0,
-            // "_V": 0,
-            // "_W": null,
-            // "_X": null,
-            // }
-            // const dataAwait = await data; // causing bugs
-            // console.log("data awaited")
-            // const restaurantObject = JSON.parse(data);
-            // restaurantObject.array.forEach(element => {
-            //     console.log("working");
-            // });
-        } catch (error) {
-            console.log(error);
+    function readReviews() {
+        // Creates an object for the review currently being written
+        const currReview = {
+            stars: stars,
+            text: text,
+        }
+
+        // If User doesn't select stars
+        if (stars == '') {
+            console.log("no stars");
+            Alert.alert("No Stars Inputed", "You Must Select a Rating to Proceed");
+        }
+        // TODO: make below code more readable (less duplication)
+        else if (typeof reviews === 'undefined') {
+            // Pass and merge params back to home screen
+            navigation.navigate({
+                name: 'BusinessPage',
+                params: { reviews: [currReview] },
+                merge: true,
+            });
+        } else {
+            reviews.push(currReview)
+            // Pass and merge params back to home screen
+            navigation.navigate({
+                name: 'BusinessPage',
+                params: { reviews },
+                merge: true,
+            });
         }
     }
 
     return (
         <ScrollView style={styles.body}>
-        <View >
-            <Text style={styles.name}>{restaurantName}</Text>
-        </View>
-        <View style={styles.starPlacement}>
-            <Stars 
-            count={5}
-            starSize={35}
-            fullStar={require("./images/starFilled.png")}
-            emptyStar={require("./images/starEmpty.png")}
-            />
-            <Text style={styles.ratingText}>Select your rating.</Text>
-        </View>
-        <View>
-            <ScrollView>
-            <TextInput    
-            style={styles.textInputContainer}
-            placeholder="How was the chow? Write your review here..."
-      />
-      </ScrollView>
-        </View>
-        <View>
-            <TouchableOpacity style={styles.container}>
-                <Text style={styles.textSpace} >Submit Your Review</Text>
-            </TouchableOpacity>
-        </View>
+            <View >
+                <Text style={styles.name}>{restaurantName}</Text>
+            </View>
+            <View style={styles.starPlacement}>
+                <Stars
+                    count={5}
+                    starSize={35}
+                    fullStar={require("./images/starFilled.png")}
+                    emptyStar={require("./images/starEmpty.png")}
+                    update={setStars}
+                />
+                <Text style={styles.ratingText}>Select your rating.</Text>
+            </View>
+            <View>
+                <ScrollView>
+                    <TextInput
+                        style={styles.textInputContainer}
+                        placeholder="How was the chow? Write your review here..."
+                        value={text}
+                        onChangeText={setText}
+                    />
+                </ScrollView>
+            </View>
+            <View>
+                <TouchableOpacity style={styles.container} onPress={() => readReviews()}>
+                    <Text style={styles.textSpace} >Submit Your Review</Text>
+                </TouchableOpacity>
+            </View>
         </ScrollView>
     )
 }
@@ -84,9 +93,11 @@ const styles = StyleSheet.create({
         height: 50,
         width: 340,
         backgroundColor: '#AF9BD5',
-        flexDirection: 'row',
+        // flexDirection: 'row',
         alignItems: 'center',
-        paddingHorizontal: 110,
+        textAlignVertical: 'center',
+        // paddingHorizontal: 70,
+        // paddingTop: 20,
         marginLeft: 16,
     },
     textSpace: {
