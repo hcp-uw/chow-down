@@ -16,12 +16,13 @@ const AddReview = ({ route, navigation }) => {
             text: text,
         }
 
+        // TODO: make below code more readable (less duplication, lines 19-44)
         // If User doesn't select stars
         if (stars == '') {
             console.log("no stars");
             Alert.alert("No Stars Inputed", "You Must Select a Rating to Proceed");
         }
-        // TODO: make below code more readable (less duplication)
+        // Enter this if there does not already exist a "reviews" array
         else if (typeof reviews === 'undefined') {
             // Pass and merge params back to home screen
             navigation.navigate({
@@ -29,7 +30,9 @@ const AddReview = ({ route, navigation }) => {
                 params: { reviews: [currReview] },
                 merge: true,
             });
-        } else {
+        }
+        // Enter this if there exists a "reviews" array
+        else {
             reviews.push(currReview)
             // Pass and merge params back to home screen
             navigation.navigate({

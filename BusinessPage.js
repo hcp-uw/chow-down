@@ -44,7 +44,7 @@ function BusinessPage({ route, navigation }) {
                 emptyStar={require("./images/starEmpty.png")}
               />
               {/** TODO: get num count and stars to align vertically */}
-              <Text style={styles.numCountText}> ({JSON.stringify(numberOfRatings)}) </Text>
+              <Text style={styles.numCountText}> ({JSON.stringify(numberOfRatings) + numRatingsCount()}) </Text>
             </View>
         </View>
 
@@ -86,7 +86,6 @@ function BusinessPage({ route, navigation }) {
     </ScrollView>
   );
 };
-
 
 // Text to display on whether a restaurant accepts Apple Pay
 const mobilePayments = (acceptsApplePay) => {
