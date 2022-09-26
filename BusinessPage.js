@@ -1,8 +1,10 @@
 import React from "react";
 import { ScrollView, View, Text, StyleSheet, Button, ImageBackground } from "react-native";
+import JSONDATA from './components/search-bar/MOCK_DATA.json';
 import Stars from "react-native-stars"; // npm install react-native-stars --save
 import { Ionicons, FontAwesome5 } from '@expo/vector-icons'; // for icons
 import CustomAddReviewButton from './components/custom-buttons/CustomAddReviewButton';
+import CustomReviewBox from './components/custom-buttons/CustomReviewBox';
 
 /**
  * Business Page is the default template for a restaurant's page.
@@ -72,17 +74,19 @@ function BusinessPage({ route, navigation }) {
           <Ionicons name="phone-portrait-outline" size={20} color="black" />
           <Text style={styles.restaurantDetailsText}> {mobilePayments(acceptsApplePay)} </Text>
         </View>
-        {/** Below lines are for testing purposes. Will turn into review "components" in future meetings */}
-        <View style={styles.restaurantDetails}>
-          <Text style={styles.restaurantDetailsText}> {JSON.stringify(reviews)} </Text>
         </View>
-      </View>
-
-      <View style={styles.largeSpace} />
-
-      <CustomAddReviewButton title="Add Your Review"
-      onPress={() => navigation.navigate('Add Review', {restaurantName, reviews})}
-      />
+        <View style={styles.largeSpace} />
+        <CustomAddReviewButton title="Add Your Review"
+        onPress={() => navigation.navigate('Add Review', {restaurantName, reviews})}
+        />
+        <Text style={styles.textStyle}>All Reviews</Text>
+        {/** Below lines are for testing purposes. Will turn into review "components" in future meetings */}
+        {reviews.map((val, key) => 
+         {
+           return (
+            <CustomReviewBox title={JSON.stringify(reviews)}/>
+           )
+           })}
     </ScrollView>
   );
 };
@@ -169,6 +173,13 @@ const styles = StyleSheet.create({
   largeSpace: {
     marginVertical: 10,
   },
+  textStyle: {
+    fontWeight: 'bold',
+    fontSize: 30,
+    marginTop: 25,
+    marginBottom: 30,
+    marginLeft: 25,
+},
 });
 
 export default BusinessPage;
