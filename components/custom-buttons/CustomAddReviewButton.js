@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 90,
         marginLeft: 16,
         borderRadius: 100,
+        marginBottom: 20,
     },
     textSpace: {
         textAlign: 'center',
