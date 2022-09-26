@@ -14,7 +14,7 @@ function BusinessPage({ route, navigation }) {
 
   // props passed in from React Navigation
   const { key, restaurantName, rating, numberOfRatings, cuisine,
-    addresslocation, phoneNumber, acceptsApplePay, img, reviews} = route.params;
+    addresslocation, phoneNumber, acceptsApplePay, img, reviews } = route.params;
 
   return (
     // Allows for scrolling
@@ -22,67 +22,71 @@ function BusinessPage({ route, navigation }) {
 
       {/** Displays an image behind restaurant text */}
       <ImageBackground source={{ uri: img }} resizeMode="cover" style={styles.imageBox}>
-        <View style={ styles.imageBackgroundText }> 
-            <Text style={styles.headerText}>
-              {JSON.stringify(restaurantName).replace(/\"/g, "")}
-            </Text>
+        <View style={styles.imageBackgroundText}>
+          <Text style={styles.headerText}>
+            {JSON.stringify(restaurantName).replace(/\"/g, "")}
+          </Text>
 
-            <Text style={styles.cuisineText}>
-              {JSON.stringify(cuisine).replace(/\"/g, "")}
-            </Text>
+          <Text style={styles.cuisineText}>
+            {JSON.stringify(cuisine).replace(/\"/g, "")}
+          </Text>
 
-            <View style={styles.largeSpace} />
+          <View style={styles.largeSpace} />
 
-            {/** Stars to display restaurant rating */}
-            <View style={styles.starDisplay}>
-              <Stars
-                display={parseFloat(JSON.stringify(rating))}
-                spacing={8}
-                count={5}
-                starSize={40}
-                fullStar={require("./images/starFilled.png")}
-                emptyStar={require("./images/starEmpty.png")}
-              />
-              {/** TODO: get num count and stars to align vertically */}
-              <Text style={styles.numCountText}> ({JSON.stringify(numberOfRatings)}) </Text>
-            </View>
+          {/** Stars to display restaurant rating */}
+          <View style={styles.starDisplay}>
+            <Stars
+              display={parseFloat(JSON.stringify(rating))}
+              spacing={8}
+              count={5}
+              starSize={40}
+              fullStar={require("./images/starFilled.png")}
+              emptyStar={require("./images/starEmpty.png")}
+            />
+            {/** TODO: get num count and stars to align vertically */}
+            <Text style={styles.numCountText}> ({JSON.stringify(numberOfRatings)}) </Text>
+          </View>
         </View>
 
       </ImageBackground>
 
       <View style={styles.smallSpace} />
 
-      {/** Displays some details about the restaurant (address, phone number etc.) 
+      <View style={styles.belowImageBackground}>
+        {/** Displays some details about the restaurant (address, phone number etc.) 
        * ToDo (low priority): rewrite this code to make more readable
       */}
-      <View style={styles.detailsBox}>
-        <View style={styles.restaurantDetails}>
-          <Ionicons name="location" size={20} color="black" />
-          <Text style={styles.restaurantDetailsText}>
-            {JSON.stringify(addresslocation).replace(/\"/g, "")}
-          </Text>
+        <View style={styles.detailsBox}>
+          <View style={styles.restaurantDetails}>
+            <Ionicons name="location" size={20} color="black" />
+            <Text style={styles.restaurantDetailsText}>
+              {JSON.stringify(addresslocation).replace(/\"/g, "")}
+            </Text>
+          </View>
+          <View style={styles.restaurantDetails}>
+            <FontAwesome5 name="phone" size={20} color="black" />
+            <Text style={styles.restaurantDetailsText}>
+              {JSON.stringify(phoneNumber).replace(/\"/g, "")}
+            </Text>
+          </View>
+          <View style={styles.restaurantDetails}>
+            <Ionicons name="phone-portrait-outline" size={20} color="black" />
+            <Text style={styles.restaurantDetailsText}> {mobilePayments(acceptsApplePay)} </Text>
+          </View>
+          {/** Below lines are for testing purposes. Will turn into review "components" in future meetings */}
+          <View style={styles.restaurantDetails}>
+            <Text style={styles.restaurantDetailsText}> {JSON.stringify(reviews)} </Text>
+          </View>
         </View>
-        <View style={styles.restaurantDetails}>
-          <FontAwesome5 name="phone" size={20} color="black" />
-          <Text style={styles.restaurantDetailsText}>
-            {JSON.stringify(phoneNumber).replace(/\"/g, "")}
-          </Text>
-        </View>
-        <View style={styles.restaurantDetails}>
-          <Ionicons name="phone-portrait-outline" size={20} color="black" />
-          <Text style={styles.restaurantDetailsText}> {mobilePayments(acceptsApplePay)} </Text>
-        </View>
-        {/** Below lines are for testing purposes. Will turn into review "components" in future meetings */}
-        <View style={styles.restaurantDetails}>
-          <Text style={styles.restaurantDetailsText}> {JSON.stringify(reviews)} </Text>
-        </View>
+
+        <View style={styles.largeSpace} />
+
+        {/** TODO: align add review button to be centered! */}
+        <CustomAddReviewButton title="Add Your Review"
+          onPress={() => navigation.navigate('Add Review', { restaurantName, reviews })}
+        />
       </View>
 
-      <View style={styles.largeSpace} />
-
-      <CustomAddReviewButton title="Add Your Review"
-      onPress={() => navigation.navigate('Add Review', {restaurantName, reviews})}
-      />
     </ScrollView>
   );
 };
@@ -145,7 +149,7 @@ const styles = StyleSheet.create({
   },
   // Box with restaurant details
   detailsBox: {
-    paddingLeft: 20,
+    // paddingLeft: 20,
     borderRadius: 10,
     marginHorizontal: 30,
     backgroundColor: "white",

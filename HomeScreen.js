@@ -14,12 +14,13 @@ import MapView from 'react-native-maps';
  * @param {navigation} supports React Navigation
  * @returns the Home Screen for the app
  */
- function HomeScreen({ navigation }) {
+function HomeScreen({ navigation }) {
     return (
         <View style={styles.container}>
-            <Image style={styles.logo} source={require('./images/ChowDownLogo.png')}/>
+            <Image style={styles.logo} source={require('./images/ChowDownLogo.png')} />
 
-            <View style={styles.largeSpace} />
+            <View style={styles.smallSpace} />
+            <View style={styles.smallSpace} />
 
             <View style={styles.searchInputContainer}>
                 <CustomSearchButton
@@ -28,14 +29,16 @@ import MapView from 'react-native-maps';
                 />
             </View>
 
-            <View style={styles.smallSpace} />
+            <View style={styles.largeSpace} />
 
-            <MapView style={styles.map}/>
-
-            <Button
-                title="Go to Add Review Template"
-                onPress={() => navigation.navigate("Add Review")}
-            />
+            <MapView
+                style={styles.map}
+                initialRegion={{
+                    latitude: 47.659,
+                    longitude: -122.308,
+                    latitudeDelta: .02,
+                    longitudeDelta: .02,
+                }} />
         </View>
     );
 }
@@ -48,8 +51,8 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start',
     },
     logo: {
-        height: 100, 
-        aspectRatio: 1, 
+        height: 100,
+        aspectRatio: 1,
         marginTop: 50,
     },
     searchInputContainer: {
@@ -69,8 +72,10 @@ const styles = StyleSheet.create({
         marginVertical: 20,
     },
     map: {
-        width: Dimensions.get('window').width,
-        height: Dimensions.get('window').height,
+        // width: Dimensions.get('window').width,
+        // height: Dimensions.get('window').height,
+        height: '50%',
+        width: '95%',
     },
 })
 

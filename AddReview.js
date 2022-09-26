@@ -18,7 +18,6 @@ const AddReview = ({ route, navigation }) => {
 
         // If User doesn't select stars
         if (stars == '') {
-            console.log("no stars");
             Alert.alert("No Stars Inputed", "You Must Select a Rating to Proceed");
         }
         // TODO: make below code more readable (less duplication)
@@ -56,17 +55,23 @@ const AddReview = ({ route, navigation }) => {
                 <Text style={styles.ratingText}>Select your rating.</Text>
             </View>
             <View>
+                {/** TODO: ALIGN ITEMS!!! */}
                 <ScrollView>
                     <TextInput
                         style={styles.textInputContainer}
                         placeholder="How was the chow? Write your review here..."
                         value={text}
                         onChangeText={setText}
+
+                        // Below is a solution to auto-break text that is longer than the text box
+                        // HOWEVER, it is only compatiable with Android devices
+                        multiline={true}
+                        textBreakStrategy={"highQuality"}
                     />
                 </ScrollView>
             </View>
             <View>
-                <TouchableOpacity style={styles.container} onPress={() => readReviews()}>
+                <TouchableOpacity style={styles.submitContainer} onPress={() => readReviews()}>
                     <Text style={styles.textSpace} >Submit Your Review</Text>
                 </TouchableOpacity>
             </View>
@@ -77,6 +82,8 @@ const AddReview = ({ route, navigation }) => {
 const styles = StyleSheet.create({
     body: {
         backgroundColor: "#FFF4BE",
+        // flex: 1,
+        // flexDirection: "column",
     },
     name: {
         fontWeight: 'bold',
@@ -89,7 +96,7 @@ const styles = StyleSheet.create({
         marginLeft: 20,
         marginTop: 10,
     },
-    container: {
+    submitContainer: {
         height: 50,
         width: 340,
         backgroundColor: '#AF9BD5',
@@ -97,11 +104,12 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingHorizontal: 110,
         marginLeft: 16,
+        paddingTop: 50,
     },
     textSpace: {
         textAlign: 'center',
         fontWeight: 'bold',
-        color: 'white',
+        color: 'black',
         fontSize: 18,
         // fontFamily: 'Helvetica',
     },
@@ -113,13 +121,13 @@ const styles = StyleSheet.create({
     },
     textInputContainer: {
         width: '90%',
-        height: '50%',
+        height: '100%',
         justifyContent: 'center',
         borderColor: 'black',
         borderWidth: 2,
-        padding: 10,
-        marginTop: 20,
-        marginLeft: 20,
+        paddingBottom: 50,
+        // marginTop: 20,
+        // marginLeft: 20,
     },
 });
 
