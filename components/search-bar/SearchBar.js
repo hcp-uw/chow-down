@@ -28,7 +28,7 @@ const SearchBar = ({ navigation }) => {
          {JSONDATA.filter((val) => {
             if (searchTerm == "") {
                return val
-            } else if (val.restaurantName.toLowerCase().includes(searchTerm.toLowerCase())) {
+            } else if (val.restaurantName.toLowerCase().includes(searchTerm.toLowerCase()) || val.cuisine.toLowerCase().includes(searchTerm.toLowerCase())) {
                return val
             }
          }).map((val, key) => 

@@ -13,9 +13,11 @@ const styles = StyleSheet.create({
         backgroundColor: '#AF9BD5',
         flexDirection: 'row',
         alignItems: 'center',
+        textAlign: 'center',
         paddingHorizontal: 90,
         marginLeft: 16,
         borderRadius: 100,
+        marginBottom: 20,
     },
     textSpace: {
         textAlign: 'center',
