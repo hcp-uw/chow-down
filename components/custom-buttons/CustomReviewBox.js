@@ -6,7 +6,7 @@ const CustomReviewBox = ({ reviewText, numStars }) => {
     <View style={styles.detailsBox}>
         <View style={styles.restaurantDetails}>
             <Stars 
-            default={JSON.stringify(numStars)}
+            default={numStars}
             fullStar={require("../../images/starFilled.png")}
             emptyStar={require("../../images/starEmpty.png")}
             />
