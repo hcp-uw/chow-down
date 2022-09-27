@@ -1,6 +1,7 @@
 import React from "react";
 import { ScrollView, StyleSheet, View, Text, TextInput, TouchableOpacity, Alert } from "react-native"
 import Stars from "react-native-stars";
+import CustomAddReviewButton from './components/custom-buttons/CustomAddReviewButton';
 
 
 
@@ -41,7 +42,7 @@ const AddReview = ({ route, navigation }) => {
 
     return (
         <ScrollView style={styles.body}>
-            <View >
+            <View style={styles.titleSpace}>
                 <Text style={styles.name}>{restaurantName}</Text>
             </View>
             <View style={styles.starPlacement}>
@@ -54,12 +55,12 @@ const AddReview = ({ route, navigation }) => {
                 />
                 <Text style={styles.ratingText}>Select your rating.</Text>
             </View>
-            <View>
+            <View style={styles.smallSpace}>
                 {/** TODO: ALIGN ITEMS!!! */}
                 <ScrollView>
                     <TextInput
                         style={styles.textInputContainer}
-                        placeholder="How was the chow? Write your review here..."
+                        placeholder="  How was the chow? Write your review here..."
                         value={text}
                         onChangeText={setText}
 
@@ -71,9 +72,7 @@ const AddReview = ({ route, navigation }) => {
                 </ScrollView>
             </View>
             <View>
-                <TouchableOpacity style={styles.submitContainer} onPress={() => readReviews()}>
-                    <Text style={styles.textSpace} >Submit Your Review</Text>
-                </TouchableOpacity>
+                <CustomAddReviewButton title="Submit Your Review" onPress={() => readReviews()}/>
             </View>
         </ScrollView>
     )
@@ -93,8 +92,9 @@ const styles = StyleSheet.create({
     },
     starPlacement: {
         flexDirection: 'row',
-        marginLeft: 20,
-        marginTop: 10,
+        // marginLeft: 20,
+        // marginTop: 10,
+        justifyContent: 'center',
     },
     submitContainer: {
         height: 50,
@@ -102,12 +102,14 @@ const styles = StyleSheet.create({
         backgroundColor: '#AF9BD5',
         flexDirection: 'row',
         alignItems: 'center',
-        paddingHorizontal: 110,
+        textAlign: 'center',
+        paddingHorizontal: 90,
         marginLeft: 16,
         paddingTop: 50,
+        borderRadius: 100,
+        marginBottom: 20,
     },
     textSpace: {
-        textAlign: 'center',
         fontWeight: 'bold',
         color: 'black',
         fontSize: 18,
@@ -120,7 +122,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     textInputContainer: {
-        width: '90%',
+        width: 340,
         height: '100%',
         justifyContent: 'center',
         borderColor: 'black',
@@ -128,6 +130,14 @@ const styles = StyleSheet.create({
         paddingBottom: 50,
         // marginTop: 20,
         // marginLeft: 20,
+    },
+    smallSpace: {
+        marginTop: 25,
+        marginBottom: 30,
+        alignItems: 'center',
+    },
+    titleSpace: {
+        alignItems: 'left',
     },
 });
 

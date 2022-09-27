@@ -88,6 +88,7 @@ function BusinessPage({ route, navigation }) {
             <CustomReviewBox reviewText={JSON.stringify(val.text).replace(/\"/g, "")} numStars={val.stars}/>
            )
            })}
+           </View>
     </ScrollView>
   );
 };
