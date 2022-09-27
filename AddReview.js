@@ -72,7 +72,7 @@ const AddReview = ({ route, navigation }) => {
             </View>
             <View>
                 <TouchableOpacity style={styles.submitContainer} onPress={() => readReviews()}>
-                    <Text style={styles.textSpace} >Submit Your Review</Text>
+                    <Text style={styles.textSpace}> Submit Your Review </Text>
                 </TouchableOpacity>
             </View>
         </ScrollView>

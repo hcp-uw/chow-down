@@ -58,39 +58,40 @@ function BusinessPage({ route, navigation }) {
         {/** Displays some details about the restaurant (address, phone number etc.) 
        * ToDo (low priority): rewrite this code to make more readable
       */}
-      <View style={styles.detailsBox}>
-        <View style={styles.restaurantDetails}>
-          <Ionicons name="location" size={20} color="black" />
-          <Text style={styles.restaurantDetailsText}>
-            {JSON.stringify(addresslocation).replace(/\"/g, "")}
-          </Text>
-        </View>
-        <View style={styles.restaurantDetails}>
-          <FontAwesome5 name="phone" size={20} color="black" />
-          <Text style={styles.restaurantDetailsText}>
-            {JSON.stringify(phoneNumber).replace(/\"/g, "")}
-          </Text>
-        </View>
-        <View style={styles.restaurantDetails}>
-          <Ionicons name="phone-portrait-outline" size={20} color="black" />
-          <Text style={styles.restaurantDetailsText}> {mobilePayments(acceptsApplePay)} </Text>
-        </View>
+        <View style={styles.detailsBox}>
+          <View style={styles.restaurantDetails}>
+            <Ionicons name="location" size={20} color="black" />
+            <Text style={styles.restaurantDetailsText}>
+              {JSON.stringify(addresslocation).replace(/\"/g, "")}
+            </Text>
+          </View>
+          <View style={styles.restaurantDetails}>
+            <FontAwesome5 name="phone" size={20} color="black" />
+            <Text style={styles.restaurantDetailsText}>
+              {JSON.stringify(phoneNumber).replace(/\"/g, "")}
+            </Text>
+          </View>
+          <View style={styles.restaurantDetails}>
+            <Ionicons name="phone-portrait-outline" size={20} color="black" />
+            <Text style={styles.restaurantDetailsText}> {mobilePayments(acceptsApplePay)} </Text>
+          </View>
         </View>
         <View style={styles.largeSpace} />
         <CustomAddReviewButton title="Add Your Review"
-        onPress={() => navigation.navigate('Add Review', {restaurantName, reviews})}
+          onPress={() => navigation.navigate('Add Review', { restaurantName, reviews })}
         />
         <Text style={styles.textStyle}>All Reviews</Text>
         {/** Below lines are for testing purposes. Will turn into review "components" in future meetings */}
-        {reviews.map((val, key) => 
-         {
-           return (
-            <CustomReviewBox reviewText={JSON.stringify(val.text).replace(/\"/g, "")} numStars={val.stars}/>
-           )
-           })}
+        {reviews.map((val, key) => {
+          return (
+            <CustomReviewBox reviewText={JSON.stringify(val.text).replace(/\"/g, "")} numStars={val.stars} />
+          )
+        })}
+        </View>
     </ScrollView>
   );
 };
+
 
 
 // Text to display on whether a restaurant accepts Apple Pay
@@ -180,7 +181,7 @@ const styles = StyleSheet.create({
     marginTop: 25,
     marginBottom: 30,
     marginLeft: 28,
-},
+  },
 });
 
 export default BusinessPage;
