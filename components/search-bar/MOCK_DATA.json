@@ -20,7 +20,8 @@
         "acceptsApplePay": "Yes",
         "rating": 3.1,
         "numberOfRatings": 308,
-        "img": "https://hfs.uw.edu/getmedia/3d40434a-89f6-4b7a-a2d5-8aff98f6be2e/LOC-LP-card-with-logo.jpg.aspx?width=800&height=450&ext=.jpg"
+        "img": "https://hfs.uw.edu/getmedia/3d40434a-89f6-4b7a-a2d5-8aff98f6be2e/LOC-LP-card-with-logo.jpg.aspx?width=800&height=450&ext=.jpg",
+        "reviews": []
     },
     {
         "restaurantName": "Husky Den Food Court",
@@ -30,7 +31,8 @@
         "phoneNumber": "206-221-3361",
         "acceptsApplePay": "Yes",
         "rating": 3.5,
-        "numberOfRatings": 72
+        "numberOfRatings": 72,
+        "reviews": []
     },
     {
         "restaurantName": "Motosurf",
@@ -40,7 +42,8 @@
         "phoneNumber": "206-221-3361",
         "acceptsApplePay": "Yes",
         "rating": 4.2,
-        "numberOfRatings": 19
+        "numberOfRatings": 19,
+        "reviews": []
     },
     {
         "restaurantName": "Ace Sushi",
@@ -50,7 +53,8 @@
         "phoneNumber": "206-221-3361",
         "acceptsApplePay": "Yes",
         "rating": 2.5,
-        "numberOfRatings": 4
+        "numberOfRatings": 4,
+        "reviews": []
     },
     {
         "restaurantName": "Crafted",
@@ -60,7 +64,8 @@
         "phoneNumber": "206-221-3361",
         "acceptsApplePay": "Yes",
         "rating": 3,
-        "numberOfRatings": 4
+        "numberOfRatings": 4,
+        "reviews": []
     },
     {
         "restaurantName": "DUB Street Burgers",
@@ -70,7 +75,8 @@
         "phoneNumber": "206-221-3361",
         "acceptsApplePay": "Yes",
         "rating": 2.7,
-        "numberOfRatings": 32
+        "numberOfRatings": 32,
+        "reviews": []
     },
     {
         "restaurantName": "Firecracker",
@@ -80,7 +86,8 @@
         "phoneNumber": "206-221-3361",
         "acceptsApplePay": "Yes",
         "rating": 2.7,
-        "numberOfRatings": 3
+        "numberOfRatings": 3,
+        "reviews": []
     },
     {
         "restaurantName": "Red Radish",
@@ -90,7 +97,8 @@
         "phoneNumber": "206-221-3361",
         "acceptsApplePay": "Yes",
         "rating": 4,
-        "numberOfRatings": 2
+        "numberOfRatings": 2,
+        "reviews": []
     },
     {
         "restaurantName": "Noodle",
@@ -100,7 +108,8 @@
         "phoneNumber": "206-221-3361",
         "acceptsApplePay": "Yes",
         "rating": 1.8,
-        "numberOfRatings": 4
+        "numberOfRatings": 4,
+        "reviews": []
     },
     {
         "restaurantName": "Pagliacci Pizza, HUB",
@@ -110,7 +119,8 @@
         "phoneNumber": "206-221-3361",
         "acceptsApplePay": "Yes",
         "rating": 3.3,
-        "numberOfRatings": 11
+        "numberOfRatings": 11,
+        "reviews": []
     },
     {
         "restaurantName": "Orin's Place",
@@ -120,7 +130,8 @@
         "phoneNumber": "206-616-8992",
         "acceptsApplePay": "Yes",
         "rating": 3.8,
-        "numberOfRatings": 19
+        "numberOfRatings": 19,
+        "reviews": []
     },
     {
         "restaurantName": "Pagliacci Pizza, North Campus",
@@ -130,7 +141,8 @@
         "phoneNumber": "206-616-4329",
         "acceptsApplePay": "Yes",
         "rating": 3.3,
-        "numberOfRatings": 11
+        "numberOfRatings": 11,
+        "reviews": []
     },
     {
         "restaurantName": "Parnassus Café ",
@@ -140,7 +152,8 @@
         "phoneNumber": "206-543-7737",
         "acceptsApplePay": "Yes",
         "rating": 4.6,
-        "numberOfRatings": 98
+        "numberOfRatings": 98,
+        "reviews": []
     },
     {
         "restaurantName": "Denny Café",
@@ -150,7 +163,8 @@
         "phoneNumber": "206-221-7796",
         "acceptsApplePay": "Yes",
         "rating": 4,
-        "numberOfRatings": 1
+        "numberOfRatings": 1,
+        "reviews": []
     },
     {
         "restaurantName": "Husky Grind Café, District Market",
@@ -160,7 +174,8 @@
         "phoneNumber": "206-221-7796",
         "acceptsApplePay": "Yes",
         "rating": 4,
-        "numberOfRatings": 1
+        "numberOfRatings": 1,
+        "reviews": []
     },
     {
         "restaurantName": "Husky Grind Café, Mercer Court",
@@ -170,7 +185,8 @@
         "phoneNumber": "206-221-2398",
         "acceptsApplePay": "Yes",
         "rating": 4.2,
-        "numberOfRatings": 72
+        "numberOfRatings": 72,
+        "reviews": []
     },
     {
         "restaurantName": "Microsoft Café",
@@ -180,7 +196,8 @@
         "phoneNumber": "206-543-7737",
         "acceptsApplePay": "Yes",
         "rating": 3.8,
-        "numberOfRatings": 20
+        "numberOfRatings": 20,
+        "reviews": []
     },
     {
         "restaurantName": "Suzzalo Starbucks",
@@ -191,7 +208,8 @@
         "acceptsApplePay": "Yes",
         "rating": 3.6,
         "numberOfRatings": 44,
-        "undefined": "-1 from steven (reasonable"
+        "undefined": "-1 from steven (reasonable",
+        "reviews": []
     },
     {
         "restaurantName": "Overpass Espresso",
@@ -201,7 +219,8 @@
         "phoneNumber": "206-616-7623",
         "acceptsApplePay": "Yes",
         "rating": 3.3,
-        "numberOfRatings": 7
+        "numberOfRatings": 7,
+        "reviews": []
     },
     {
         "restaurantName": "Portage Bay Café",
@@ -210,7 +229,8 @@
         "website": "https://www.portagebaycafe.com/roosevelt",
         "phoneNumber": "(206) 547-8230",
         "rating": 4.3,
-        "numberOfRatings": 1983
+        "numberOfRatings": 1983,
+        "reviews": []
     },
     {
         "restaurantName": "Little Duck",
@@ -219,7 +239,8 @@
         "website": "https://littleduckwa.com/",
         "phoneNumber": "(206) 695-2564",
         "rating": 4.5,
-        "numberOfRatings": 12
+        "numberOfRatings": 12,
+        "reviews": []
     },
     {
         "restaurantName": "Henry's Taiwan Kitchen",
@@ -228,7 +249,8 @@
         "website": "http://www.henrysseattle.com/",
         "phoneNumber": "(206) 547-8899",
         "rating": 3.5,
-        "numberOfRatings": 256
+        "numberOfRatings": 256,
+        "reviews": []
     },
     {
         "restaurantName": "Basil Viet Kitchen",
@@ -237,7 +259,8 @@
         "website": "https://food.google.com/chooseprovider?restaurantId=/g/11fkttc606&g2lbs=AL1YbfV9ElbHs4oWiO5RrqTTWyNWeDPlLidUTs1tw5fbATaKognCfkDOk5yHeN133BV0TAY9RC4eIfnJg3KtuKdwkSY0Sx7l_vV8RjAbvN6S4181J9O4fwjZR6NBZ2OkSZMADk60eSkv&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=Bw4PY_-3LePu9AOJzpyYBA&ei=Bw4PY_-3LePu9AOJzpyYBA&fo_s=OA,AH&sa=X&ved=2ahUKEwi_19a-x_D5AhVjN30KHQknB0MQjYwDKAF6BAhtEAI&sei=Cfi2BVF5pzu8EfMlxO_HF_dC&utm_campaign&utm_source=search",
         "phoneNumber": "(206) 566-5136",
         "rating": 4.4,
-        "numberOfRatings": 77
+        "numberOfRatings": 77,
+        "reviews": []
     },
     {
         "restaurantName": "Café Happy",
@@ -246,7 +269,8 @@
         "website": " https://www.cafe-happy.com/seattlemenu.html",
         "phoneNumber": "(425) 822-9696",
         "rating": 3.9,
-        "numberOfRatings": 59
+        "numberOfRatings": 59,
+        "reviews": []
     },
     {
         "restaurantName": "Green House Korean Restaurant",
@@ -255,7 +279,8 @@
         "website": "https://uwkoreanrestaurant.com/",
         "phoneNumber": "(206) 632-2600",
         "rating": 3.9,
-        "numberOfRatings": 195
+        "numberOfRatings": 195,
+        "reviews": []
     },
     {
         "restaurantName": "Guanaco's Tacos Pupuseria",
@@ -264,7 +289,8 @@
         "website": "https://guanacostacos.weebly.com/",
         "phoneNumber": "(206) 547-2369",
         "rating": 4.3,
-        "numberOfRatings": 579
+        "numberOfRatings": 579,
+        "reviews": []
     },
     {
         "restaurantName": "Saigon Deli",
@@ -273,7 +299,8 @@
         "website": "https://saigondeliuw.com/",
         "phoneNumber": "(206) 634-2866",
         "rating": 4.6,
-        "numberOfRatings": 229
+        "numberOfRatings": 229,
+        "reviews": []
     },
     {
         "restaurantName": "Korean Tofu House",
@@ -282,7 +309,8 @@
         "website": "https://koreantofuhouse.com/",
         "phoneNumber": "(206) 632-3119",
         "rating": 4.3,
-        "numberOfRatings": 838
+        "numberOfRatings": 838,
+        "reviews": []
     },
     {
         "restaurantName": "Little Thai",
@@ -291,7 +319,8 @@
         "website": "https://littlethaiseattle.com/",
         "phoneNumber": "(206) 548-8009",
         "rating": 4.3,
-        "numberOfRatings": 331
+        "numberOfRatings": 331,
+        "reviews": []
     },
     {
         "restaurantName": "Sizzle & Crunch",
@@ -300,7 +329,8 @@
         "website": "http://sizzleandcrunch.com/",
         "phoneNumber": "(206) 547-2723",
         "rating": 4.5,
-        "numberOfRatings": 411
+        "numberOfRatings": 411,
+        "reviews": []
     },
     {
         "restaurantName": "Hey I am Yogost",
@@ -309,7 +339,8 @@
         "website": "https://www.yogost.com.au/",
         "phoneNumber": "(206) 402-6171",
         "rating": 3.9,
-        "numberOfRatings": 52
+        "numberOfRatings": 52,
+        "reviews": []
     },
     {
         "restaurantName": "University Teriyaki",
@@ -318,7 +349,8 @@
         "website": "http://places.singleplatform.com/university-teriyaki/menu?ref=google",
         "phoneNumber": "(206) 632-5688",
         "rating": 3.8,
-        "numberOfRatings": 263
+        "numberOfRatings": 263,
+        "reviews": []
     },
     {
         "restaurantName": "Shultzy's Bar & Grill",
@@ -327,7 +359,8 @@
         "website": "https://www.shultzys.com/menus",
         "phoneNumber": "(206) 548-9461",
         "rating": 4.3,
-        "numberOfRatings": 1046
+        "numberOfRatings": 1046,
+        "reviews": []
     },
     {
         "restaurantName": "Café Solstice",
@@ -336,7 +369,8 @@
         "website": "https://www.facebook.com/cafesolstice",
         "phoneNumber": "(206) 675-0850",
         "rating": 4.4,
-        "numberOfRatings": 648
+        "numberOfRatings": 648,
+        "reviews": []
     },
     {
         "restaurantName": "U DupBop",
@@ -345,7 +379,8 @@
         "website": "https://www.seamless.com/menu/u-dupbop-4124-university-way-ne-seattle/2329611",
         "phoneNumber": "(206) 632-6975",
         "rating": 4.5,
-        "numberOfRatings": 130
+        "numberOfRatings": 130,
+        "reviews": []
     },
     {
         "restaurantName": "The Alley",
@@ -354,7 +389,8 @@
         "website": "https://food.google.com/chooseprovider?restaurantId=/g/11ft5703kl&g2lbs=AL1YbfX194a5MQezLQoRpAVw7FWqvDJr9xEh7GWKMhoYycCgC8oVrE_gcQa_p9Brt11kr9hps4k_JKWehaYW1G5F0C8iMcZA803NVeuzBmojP_6_nHAKjeK7OWv_EZswkkb9jzwBHQ7P&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=fRUPY_jcMd-L0PEPi-6T-Ao&ei=fRUPY_jcMd-L0PEPi-6T-Ao&fo_s=OA,AH&sa=X&ved=2ahUKEwi4j7zNzvD5AhXfBTQIHQv3BK8QjYwDKAB6BAhkEAE&sei=CaWauBtDHDmkEfespq4eLJ46&utm_campaign&utm_source=search",
         "phoneNumber": "(206) 545-6968",
         "rating": 4.1,
-        "numberOfRatings": 116
+        "numberOfRatings": 116,
+        "reviews": []
     },
     {
         "restaurantName": "The BoB",
@@ -363,7 +399,8 @@
         "website": "https://thebob.business.site/?utm_source=gmb&utm_medium=referral",
         "phoneNumber": "(206) 633-6582",
         "rating": 4.2,
-        "numberOfRatings": 147
+        "numberOfRatings": 147,
+        "reviews": []
     },
     {
         "restaurantName": "Big Time Brewery",
@@ -372,7 +409,8 @@
         "website": "http://bigtimebrewery.com/",
         "phoneNumber": "(206) 545-4509",
         "rating": 4.3,
-        "numberOfRatings": 393
+        "numberOfRatings": 393,
+        "reviews": []
     },
     {
         "restaurantName": "Aladdin Char Burger",
@@ -381,7 +419,8 @@
         "website": "https://www.aladdincharburger.com/",
         "phoneNumber": "(206) 545-3858",
         "rating": 4.9,
-        "numberOfRatings": 29
+        "numberOfRatings": 29,
+        "reviews": []
     },
     {
         "restaurantName": "Aladdin Gyro-Cery",
@@ -390,7 +429,8 @@
         "website": "https://www.aladdingyro.com/",
         "phoneNumber": "(206) 632-5253",
         "rating": 4.5,
-        "numberOfRatings": 1636
+        "numberOfRatings": 1636,
+        "reviews": []
     },
     {
         "restaurantName": "Boba Up",
@@ -399,7 +439,8 @@
         "website": "https://bobaupseattle.com/",
         "phoneNumber": "(206) 547-8800",
         "rating": 4.6,
-        "numberOfRatings": 694
+        "numberOfRatings": 694,
+        "reviews": []
     },
     {
         "restaurantName": "Sushi Burrito",
@@ -408,7 +449,8 @@
         "website": "https://www.ijsushiburrito.com/",
         "phoneNumber": "(206) 547-2168",
         "rating": 4,
-        "numberOfRatings": 67
+        "numberOfRatings": 67,
+        "reviews": []
     },
     {
         "restaurantName": "Samurai Noodle",
@@ -417,7 +459,8 @@
         "website": "http://www.samurainoodle.com/",
         "phoneNumber": "(206) 547-1774",
         "rating": 4.1,
-        "numberOfRatings": 631
+        "numberOfRatings": 631,
+        "reviews": []
     },
     {
         "restaurantName": "Burger and Kabob Hut",
@@ -426,7 +469,8 @@
         "website": "https://burgerhut.godaddysites.com/",
         "phoneNumber": "(206) 632-0324",
         "rating": 4.4,
-        "numberOfRatings": 2037
+        "numberOfRatings": 2037,
+        "reviews": []
     },
     {
         "restaurantName": "Starbucks, UDistrict",
@@ -435,7 +479,8 @@
         "website": "https://www.starbucks.com/store-locator/store/13739/4147-university-way-avenue-4147-university-way-ne-seattle-wa-981056213-us",
         "phoneNumber": "(206) 547-3280",
         "rating": 4.2,
-        "numberOfRatings": 696
+        "numberOfRatings": 696,
+        "reviews": []
     },
     {
         "restaurantName": "Café on the Ave",
@@ -444,7 +489,8 @@
         "website": "https://www.facebook.com/Cafe-on-the-Ave-123777417636859/",
         "phoneNumber": "(206) 632-6001",
         "rating": 4.1,
-        "numberOfRatings": 972
+        "numberOfRatings": 972,
+        "reviews": []
     },
     {
         "restaurantName": "Bulldog News",
@@ -453,7 +499,8 @@
         "website": "http://www.bulldognews.com/",
         "phoneNumber": "(206) 632-6397",
         "rating": 4.6,
-        "numberOfRatings": 103
+        "numberOfRatings": 103,
+        "reviews": []
     },
     {
         "restaurantName": "University Food & Beverages Market",
@@ -462,7 +509,8 @@
         "website": "https://www.facebook.com/pages/category/Food---beverage/University-Food-Beverage-Market-105403677512338/",
         "phoneNumber": "(206) 547-9887",
         "rating": 3.9,
-        "numberOfRatings": 7
+        "numberOfRatings": 7,
+        "reviews": []
     },
     {
         "restaurantName": "Phở Than Brothers",
@@ -471,7 +519,8 @@
         "website": "http://thanbrothers.com/",
         "phoneNumber": "(206) 632-7272",
         "rating": 4.2,
-        "numberOfRatings": 337
+        "numberOfRatings": 337,
+        "reviews": []
     },
     {
         "restaurantName": "Mama's Viet Kitchen",
@@ -480,7 +529,8 @@
         "website": "http://mamasvietkitchen.com/",
         "phoneNumber": "(206) 545-6992",
         "rating": 4.7,
-        "numberOfRatings": 48
+        "numberOfRatings": 48,
+        "reviews": []
     },
     {
         "restaurantName": "Byrek & Baguette",
@@ -489,7 +539,8 @@
         "website": "http://www.byrekandbaguette.org/",
         "phoneNumber": "(206) 632-3864",
         "rating": 4.6,
-        "numberOfRatings": 407
+        "numberOfRatings": 407,
+        "reviews": []
     },
     {
         "restaurantName": "Café Allegro",
@@ -498,7 +549,8 @@
         "website": "http://www.seattleallegro.com/",
         "phoneNumber": "(206) 633-3030",
         "rating": 4.5,
-        "numberOfRatings": 622
+        "numberOfRatings": 622,
+        "reviews": []
     },
     {
         "restaurantName": "Boba Gem Tea House",
@@ -507,7 +559,8 @@
         "website": "https://www.bobagemteahouse.com/",
         "phoneNumber": "(206) 545-3866",
         "rating": 4.5,
-        "numberOfRatings": 69
+        "numberOfRatings": 69,
+        "reviews": []
     },
     {
         "restaurantName": "Finn Maccools",
@@ -516,7 +569,8 @@
         "website": "https://www.finnmaccools.com/",
         "phoneNumber": "(206) 675-0885",
         "rating": 4.1,
-        "numberOfRatings": 461
+        "numberOfRatings": 461,
+        "reviews": []
     },
     {
         "restaurantName": "Jai Thai ",
@@ -525,7 +579,8 @@
         "website": "https://jaithairestaurant.com/",
         "phoneNumber": "(206) 547-9999",
         "rating": 4.1,
-        "numberOfRatings": 114
+        "numberOfRatings": 114,
+        "reviews": []
     },
     {
         "restaurantName": "Fresh Café",
@@ -534,7 +589,8 @@
         "website": "https://www.mapquest.com/us/washington/fresh-cafe-431691501",
         "phoneNumber": "(206) 547-0611",
         "rating": 4.6,
-        "numberOfRatings": 38
+        "numberOfRatings": 38,
+        "reviews": []
     },
     {
         "restaurantName": "BB's Teriyaki & Grill",
@@ -543,7 +599,8 @@
         "website": "http://bbsteriyaki.com/",
         "phoneNumber": "(206) 876-9105",
         "rating": 4.2,
-        "numberOfRatings": 333
+        "numberOfRatings": 333,
+        "reviews": []
     },
     {
         "restaurantName": "H-Mart",
@@ -552,7 +609,8 @@
         "website": "https://www.hmartus.com/",
         "phoneNumber": "(206) 547-0767",
         "rating": 4.4,
-        "numberOfRatings": 802
+        "numberOfRatings": 802,
+        "reviews": []
     },
     {
         "restaurantName": "bb.q Chicken",
@@ -561,7 +619,8 @@
         "website": "https://bbq-chicken-uw-chicken-restaurant.business.site",
         "phoneNumber": "(206) 822-6338",
         "rating": 3.3,
-        "numberOfRatings": 191
+        "numberOfRatings": 191,
+        "reviews": []
     },
     {
         "restaurantName": "Chilli's South Indian Cuisine",
@@ -570,7 +629,8 @@
         "website": "chilissouthindianrestaurant.com",
         "phoneNumber": "(206) 633-1458",
         "rating": 4.1,
-        "numberOfRatings": 1018
+        "numberOfRatings": 1018,
+        "reviews": []
     },
     {
         "restaurantName": "Sultan Gryo & Shawarma",
@@ -579,7 +639,8 @@
         "website": "https://food.google.com/chooseprovider?restaurantId=/g/11xb886hv&g2lbs=AL1YbfWAVeRpT7-vNiJz1nPyTKYR8YaIPEG1QI6mw3rR238hjQIcP1SiHQmcnXOmEp7OxzLKEy21eg0lqqygHv9xjO5l1aRLBXddTuog3hawkNPPM0Sn_R4%3D&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=7TgQY8mhGr3H0PEP1dWs0AI&ei=7TgQY8mhGr3H0PEP1dWs0AI&fo_s=OA,AH&orderType=2&sa=X&ved=2ahUKEwiJzJPF5PL5AhW9IzQIHdUqCyoQjYwDKAB6BAhlEAE&sei=CYZXUMrl5PmgEd3FARoCmRi4&utm_campaign&utm_source=search",
         "phoneNumber": "(206) 632-7844",
         "rating": 4.4,
-        "numberOfRatings": 571
+        "numberOfRatings": 571,
+        "reviews": []
     },
     {
         "restaurantName": "Thanh Vi ",
@@ -588,7 +649,8 @@
         "website": "http://www.thanhvi.net/",
         "phoneNumber": "(206) 633-7867",
         "rating": 4.3,
-        "numberOfRatings": 333
+        "numberOfRatings": 333,
+        "reviews": []
     },
     {
         "restaurantName": "Thaiger Room",
@@ -597,7 +659,8 @@
         "website": "thaigerroomseattle.com",
         "phoneNumber": "(206) 632-9299",
         "rating": 3.7,
-        "numberOfRatings": 355
+        "numberOfRatings": 355,
+        "reviews": []
     },
     {
         "restaurantName": "Chipotle Mexican Grill",
@@ -606,7 +669,8 @@
         "website": "https://locations.chipotle.com/wa/seattle/4229-university-way-ne",
         "phoneNumber": "(206) 547-4644",
         "rating": 3.7,
-        "numberOfRatings": 838
+        "numberOfRatings": 838,
+        "reviews": []
     },
     {
         "restaurantName": "Noodle Nation ",
@@ -616,7 +680,8 @@
         "phoneNumber": "(206) 632-5833",
         "acceptsApplePay": "CLOSED",
         "rating": 4.5,
-        "numberOfRatings": 146
+        "numberOfRatings": 146,
+        "reviews": []
     },
     {
         "restaurantName": "A Burger Place",
@@ -626,7 +691,8 @@
         "phoneNumber": "(206) 547-5096",
         "acceptsApplePay": "CLOSED",
         "rating": 4.6,
-        "numberOfRatings": 272
+        "numberOfRatings": 272,
+        "reviews": []
     },
     {
         "restaurantName": "Phở Shizzle",
@@ -635,7 +701,8 @@
         "website": "https://www.phoshizzlerestaurant.com/",
         "phoneNumber": "(206) 632-1078",
         "rating": 4.2,
-        "numberOfRatings": 566
+        "numberOfRatings": 566,
+        "reviews": []
     },
     {
         "restaurantName": "Call A Chicken",
@@ -644,7 +711,8 @@
         "website": "https://calledachicken.com",
         "phoneNumber": "(206) 545-6979",
         "rating": 3.5,
-        "numberOfRatings": 25
+        "numberOfRatings": 25,
+        "reviews": []
     },
     {
         "restaurantName": "Bugis",
@@ -653,7 +721,8 @@
         "website": "https://app.cheqplease.com/partner/5689",
         "phoneNumber": "(206) 547-1918",
         "rating": 4.5,
-        "numberOfRatings": 167
+        "numberOfRatings": 167,
+        "reviews": []
     },
     {
         "restaurantName": "Nuodle Express",
@@ -662,7 +731,8 @@
         "website": "https://www.instagram.com/nuodle.seattle/?hl=en",
         "phoneNumber": "(206) 775-3333",
         "rating": 2.9,
-        "numberOfRatings": 15
+        "numberOfRatings": 15,
+        "reviews": []
     },
     {
         "restaurantName": "Cedar's of Lebanon",
@@ -671,7 +741,8 @@
         "website": "https://cedarsoflebanonuw.com/",
         "phoneNumber": "(206) 632-7708",
         "rating": 4.6,
-        "numberOfRatings": 257
+        "numberOfRatings": 257,
+        "reviews": []
     },
     {
         "restaurantName": "Flowers Bar & Restaurant",
@@ -680,7 +751,8 @@
         "website": "https://m.facebook.com/profile.php?id=111624532206948",
         "phoneNumber": "(206) 633-1903",
         "rating": 4,
-        "numberOfRatings": 337
+        "numberOfRatings": 337,
+        "reviews": []
     },
     {
         "restaurantName": "Mark Thai Food Box",
@@ -689,7 +761,8 @@
         "website": "http://www.markhomemadethai.com/",
         "phoneNumber": "(206) 432-5902",
         "rating": 4.6,
-        "numberOfRatings": 131
+        "numberOfRatings": 131,
+        "reviews": []
     },
     {
         "restaurantName": "Ugly Mug Café",
@@ -698,7 +771,8 @@
         "website": "http://www.uglymugseattle.com",
         "phoneNumber": "(206) 547-3219",
         "rating": 4.6,
-        "numberOfRatings": 361
+        "numberOfRatings": 361,
+        "reviews": []
     },
     {
         "restaurantName": "Samir's Mediterranean Grill",
@@ -707,7 +781,8 @@
         "website": "https://samirsmediterranean.com/",
         "phoneNumber": "(206) 633-1778",
         "rating": 4.5,
-        "numberOfRatings": 39
+        "numberOfRatings": 39,
+        "reviews": []
     },
     {
         "restaurantName": "Sweet Alchemy",
@@ -716,7 +791,8 @@
         "website": "http://sweetalchemyicecreamery.com/",
         "phoneNumber": "(206) 632-0243",
         "rating": 4.5,
-        "numberOfRatings": 710
+        "numberOfRatings": 710,
+        "reviews": []
     },
     {
         "restaurantName": "Nasai Teriyaki",
@@ -726,7 +802,8 @@
         "phoneNumber": "(206) 632-3572",
         "imageSourceLink": ".images/name'",
         "rating": 4.2,
-        "numberOfRatings": 211
+        "numberOfRatings": 211,
+        "reviews": []
     },
     {
         "restaurantName": "The Bookstore Café",
@@ -735,7 +812,8 @@
         "website": "https://www.ubookstore.com",
         "phoneNumber": "(800) 335-7323",
         "rating": 4.2,
-        "numberOfRatings": 363
+        "numberOfRatings": 363,
+        "reviews": []
     },
     {
         "restaurantName": "Pauly's at Earl's",
@@ -744,7 +822,8 @@
         "website": "https://www.earlsontheave.com/",
         "phoneNumber": "(206) 525-4493",
         "rating": 4.2,
-        "numberOfRatings": 77
+        "numberOfRatings": 77,
+        "reviews": []
     },
     {
         "restaurantName": "Earl's on the Ave",
@@ -753,7 +832,8 @@
         "website": "https://paulysatearls.com/",
         "phoneNumber": "(206) 525-4493",
         "rating": 4.1,
-        "numberOfRatings": 463
+        "numberOfRatings": 463,
+        "reviews": []
     },
     {
         "restaurantName": "Shawarma King",
@@ -762,7 +842,8 @@
         "website": "http://www.shawarmakingus.com/",
         "phoneNumber": "(206) 420-1484",
         "rating": 4.4,
-        "numberOfRatings": 1.1
+        "numberOfRatings": 1.1,
+        "reviews": []
     },
     {
         "restaurantName": "Just Poké",
@@ -771,7 +852,8 @@
         "website": "https://justpoke.com/",
         "phoneNumber": "(206) 566-6156",
         "rating": 4.4,
-        "numberOfRatings": 125
+        "numberOfRatings": 125,
+        "reviews": []
     },
     {
         "restaurantName": "Boba Smoothies",
@@ -780,7 +862,8 @@
         "website": "http://bobasmoothies.com/",
         "phoneNumber": "(425) 214-1267",
         "rating": 4.3,
-        "numberOfRatings": 53
+        "numberOfRatings": 53,
+        "reviews": []
     },
     {
         "restaurantName": "Mee Sum Pastry",
@@ -789,7 +872,8 @@
         "website": "http://www.meesumpastryseattle.com/?utm_source=gmb&utm_medium=website",
         "phoneNumber": "(206) 632-7298",
         "rating": 4.4,
-        "numberOfRatings": 51
+        "numberOfRatings": 51,
+        "reviews": []
     },
     {
         "restaurantName": "Leon Coffee House",
@@ -798,7 +882,8 @@
         "website": "http://leoncoffeehouse.com/",
         "phoneNumber": "(206) 537-3660",
         "rating": 4.7,
-        "numberOfRatings": 87
+        "numberOfRatings": 87,
+        "reviews": []
     },
     {
         "restaurantName": "TP Tea",
@@ -808,7 +893,8 @@
         "phoneNumber": "(206) 327-9811",
         "acceptsApplePay": "yes",
         "rating": 4.6,
-        "numberOfRatings": 45
+        "numberOfRatings": 45,
+        "reviews": []
     },
     {
         "restaurantName": "Panda Noodle Bar",
@@ -818,7 +904,8 @@
         "phoneNumber": "(206) 547-2445",
         "acceptsApplePay": "yes",
         "rating": 4.5,
-        "numberOfRatings": 64
+        "numberOfRatings": 64,
+        "reviews": []
     },
     {
         "restaurantName": "Just Burgers",
@@ -828,7 +915,8 @@
         "phoneNumber": "(425) 276-1824",
         "acceptsApplePay": "yes",
         "rating": 4.3,
-        "numberOfRatings": 902
+        "numberOfRatings": 902,
+        "reviews": []
     },
     {
         "restaurantName": "Capsule Café",
@@ -838,7 +926,8 @@
         "phoneNumber": "(206) 535-7458",
         "acceptsApplePay": "yes",
         "rating": 5,
-        "numberOfRatings": 31
+        "numberOfRatings": 31,
+        "reviews": []
     },
     {
         "restaurantName": "Tasty Pot",
@@ -848,7 +937,8 @@
         "phoneNumber": "(206) 397-3746",
         "acceptsApplePay": "yes",
         "rating": 4.1,
-        "numberOfRatings": 105
+        "numberOfRatings": 105,
+        "reviews": []
     },
     {
         "restaurantName": "Don't Yell At Me",
@@ -858,7 +948,8 @@
         "phoneNumber": "(206) 588-0719",
         "acceptsApplePay": "yes",
         "rating": 4.5,
-        "numberOfRatings": 328
+        "numberOfRatings": 328,
+        "reviews": []
     },
     {
         "restaurantName": "U:Don Noodle Station",
@@ -868,7 +959,8 @@
         "phoneNumber": "(206) 466-1471",
         "acceptsApplePay": "yes",
         "rating": 4.4,
-        "numberOfRatings": 856
+        "numberOfRatings": 856,
+        "reviews": []
     },
     {
         "restaurantName": "Korean Tofu House Express",
@@ -878,7 +970,8 @@
         "phoneNumber": "(206) 922-3562",
         "acceptsApplePay": "yes",
         "rating": 4.2,
-        "numberOfRatings": 27
+        "numberOfRatings": 27,
+        "reviews": []
     },
     {
         "restaurantName": "Oasis Tea Zone",
@@ -888,7 +981,8 @@
         "phoneNumber": "(206) 447-8098",
         "acceptsApplePay": "yes",
         "rating": 4.3,
-        "numberOfRatings": 478
+        "numberOfRatings": 478,
+        "reviews": []
     },
     {
         "restaurantName": "Palmi Korean BBQ",
@@ -898,7 +992,8 @@
         "phoneNumber": "(206) 633-9993",
         "acceptsApplePay": "yes",
         "rating": 4,
-        "numberOfRatings": 489
+        "numberOfRatings": 489,
+        "reviews": []
     },
     {
         "restaurantName": "Taste of Xi'an",
@@ -908,7 +1003,8 @@
         "phoneNumber": "(206) 231-9999",
         "acceptsApplePay": "yes",
         "rating": 4,
-        "numberOfRatings": 500
+        "numberOfRatings": 500,
+        "reviews": []
     },
     {
         "restaurantName": "Chi Mac",
@@ -918,7 +1014,8 @@
         "phoneNumber": "(206) 888-8947",
         "acceptsApplePay": "yes",
         "rating": 4.2,
-        "numberOfRatings": 526
+        "numberOfRatings": 526,
+        "reviews": []
     },
     {
         "restaurantName": "Tea Republik",
@@ -928,7 +1025,8 @@
         "phoneNumber": "(206) 485-2314",
         "acceptsApplePay": "yes",
         "rating": 4.7,
-        "numberOfRatings": 397
+        "numberOfRatings": 397,
+        "reviews": []
     },
     {
         "restaurantName": "Supreme",
@@ -938,7 +1036,8 @@
         "phoneNumber": "(206) 257-4767",
         "acceptsApplePay": "no",
         "rating": 4.5,
-        "numberOfRatings": 177
+        "numberOfRatings": 177,
+        "reviews": []
     },
     {
         "restaurantName": "Zen Noodle & Café",
@@ -948,7 +1047,8 @@
         "phoneNumber": "(206) 632-7792",
         "acceptsApplePay": "no",
         "rating": 4.1,
-        "numberOfRatings": 115
+        "numberOfRatings": 115,
+        "reviews": []
     },
     {
         "restaurantName": "Time Bistro",
@@ -958,7 +1058,8 @@
         "phoneNumber": "(206) 420-8826",
         "acceptsApplePay": "yes",
         "rating": 4.6,
-        "numberOfRatings": 118
+        "numberOfRatings": 118,
+        "reviews": []
     },
     {
         "restaurantName": "Aladdin Falafel Corner",
@@ -968,7 +1069,8 @@
         "phoneNumber": "(206) 548-9539",
         "acceptsApplePay": "yes",
         "rating": 4.4,
-        "numberOfRatings": 497
+        "numberOfRatings": 497,
+        "reviews": []
     },
     {
         "restaurantName": "Thai Tom",
@@ -978,7 +1080,8 @@
         "phoneNumber": "(206) 548-9548",
         "acceptsApplePay": "no",
         "rating": 4.3,
-        "numberOfRatings": 1619
+        "numberOfRatings": 1619,
+        "reviews": []
     },
     {
         "restaurantName": "Red Pepper",
@@ -988,7 +1091,8 @@
         "phoneNumber": "(206) 906-9679",
         "acceptsApplePay": "yes",
         "rating": 4.2,
-        "numberOfRatings": 387
+        "numberOfRatings": 387,
+        "reviews": []
     },
     {
         "restaurantName": "Hawaii BBQ Restaurant",
@@ -998,7 +1102,8 @@
         "phoneNumber": "(206) 522-7740",
         "acceptsApplePay": "no",
         "rating": 3.9,
-        "numberOfRatings": 289
+        "numberOfRatings": 289,
+        "reviews": []
     },
     {
         "restaurantName": "Costa's Restaurant",
@@ -1008,7 +1113,8 @@
         "phoneNumber": "(206) 633-2751",
         "acceptsApplePay": "no",
         "rating": 4,
-        "numberOfRatings": 598
+        "numberOfRatings": 598,
+        "reviews": []
     },
     {
         "restaurantName": "YangGuoFu YGF MalaTang",
@@ -1018,7 +1124,8 @@
         "phoneNumber": "(206) 922-3496",
         "acceptsApplePay": "yes",
         "rating": 4.2,
-        "numberOfRatings": 99
+        "numberOfRatings": 99,
+        "reviews": []
     },
     {
         "restaurantName": "Sharetea",
@@ -1028,7 +1135,8 @@
         "phoneNumber": "(425) 829-8644",
         "acceptsApplePay": "yes",
         "rating": 4.4,
-        "numberOfRatings": 66
+        "numberOfRatings": 66,
+        "reviews": []
     },
     {
         "restaurantName": "Ate O'Clock Thai",
@@ -1038,7 +1146,8 @@
         "phoneNumber": "(206) 524-6339",
         "acceptsApplePay": "yes",
         "rating": 4.5,
-        "numberOfRatings": 150
+        "numberOfRatings": 150,
+        "reviews": []
     },
     {
         "restaurantName": "Mr. Lu's Seafood & Burgers",
@@ -1048,7 +1157,8 @@
         "phoneNumber": "(206) 525-0365",
         "acceptsApplePay": "no",
         "rating": 4.5,
-        "numberOfRatings": 277
+        "numberOfRatings": 277,
+        "reviews": []
     },
     {
         "restaurantName": " Arepa Venezuelan Kitchen",
@@ -1058,7 +1168,8 @@
         "phoneNumber": "(206) 556-4879",
         "acceptsApplePay": "yes",
         "rating": 4.6,
-        "numberOfRatings": 906
+        "numberOfRatings": 906,
+        "reviews": []
     },
     {
         "restaurantName": "Café O Dessert",
@@ -1068,7 +1179,8 @@
         "phoneNumber": "(206) 522-5266",
         "acceptsApplePay": "no",
         "rating": 4.3,
-        "numberOfRatings": 109
+        "numberOfRatings": 109,
+        "reviews": []
     },
     {
         "restaurantName": "Jewel of India",
@@ -1078,7 +1190,8 @@
         "phoneNumber": "(206) 859-8946",
         "acceptsApplePay": "yes",
         "rating": 4.1,
-        "numberOfRatings": 552
+        "numberOfRatings": 552,
+        "reviews": []
     },
     {
         "restaurantName": "Memos Mexican Restaurant",
@@ -1088,7 +1201,8 @@
         "phoneNumber": "(206) 729-5071",
         "acceptsApplePay": "no",
         "rating": 3.7,
-        "numberOfRatings": 1041
+        "numberOfRatings": 1041,
+        "reviews": []
     },
     {
         "restaurantName": "Jack in the Box",
@@ -1098,7 +1212,8 @@
         "phoneNumber": "(206) 628-9028",
         "acceptsApplePay": "yes",
         "rating": 3.3,
-        "numberOfRatings": 869
+        "numberOfRatings": 869,
+        "reviews": []
     },
     {
         "restaurantName": "Six Pack Foods Company",
@@ -1108,7 +1223,8 @@
         "phoneNumber": "(206) 695-2883",
         "acceptsApplePay": "yes",
         "rating": 3.9,
-        "numberOfRatings": 96
+        "numberOfRatings": 96,
+        "reviews": []
     },
     {
         "restaurantName": "Roji Monster Ice Cream",
@@ -1118,7 +1234,8 @@
         "phoneNumber": "(206) 331-4442",
         "acceptsApplePay": "yes",
         "rating": 4.3,
-        "numberOfRatings": 80
+        "numberOfRatings": 80,
+        "reviews": []
     },
     {
         "restaurantName": "Yi Fang Taiwan Fruit Tea",
@@ -1128,7 +1245,8 @@
         "phoneNumber": "(206) 420-2369",
         "acceptsApplePay": "yes",
         "rating": 4.3,
-        "numberOfRatings": 169
+        "numberOfRatings": 169,
+        "reviews": []
     },
     {
         "restaurantName": "Morsel",
@@ -1138,7 +1256,8 @@
         "phoneNumber": "(206) 268-0154",
         "acceptsApplePay": "yes",
         "rating": 4.7,
-        "numberOfRatings": 886
+        "numberOfRatings": 886,
+        "reviews": []
     },
     {
         "restaurantName": "Urban Dinner Market",
@@ -1148,7 +1267,8 @@
         "phoneNumber": "(206) 535-8925",
         "acceptsApplePay": "no",
         "rating": 3.7,
-        "numberOfRatings": 15
+        "numberOfRatings": 15,
+        "reviews": []
     },
     {
         "restaurantName": " Bok A Bok Fried Chicken",
@@ -1158,7 +1278,8 @@
         "phoneNumber": "(206) 669-5976",
         "acceptsApplePay": "yes",
         "rating": 4,
-        "numberOfRatings": 208
+        "numberOfRatings": 208,
+        "reviews": []
     },
     {
         "restaurantName": "Village Sushi",
@@ -1168,7 +1289,8 @@
         "phoneNumber": "(206) 985-6870",
         "acceptsApplePay": "yes",
         "rating": 4.6,
-        "numberOfRatings": 305
+        "numberOfRatings": 305,
+        "reviews": []
     },
     {
         "restaurantName": "Ku Sushi & Izakaya",
@@ -1178,7 +1300,8 @@
         "phoneNumber": "(206) 524-6101",
         "acceptsApplePay": "no",
         "rating": 4.2,
-        "numberOfRatings": 378
+        "numberOfRatings": 378,
+        "reviews": []
     },
     {
         "restaurantName": "Araya's Place",
@@ -1188,7 +1311,8 @@
         "phoneNumber": "(206) 524-4332",
         "acceptsApplePay": "yes",
         "rating": 4.5,
-        "numberOfRatings": 809
+        "numberOfRatings": 809,
+        "reviews": []
     },
     {
         "restaurantName": "Cold Plate",
@@ -1198,7 +1322,8 @@
         "phoneNumber": "(206) 294-5938",
         "acceptsApplePay": "yes",
         "rating": 4.3,
-        "numberOfRatings": 180
+        "numberOfRatings": 180,
+        "reviews": []
     },
     {
         "restaurantName": "Tig Kitchen & Bar",
@@ -1208,7 +1333,8 @@
         "phoneNumber": "(206) 522-4274",
         "acceptsApplePay": "yes",
         "rating": 3.7,
-        "numberOfRatings": 104
+        "numberOfRatings": 104,
+        "reviews": []
     },
     {
         "restaurantName": "A Pizza Mart Bar & Grill",
@@ -1218,7 +1344,8 @@
         "phoneNumber": "(206) 517-4000",
         "acceptsApplePay": "yes",
         "rating": 4,
-        "numberOfRatings": 357
+        "numberOfRatings": 357,
+        "reviews": []
     },
     {
         "restaurantName": "Snowy Village",
@@ -1228,7 +1355,8 @@
         "phoneNumber": "(206) 708-1111",
         "acceptsApplePay": "no",
         "rating": 4.6,
-        "numberOfRatings": 378
+        "numberOfRatings": 378,
+        "reviews": []
     },
     {
         "restaurantName": "Tanuki Izakaya",
@@ -1238,7 +1366,8 @@
         "phoneNumber": "(206) 708-6852",
         "acceptsApplePay": "yes",
         "rating": 4.1,
-        "numberOfRatings": 102
+        "numberOfRatings": 102,
+        "reviews": []
     },
     {
         "restaurantName": "Shawarma King",
@@ -1248,7 +1377,8 @@
         "phoneNumber": "(206) 420-1484",
         "acceptsApplePay": "no",
         "rating": 4.4,
-        "numberOfRatings": "1.1k"
+        "numberOfRatings": "1.1k",
+        "reviews": []
     },
     {
         "restaurantName": "The Kraken Bar & Lounge",
@@ -1258,7 +1388,8 @@
         "phoneNumber": "(206) 522-5334",
         "acceptsApplePay": "no",
         "rating": 4.5,
-        "numberOfRatings": 387
+        "numberOfRatings": 387,
+        "reviews": []
     },
     {
         "restaurantName": "Xi'an Noodles",
@@ -1268,7 +1399,8 @@
         "phoneNumber": "(206) 522-8888",
         "acceptsApplePay": "yes",
         "rating": 4.5,
-        "numberOfRatings": 1351
+        "numberOfRatings": 1351,
+        "reviews": []
     },
     {
         "restaurantName": "Fat Ducks Deli & Bakery",
@@ -1278,7 +1410,8 @@
         "phoneNumber": "(206) 257-4798",
         "acceptsApplePay": "no",
         "rating": 4.5,
-        "numberOfRatings": 353
+        "numberOfRatings": 353,
+        "reviews": []
     },
     {
         "restaurantName": "Persepolis Grill",
@@ -1288,7 +1421,8 @@
         "phoneNumber": "(206) 524-3434",
         "acceptsApplePay": "no",
         "rating": 4.3,
-        "numberOfRatings": 792
+        "numberOfRatings": 792,
+        "reviews": []
     },
     {
         "restaurantName": "Bombay Grill",
@@ -1298,7 +1432,8 @@
         "phoneNumber": "(206) 557-0006",
         "acceptsApplePay": "no",
         "rating": 2.5,
-        "numberOfRatings": 110
+        "numberOfRatings": 110,
+        "reviews": []
     },
     {
         "restaurantName": "Herkimer Coffee",
@@ -1308,7 +1443,8 @@
         "phoneNumber": "(206) 627-0626",
         "acceptsApplePay": "no",
         "rating": 4.7,
-        "numberOfRatings": 478
+        "numberOfRatings": 478,
+        "reviews": []
     },
     {
         "restaurantName": "Taste of India",
@@ -1318,7 +1454,8 @@
         "phoneNumber": "(206) 528-1575",
         "acceptsApplePay": "no",
         "rating": 4.4,
-        "numberOfRatings": 2456
+        "numberOfRatings": 2456,
+        "reviews": []
     },
     {
         "restaurantName": "Pi Vegan Pizzeria",
@@ -1328,7 +1465,8 @@
         "phoneNumber": "(206) 343-1415",
         "acceptsApplePay": "yes",
         "rating": 4.6,
-        "numberOfRatings": 701
+        "numberOfRatings": 701,
+        "reviews": []
     },
     {
         "restaurantName": "YAN Tea",
@@ -1338,7 +1476,8 @@
         "phoneNumber": "(206) 257-0168",
         "acceptsApplePay": "yes",
         "rating": 4.3,
-        "numberOfRatings": 105
+        "numberOfRatings": 105,
+        "reviews": []
     },
     {
         "restaurantName": "Mei Mei Café",
@@ -1348,7 +1487,8 @@
         "phoneNumber": "(206) 729-2218",
         "acceptsApplePay": "yes",
         "rating": 4.4,
-        "numberOfRatings": 87
+        "numberOfRatings": 87,
+        "reviews": []
     },
     {
         "restaurantName": "Timeless Tea",
@@ -1358,7 +1498,8 @@
         "phoneNumber": "(360) 889-6666",
         "acceptsApplePay": "yes",
         "rating": 4.4,
-        "numberOfRatings": 330
+        "numberOfRatings": 330,
+        "reviews": []
     },
     {
         "restaurantName": "Sip House",
@@ -1368,7 +1509,8 @@
         "phoneNumber": "(206) 468-5358",
         "acceptsApplePay": "yes",
         "rating": 4.5,
-        "numberOfRatings": 170
+        "numberOfRatings": 170,
+        "reviews": []
     },
     {
         "restaurantName": "Cedars Restaurant",
@@ -1378,7 +1520,8 @@
         "phoneNumber": "(206) 527-4000",
         "acceptsApplePay": "no",
         "rating": 4.3,
-        "numberOfRatings": 1371
+        "numberOfRatings": 1371,
+        "reviews": []
     },
     {
         "restaurantName": "Itadakimasu",
@@ -1388,7 +1531,8 @@
         "phoneNumber": "(206) 659-0722",
         "acceptsApplePay": "no",
         "rating": 4.4,
-        "numberOfRatings": 277
+        "numberOfRatings": 277,
+        "reviews": []
     },
     {
         "restaurantName": "Domino's Pizza",
@@ -1398,7 +1542,8 @@
         "phoneNumber": "(206) 525-9551",
         "acceptsApplePay": "yes",
         "rating": 4.2,
-        "numberOfRatings": 218
+        "numberOfRatings": 218,
+        "reviews": []
     },
     {
         "restaurantName": "Meraki Tea Bar",
@@ -1408,7 +1553,8 @@
         "phoneNumber": "(206) 906-9213",
         "acceptsApplePay": "Yes",
         "rating": 4.5,
-        "numberOfRatings": 80
+        "numberOfRatings": 80,
+        "reviews": []
     },
     {
         "restaurantName": "Qdoba Mexican Eats",
@@ -1418,7 +1564,8 @@
         "phoneNumber": "(206)547-0803",
         "acceptsApplePay": "yes",
         "rating": 4,
-        "numberOfRatings": 461
+        "numberOfRatings": 461,
+        "reviews": []
     },
     {
         "restaurantName": "Subway",
@@ -1428,7 +1575,8 @@
         "phoneNumber": "(206)545-7851",
         "acceptsApplePay": "yes",
         "rating": 3.1,
-        "numberOfRatings": 308
+        "numberOfRatings": 308,
+        "reviews": []
     },
     {
         "restaurantName": "Big Tuna",
@@ -1438,7 +1586,8 @@
         "phoneNumber": "(206)-633-0378",
         "acceptsApplePay": "yes",
         "rating": 4.2,
-        "numberOfRatings": 117
+        "numberOfRatings": 117,
+        "reviews": []
     },
     {
         "restaurantName": "Pineapple Café",
@@ -1448,7 +1597,8 @@
         "phoneNumber": "(206)-826-4242",
         "acceptsApplePay": "yes",
         "rating": 3.6,
-        "numberOfRatings": 28
+        "numberOfRatings": 28,
+        "reviews": []
     },
     {
         "restaurantName": "Trinity Market",
@@ -1458,7 +1608,8 @@
         "phoneNumber": "(206) 659-0934",
         "acceptsApplePay": "yes",
         "rating": 4.6,
-        "numberOfRatings": 263
+        "numberOfRatings": 263,
+        "reviews": []
     },
     {
         "restaurantName": "Jake's Coffee",
@@ -1468,7 +1619,8 @@
         "phoneNumber": "(515) 494-0889",
         "acceptsApplePay": "yes",
         "rating": 4.6,
-        "numberOfRatings": 171
+        "numberOfRatings": 171,
+        "reviews": []
     },
     {
         "restaurantName": "Hiroshi's Poké",
@@ -1478,7 +1630,8 @@
         "phoneNumber": "(206) 466-1083",
         "acceptsApplePay": "yes",
         "rating": 4.7,
-        "numberOfRatings": 560
+        "numberOfRatings": 560,
+        "reviews": []
     },
     {
         "restaurantName": "OH Bear Café & Teahouse",
@@ -1488,7 +1641,8 @@
         "phoneNumber": "(206) 453-3097",
         "acceptsApplePay": "yes",
         "rating": 4.4,
-        "numberOfRatings": 160
+        "numberOfRatings": 160,
+        "reviews": []
     },
     {
         "restaurantName": "Sichuan Hot Pot",
@@ -1498,7 +1652,8 @@
         "phoneNumber": "(206)-420-7167",
         "acceptsApplePay": "yes",
         "rating": 4,
-        "numberOfRatings": 166
+        "numberOfRatings": 166,
+        "reviews": []
     },
     {
         "restaurantName": "Broadfork Café",
@@ -1508,17 +1663,8 @@
         "phoneNumber": "(206) 858-6487",
         "acceptsApplePay": "yes",
         "rating": 4.4,
-        "numberOfRatings": 199
-    },
-    {
-        "restaurantName": "Full Tilt Ice Cream",
-        "addresslocation": "5453 Leary Ave NW",
-        "cuisine": "ice cream",
-        "website": "https://www.fulltilticecream.com/#full-tilt",
-        "phoneNumber": "(206) 297-3000",
-        "acceptsApplePay": "no",
-        "rating": 4.7,
-        "numberOfRatings": 176
+        "numberOfRatings": 199,
+        "reviews": []
     },
     {
         "restaurantName": "BobaLust",
@@ -1528,7 +1674,8 @@
         "phoneNumber": "missing",
         "acceptsApplePay": "yes",
         "rating": 4.9,
-        "numberOfRatings": 9
+        "numberOfRatings": 9,
+        "reviews": []
     },
     {
         "restaurantName": "MOD Pizza",
@@ -1538,7 +1685,8 @@
         "phoneNumber": "(206) 632-7111",
         "acceptsApplePay": "no",
         "rating": 4.3,
-        "numberOfRatings": 679
+        "numberOfRatings": 679,
+        "reviews": []
     },
     {
         "restaurantName": "Kong Tofu House",
@@ -1548,7 +1696,8 @@
         "phoneNumber": "(206) 545-6783",
         "acceptsApplePay": "no",
         "rating": 4,
-        "numberOfRatings": 177
+        "numberOfRatings": 177,
+        "reviews": []
     },
     {
         "restaurantName": "R&B Tea",
@@ -1558,7 +1707,8 @@
         "phoneNumber": "(206) 397-4721",
         "acceptsApplePay": "yes",
         "rating": 3.7,
-        "numberOfRatings": 27
+        "numberOfRatings": 27,
+        "reviews": []
     },
     {
         "restaurantName": "Kitanda Espresso & Açai",
@@ -1568,7 +1718,8 @@
         "phoneNumber": "(206) 866-4158",
         "acceptsApplePay": "yes",
         "rating": 4.6,
-        "numberOfRatings": 147
+        "numberOfRatings": 147,
+        "reviews": []
     },
     {
         "restaurantName": "Ding Tea",
@@ -1578,7 +1729,8 @@
         "phoneNumber": "(206) 456-7192",
         "acceptsApplePay": "yes",
         "rating": 4.4,
-        "numberOfRatings": 303
+        "numberOfRatings": 303,
+        "reviews": []
     },
     {
         "restaurantName": "Ma’ono Fried Chicken",
@@ -1588,7 +1740,8 @@
         "phoneNumber": "(206) 499-5470",
         "acceptsApplePay": "yes",
         "rating": 4.3,
-        "numberOfRatings": 266
+        "numberOfRatings": 266,
+        "reviews": []
     },
     {
         "restaurantName": "Ba Bar",
@@ -1598,7 +1751,8 @@
         "phoneNumber": "(206) 328-1112",
         "acceptsApplePay": "yes",
         "rating": 4.2,
-        "numberOfRatings": 658
+        "numberOfRatings": 658,
+        "reviews": []
     },
     {
         "restaurantName": "Bamboo Sushi",
@@ -1608,7 +1762,8 @@
         "phoneNumber": "(206) 556-3449",
         "acceptsApplePay": "yes",
         "rating": 4.3,
-        "numberOfRatings": 317
+        "numberOfRatings": 317,
+        "reviews": []
     },
     {
         "restaurantName": "Chill",
@@ -1618,7 +1773,8 @@
         "phoneNumber": "(206) 900-9871",
         "acceptsApplePay": "yes",
         "rating": 4.1,
-        "numberOfRatings": 141
+        "numberOfRatings": 141,
+        "reviews": []
     },
     {
         "restaurantName": "Chipotle ",
@@ -1628,7 +1784,8 @@
         "phoneNumber": "(206) 525-2147",
         "acceptsApplePay": "yes",
         "rating": 4,
-        "numberOfRatings": 462
+        "numberOfRatings": 462,
+        "reviews": []
     },
     {
         "restaurantName": "Delfino’s Chicago Style Pizza",
@@ -1638,7 +1795,8 @@
         "phoneNumber": "(206) 522-3466",
         "acceptsApplePay": "yes",
         "rating": 4.4,
-        "numberOfRatings": 914
+        "numberOfRatings": 914,
+        "reviews": []
     },
     {
         "restaurantName": "Ding Tai Fung",
@@ -1648,7 +1806,8 @@
         "phoneNumber": "(206) 525-0958",
         "acceptsApplePay": "no",
         "rating": 4.6,
-        "numberOfRatings": 2923
+        "numberOfRatings": 2923,
+        "reviews": []
     },
     {
         "restaurantName": "Elemental Wood Fired Pizza",
@@ -1658,7 +1817,8 @@
         "phoneNumber": "(206) 524-4930",
         "acceptsApplePay": "yes",
         "rating": 4,
-        "numberOfRatings": 372
+        "numberOfRatings": 372,
+        "reviews": []
     },
     {
         "restaurantName": "Eureka!",
@@ -1668,7 +1828,8 @@
         "phoneNumber": "(206) 812-9655",
         "acceptsApplePay": "yes",
         "rating": 4.2,
-        "numberOfRatings": 743
+        "numberOfRatings": 743,
+        "reviews": []
     },
     {
         "restaurantName": "Evergreen",
@@ -1678,7 +1839,8 @@
         "phoneNumber": "(206) 524-0741",
         "acceptsApplePay": "yes",
         "rating": 4.3,
-        "numberOfRatings": 159
+        "numberOfRatings": 159,
+        "reviews": []
     },
     {
         "restaurantName": "Fran's Chocolate",
@@ -1688,7 +1850,8 @@
         "phoneNumber": "(206) 528-9969",
         "acceptsApplePay": "yes",
         "rating": 4.7,
-        "numberOfRatings": 195
+        "numberOfRatings": 195,
+        "reviews": []
     },
     {
         "restaurantName": "Shake Shack",
@@ -1698,7 +1861,8 @@
         "phoneNumber": "(206) 487-1283",
         "acceptsApplePay": "yes",
         "rating": 3.7,
-        "numberOfRatings": 381
+        "numberOfRatings": 381,
+        "reviews": []
     },
     {
         "restaurantName": "Homegrown",
@@ -1708,7 +1872,8 @@
         "phoneNumber": "(877) 567-9240",
         "acceptsApplePay": "yes",
         "rating": 4.2,
-        "numberOfRatings": 71
+        "numberOfRatings": 71,
+        "reviews": []
     },
     {
         "restaurantName": "Hokkaido Ramen Santouka",
@@ -1718,7 +1883,8 @@
         "phoneNumber": "(206) 524-4431",
         "acceptsApplePay": "yes",
         "rating": 4.4,
-        "numberOfRatings": 765
+        "numberOfRatings": 765,
+        "reviews": []
     },
     {
         "restaurantName": "Mr West Cafe Bar",
@@ -1728,7 +1894,8 @@
         "phoneNumber": "(206) 900-9378",
         "acceptsApplePay": "yes",
         "rating": 4.5,
-        "numberOfRatings": 274
+        "numberOfRatings": 274,
+        "reviews": []
     },
     {
         "restaurantName": "Piatti",
@@ -1738,7 +1905,8 @@
         "phoneNumber": "(206) 524-9088",
         "acceptsApplePay": "no",
         "rating": 4.2,
-        "numberOfRatings": 537
+        "numberOfRatings": 537,
+        "reviews": []
     },
     {
         "restaurantName": "JOEY Kitchen",
@@ -1748,7 +1916,8 @@
         "phoneNumber": "(206) 527-6188",
         "acceptsApplePay": "no",
         "rating": 4.1,
-        "numberOfRatings": 949
+        "numberOfRatings": 949,
+        "reviews": []
     },
     {
         "restaurantName": "Veggie Grill",
@@ -1758,7 +1927,8 @@
         "phoneNumber": "(206) 523-1961",
         "acceptsApplePay": "no",
         "rating": 4.3,
-        "numberOfRatings": 702
+        "numberOfRatings": 702,
+        "reviews": []
     },
     {
         "restaurantName": "Juice Press",
@@ -1768,7 +1938,8 @@
         "phoneNumber": "(646) 901-1436",
         "acceptsApplePay": "yes",
         "rating": 3.8,
-        "numberOfRatings": 74
+        "numberOfRatings": 74,
+        "reviews": []
     },
     {
         "restaurantName": "Jamba Juice",
@@ -1778,7 +1949,8 @@
         "phoneNumber": "(206) 457-3946",
         "acceptsApplePay": "yes",
         "rating": 4.3,
-        "numberOfRatings": 174
+        "numberOfRatings": 174,
+        "reviews": []
     },
     {
         "restaurantName": "Molly Moon's Homemade Ice Cream",
@@ -1788,7 +1960,8 @@
         "phoneNumber": "(206) 525-5140",
         "acceptsApplePay": "yes",
         "rating": 4.5,
-        "numberOfRatings": 711
+        "numberOfRatings": 711,
+        "reviews": []
     },
     {
         "restaurantName": "Frankie & Jo's",
@@ -1798,6 +1971,7 @@
         "phoneNumber": "(206) 453-3135",
         "acceptsApplePay": "yes",
         "rating": 4.6,
-        "numberOfRatings": 131
+        "numberOfRatings": 131,
+        "reviews": []
     }
 ]
