@@ -84,7 +84,7 @@ function BusinessPage({ route, navigation }) {
         {reviews.map((val, key) => 
          {
            return (
-            <CustomReviewBox title={JSON.stringify(reviews)}/>
+            <CustomReviewBox reviewText={JSON.stringify(val.text).replace(/\"/g, "")} numStars={val.stars}/>
            )
            })}
     </ScrollView>
@@ -178,7 +178,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     marginTop: 25,
     marginBottom: 30,
-    marginLeft: 25,
+    marginLeft: 28,
 },
 });
 
