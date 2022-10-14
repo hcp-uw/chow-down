@@ -1,7 +1,7 @@
 import React from "react";
 import { ScrollView, StyleSheet, View, Text, TextInput, TouchableOpacity, Alert } from "react-native"
 import Stars from "react-native-stars";
-import CustomAddReviewButton from './components/custom-buttons/CustomAddReviewButton';
+import CustomAddReviewButton from '../custom-buttons/CustomAddReviewButton';
 
 
 

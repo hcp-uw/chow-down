@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, Text, TextInput, StyleSheet, Button } from 'react-native';
-import BusinessPage from '../BusinessPage';
+import BusinessPage from '../components/home-stack/BusinessPage';
 import SearchBar from '../components/search-bar/SearchBar'
-import HomeScreen from '../HomeScreen'
-import AddReview from '../AddReview';
+import HomeScreen from '../components/home-stack/HomeScreen'
+import AddReview from '../components/home-stack/AddReview';
 
 
 

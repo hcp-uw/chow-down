@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, TextInput, StyleSheet, Button, Image, Dimensions } from 'react-native';
-import CustomSearchButton from './components/custom-buttons/CustomSearchButton';
+import CustomSearchButton from '../custom-buttons/CustomSearchButton';
 import MapView from 'react-native-maps';
 
 // to install the icon, use commands in this order:

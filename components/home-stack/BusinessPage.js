@@ -1,10 +1,10 @@
 import React from "react";
 import { ScrollView, View, Text, StyleSheet, Button, ImageBackground } from "react-native";
-import JSONDATA from './components/search-bar/MOCK_DATA.json';
+import JSONDATA from '../search-bar/MOCK_DATA.json';
 import Stars from "react-native-stars"; // npm install react-native-stars --save
 import { Ionicons, FontAwesome5 } from '@expo/vector-icons'; // for icons
-import CustomAddReviewButton from './components/custom-buttons/CustomAddReviewButton';
-import CustomReviewBox from './components/custom-buttons/CustomReviewBox';
+import CustomAddReviewButton from '../custom-buttons/CustomAddReviewButton';
+import CustomReviewBox from '../custom-buttons/CustomReviewBox';
 
 /**
  * Business Page is the default template for a restaurant's page.
