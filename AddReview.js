@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     titleSpace: {
-        alignItems: 'left',
+        alignItems: 'flex-start',
     },
 });
 

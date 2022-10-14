@@ -85,7 +85,7 @@ function BusinessPage({ route, navigation }) {
         {reviews.map((val, key) => 
          {
            return (
-            <CustomReviewBox reviewText={JSON.stringify(val.text).replace(/\"/g, "")} numStars={val.stars}/>
+            <CustomReviewBox key={key} reviewText={JSON.stringify(val.text).replace(/\"/g, "")} numStars={val.stars}/>
            )
            })}
            </View>
