@@ -14,3 +14,7 @@ Chow Down helps UW students narrow down their restaurant search by allowing a ti
 1. Clone the repository and open in an IDE
 2. Type 'npm install' in the terminal (make sure you're in the chow-down directory)
 3. Run 'expo start' in the terminal!
+
+## File Organization
+- Navigators which support React Navigation are nested below the 'navigators' folder.
+
