@@ -25,14 +25,14 @@ const styles = StyleSheet.create({
         marginHorizontal: 30,
         backgroundColor: "white",
         marginBottom: 20,
-        alignContent: 'left',
+        alignContent: 'flex-start',
         flexDirection: 'column',
       },
       restaurantDetails: {
         flex: 1,
         flexDirection: 'column',
         marginVertical: 10,   
-        alignItems: 'left', 
+        alignItems: 'flex-start', 
       },
       restaurantDetailsText: {
         paddingLeft: 10,
