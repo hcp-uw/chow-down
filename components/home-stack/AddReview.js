@@ -49,8 +49,8 @@ const AddReview = ({ route, navigation }) => {
                 <Stars
                     count={5}
                     starSize={35}
-                    fullStar={require("./images/starFilled.png")}
-                    emptyStar={require("./images/starEmpty.png")}
+                    fullStar={require("../../images/starFilled.png")}
+                    emptyStar={require("../../images/starEmpty.png")}
                     update={setStars}
                 />
                 <Text style={styles.ratingText}>Select your rating.</Text>

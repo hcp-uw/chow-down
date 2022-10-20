@@ -17,7 +17,7 @@ import MapView from 'react-native-maps';
 function HomeScreen({ navigation }) {
     return (
         <View style={styles.container}>
-            <Image style={styles.logo} source={require('./images/ChowDownLogo.png')} />
+            <Image style={styles.logo} source={require('../../images/ChowDownLogo.png')} />
 
             <View style={styles.smallSpace} />
             <View style={styles.smallSpace} />

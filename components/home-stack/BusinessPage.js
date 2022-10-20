@@ -42,8 +42,8 @@ function BusinessPage({ route, navigation }) {
               spacing={8}
               count={5}
               starSize={40}
-              fullStar={require("./images/starFilled.png")}
-              emptyStar={require("./images/starEmpty.png")}
+              fullStar={require("../../images/starFilled.png")}
+              emptyStar={require("../../images/starEmpty.png")}
             />
             {/** TODO: get num count and stars to align vertically */}
             <Text style={styles.numCountText}> ({JSON.stringify(numberOfRatings)}) </Text>
