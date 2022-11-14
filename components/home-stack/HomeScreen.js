@@ -31,14 +31,17 @@ function HomeScreen({ navigation }) {
 
             <View style={styles.largeSpace} />
 
-            <MapView
+            {/** Check out https://mapsplatform.google.com/pricing/ before 
+             * we enable Google Maps API*/}
+
+            {/* <MapView
                 style={styles.map}
                 initialRegion={{
                     latitude: 47.659,
                     longitude: -122.308,
                     latitudeDelta: .02,
                     longitudeDelta: .02,
-                }} />
+                }} /> */}
         </View>
     );
 }
