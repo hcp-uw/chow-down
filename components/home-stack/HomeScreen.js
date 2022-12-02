@@ -31,9 +31,6 @@ function HomeScreen({ navigation }) {
 
             <View style={styles.largeSpace} />
 
-            {/** Check out https://mapsplatform.google.com/pricing/ before 
-             * we enable Google Maps API*/}
-
             {/* <MapView
                 style={styles.map}
                 initialRegion={{
@@ -41,7 +38,8 @@ function HomeScreen({ navigation }) {
                     longitude: -122.308,
                     latitudeDelta: .02,
                     longitudeDelta: .02,
-                }} /> */}
+                }} 
+            />  */}
         </View>
     );
 }
