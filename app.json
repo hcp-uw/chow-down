@@ -1,4 +1,7 @@
 {
+  "name": "chowdown",
+  "displayName": "chowDown",
+
   "expo": { 
     "name": "chowDown",
     "slug": "chowDown",
