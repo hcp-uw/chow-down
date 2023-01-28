@@ -19,17 +19,8 @@ export default function App() {
 
   const app = initializeApp(firebaseConfig);
 
-  function storeHighScore(userId, score) {
-    const db = getDatabase();
-    const reference = ref(db, 'users/' + userId);
-    set(reference, {
-      highscore: score,
-    });
-  }
-
   return (
     <View style={styles.container}>
-      <Button title='Send Data' onPress={storeHighScore("user1", 500)}></Button>
       <StatusBar style="auto" />
       <BottomTabs />
     </View>
