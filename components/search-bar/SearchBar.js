@@ -4,11 +4,20 @@ import JSONDATA from './MOCK_DATA.json';
 import { useState } from 'react';
 import CustomRestaurantButton from '../custom-buttons/CustomRestaurantButton';
 import { ScrollView } from 'react-native-gesture-handler';
+import { getDatabase, ref, onValue, set } from 'firebase/database';
+import { initializeApp } from 'firebase/app';
+
 
 // NOTE: to test that Keyboard appearance works on SearchPage.js,
 // you have to use Expo Go on a separate device. Does not show up on emulator.
 const SearchBar = ({ navigation }) => { 
    const [searchTerm, setSearchTerm] = useState('')
+   const db = getDatabase();
+   const reference = ref(db, '/');
+   let data = [];
+   onValue(reference, (snapshot) => {
+      data = Object.values(snapshot.val());
+   });
 
    return ( 
       <ScrollView className="search" style={styles.container}>
@@ -25,13 +34,7 @@ const SearchBar = ({ navigation }) => {
          </KeyboardAvoidingView>
          
          {/** Powers the search bar */}
-         {JSONDATA.filter((val) => {
-            if (searchTerm == "") {
-               return val
-            } else if (val.restaurantName.toLowerCase().includes(searchTerm.toLowerCase()) || val.cuisine.toLowerCase().includes(searchTerm.toLowerCase())) {
-               return val
-            }
-         }).map((val, key) => 
+         {data.map((val, key) =>
          
          { //Filter function and style for search results here
             

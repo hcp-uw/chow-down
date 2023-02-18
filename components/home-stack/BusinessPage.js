@@ -5,6 +5,7 @@ import Stars from "react-native-stars"; // npm install react-native-stars --save
 import { Ionicons, FontAwesome5 } from '@expo/vector-icons'; // for icons
 import CustomAddReviewButton from '../custom-buttons/CustomAddReviewButton';
 import CustomReviewBox from '../custom-buttons/CustomReviewBox';
+import { getDatabase, ref, set, onValue } from "firebase/database";
 
 /**
  * Business Page is the default template for a restaurant's page.
@@ -17,6 +18,17 @@ function BusinessPage({ route, navigation }) {
   // props passed in from React Navigation
   const { key, restaurantName, rating, numberOfRatings, cuisine,
     addresslocation, phoneNumber, acceptsApplePay, img, reviews } = route.params;
+
+// IN PROGRESS: Writing new reviews to database
+  function updateData() {
+    const db = getDatabase();
+    const reviewRef = ref(db, '/' + key + '/');
+    onValue(reviewRef, (snapshot) => {
+      const data = snapshot.val();
+//      updateStarCount(postElement, data);
+    });
+  }
+
 
   return (
     // Allows for scrolling
@@ -78,7 +90,7 @@ function BusinessPage({ route, navigation }) {
         </View>
         <View style={styles.largeSpace} />
         <CustomAddReviewButton title="Add Your Review"
-          onPress={() => navigation.navigate('Add Review', { restaurantName, reviews })}
+          onPress={() => navigation.navigate('Add Review', { key, numberOfRatings, restaurantName, reviews })}
         />
         <Text style={styles.textStyle}>All Reviews</Text>
         {/** Below lines are for testing purposes. Will turn into review "components" in future meetings */}
