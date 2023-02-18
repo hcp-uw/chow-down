@@ -1,8 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Button, Text, View } from 'react-native';
-import BottomTabs from './navigators/BottomTabs';
-import 'react-native-gesture-handler';
-import { initializeApp } from 'firebase/app';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Button, Text, View } from "react-native";
+import BottomTabs from "./navigators/BottomTabs";
+import "react-native-gesture-handler";
+import { initializeApp } from "firebase/app";
 
 // 8/11/22: npm install @react-navigation/bottom-tabs
 
@@ -15,7 +15,7 @@ export default function App() {
   const firebaseConfig = {
     // TODO: INSERT CONFIG HERE
   };
-  const app = initializeApp(firebaseConfig);
+  initializeApp(firebaseConfig);
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
@@ -27,7 +27,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFF4BE',
-  }
-})
-
+    backgroundColor: "#FFF4BE",
+  },
+});
