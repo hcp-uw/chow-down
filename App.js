@@ -14,6 +14,15 @@ import { initializeApp } from 'firebase/app';
 export default function App() {
   const firebaseConfig = {
     // TODO: INSERT CONFIG HERE
+    apiKey: "AIzaSyA29m5bDIfnVb3xoGKSjkXMwZhsKXP8dMQ",
+        authDomain: "chow-down-e9c98.firebaseapp.com",
+        databaseURL: "https://chow-down-e9c98-default-rtdb.firebaseio.com",
+        projectId: "chow-down-e9c98",
+        storageBucket: "chow-down-e9c98.appspot.com",
+        messagingSenderId: "1024750009491",
+        appId: "1:1024750009491:web:5956c807371b3fe0b5a166",
+        measurementId: "G-3SYP9GW77S"
+
   };
   const app = initializeApp(firebaseConfig);
   return (

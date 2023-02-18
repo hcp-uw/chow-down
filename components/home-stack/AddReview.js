@@ -2,20 +2,21 @@ import React from "react";
 import { ScrollView, StyleSheet, View, Text, TextInput, TouchableOpacity, Alert } from "react-native"
 import Stars from "react-native-stars";
 import CustomAddReviewButton from '../custom-buttons/CustomAddReviewButton';
-
-
+import { getDatabase, ref, set } from "firebase/database";
 
 const AddReview = ({ route, navigation }) => {
-    const { restaurantName, reviews } = route.params;
+    const { key, numberOfRatings, restaurantName, reviews } = route.params;
     const [stars, setStars] = React.useState('');
     const [text, setText] = React.useState('');
 
     function readReviews() {
-        // Creates an object for the review currently being written
-        const currReview = {
+        const db = getDatabase();
+        let nextOpenReview = Object.keys(reviews).length;
+        // TODO: set address to next key... (+1)
+        set(ref(db, '/' + key + '/reviews/' + nextOpenReview), {
             stars: stars,
             text: text,
-        }
+        });
 
         // If User doesn't select stars
         if (stars == '') {
@@ -26,16 +27,16 @@ const AddReview = ({ route, navigation }) => {
             // Pass and merge params back to home screen
             navigation.navigate({
                 name: 'BusinessPage',
-                params: { reviews: [currReview] },
+                params: { reviews },
                 merge: true,
             });
         } else {
-            reviews.push(currReview)
+//            reviews.push(currReview)
             // Pass and merge params back to home screen
             navigation.navigate({
                 name: 'BusinessPage',
-                params: { reviews },
-                merge: true,
+                params: {reviews},
+                merge: true
             });
         }
     }
