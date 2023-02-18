@@ -7,7 +7,6 @@ import {
   Button,
   ImageBackground,
 } from "react-native";
-import JSONDATA from "../search-bar/MOCK_DATA.json";
 import Stars from "react-native-stars"; // npm install react-native-stars --save
 import { Ionicons, FontAwesome5 } from "@expo/vector-icons"; // for icons
 import CustomAddReviewButton from "../custom-buttons/CustomAddReviewButton";
