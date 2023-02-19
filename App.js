@@ -3,6 +3,7 @@ import { StyleSheet, Button, Text, View } from "react-native";
 import BottomTabs from "./navigators/BottomTabs";
 import "react-native-gesture-handler";
 import { initializeApp } from "firebase/app";
+import FIREBASE_CONFIG from "./FIREBASE_CONFIG.json";
 
 // 8/11/22: npm install @react-navigation/bottom-tabs
 
@@ -12,10 +13,7 @@ import { initializeApp } from "firebase/app";
  * @returns Display for mobile device
  */
 export default function App() {
-  const firebaseConfig = {
-    // TODO: INSERT CONFIG HERE
-  };
-  initializeApp(firebaseConfig);
+  initializeApp(FIREBASE_CONFIG);
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
