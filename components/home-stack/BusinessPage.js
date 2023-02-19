@@ -108,6 +108,7 @@ function BusinessPage({ route, navigation }) {
         <Text style={styles.textStyle}>All Reviews</Text>
         {/** Below lines are for testing purposes. Will turn into review "components" in future meetings */}
         {!reviews ? (
+          // TODO: Add styling to "No reviews"
           <Text>No reviews</Text>
         ) : (
           reviews.map((val, key) => {
