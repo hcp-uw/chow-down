@@ -107,15 +107,19 @@ function BusinessPage({ route, navigation }) {
         />
         <Text style={styles.textStyle}>All Reviews</Text>
         {/** Below lines are for testing purposes. Will turn into review "components" in future meetings */}
-        {reviews.map((val, key) => {
-          return (
-            <CustomReviewBox
-              key={key}
-              reviewText={JSON.stringify(val.text).replace(/\"/g, "")}
-              numStars={val.stars}
-            />
-          );
-        })}
+        {!reviews ? (
+          <Text>No reviews</Text>
+        ) : (
+          reviews.map((val, key) => {
+            return (
+              <CustomReviewBox
+                key={key}
+                reviewText={JSON.stringify(val.text).replace(/\"/g, "")}
+                numStars={val.stars}
+              />
+            );
+          })
+        )}
       </View>
     </ScrollView>
   );
