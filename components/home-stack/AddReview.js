@@ -2,17 +2,40 @@ import React from "react";
 import { ScrollView, StyleSheet, View, Text, TextInput, TouchableOpacity, Alert } from "react-native"
 import Stars from "react-native-stars";
 import CustomAddReviewButton from '../custom-buttons/CustomAddReviewButton';
-import { getDatabase, ref, set } from "firebase/database";
+import { getDatabase, ref, set, child, push, update, onValue } from "firebase/database";
+
+
 
 const AddReview = ({ route, navigation }) => {
     const { key, numberOfRatings, restaurantName, reviews } = route.params;
     const [stars, setStars] = React.useState('');
     const [text, setText] = React.useState('');
 
+    // IN PROGRESS: Writing new reviews to database
+    function updateReviews() {
+        const db = getDatabase();
+        const reviewRef = ref(db, '/' + key + '/reviews/');
+        onValue(reviewRef, (snapshot) => {
+            data = snapshot.val();
+        });
+        console.log(data);
+        return data;
+    }
+
     function readReviews() {
         const db = getDatabase();
+        const newReview = {
+            stars: stars,
+            text: text,
+        }
+        // TODO: Reviews only accepting keys in numeric order? What if we
+        // want to generate an unique key? (Multiple users may attempt to
+        // generate a review at the same time)
+
+        // const newReviewPush = push(child(ref(db), 'reviews')).key;
+        // const updates = {};
+        // updates['/' + key + '/reviews/' + newReviewPush] = newReview;
         let nextOpenReview = Object.keys(reviews).length;
-        // TODO: set address to next key... (+1)
         set(ref(db, '/' + key + '/reviews/' + nextOpenReview), {
             stars: stars,
             text: text,
@@ -21,24 +44,15 @@ const AddReview = ({ route, navigation }) => {
         // If User doesn't select stars
         if (stars == '') {
             Alert.alert("No Stars Inputed", "You Must Select a Rating to Proceed");
-        }
-        // TODO: make below code more readable (less duplication)
-        else if (typeof reviews === 'undefined') {
-            // Pass and merge params back to home screen
-            navigation.navigate({
-                name: 'BusinessPage',
-                params: { reviews },
-                merge: true,
-            });
         } else {
-//            reviews.push(currReview)
             // Pass and merge params back to home screen
             navigation.navigate({
                 name: 'BusinessPage',
-                params: {reviews},
+                params: {reviews: updateReviews() },
                 merge: true
             });
         }
+        // return update(ref(db), updates);
     }
 
     return (

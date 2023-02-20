@@ -36,7 +36,7 @@ const SearchBar = ({ navigation }) => {
          {/** Powers the search bar */}
          {data.map((val, key) =>
          
-         { //Filter function and style for search results here
+         { // TODO: Filter function and style for search results here
             
             return ( // TODO: maybe --> Switch .map to something more compatiable for React Native- FlatList
                <CustomRestaurantButton

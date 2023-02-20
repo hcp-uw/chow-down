@@ -27,6 +27,7 @@ function BusinessPage({ route, navigation }) {
       const data = snapshot.val();
 //      updateStarCount(postElement, data);
     });
+    console.log(data);
   }
 
 
@@ -93,11 +94,9 @@ function BusinessPage({ route, navigation }) {
           onPress={() => navigation.navigate('Add Review', { key, numberOfRatings, restaurantName, reviews })}
         />
         <Text style={styles.textStyle}>All Reviews</Text>
-        {/** Below lines are for testing purposes. Will turn into review "components" in future meetings */}
-        {reviews.map((val, key) => 
-         {
+        {reviews.map((val, key) => {
            return (
-            <CustomReviewBox key={key} reviewText={JSON.stringify(val.text).replace(/\"/g, "")} numStars={val.stars}/>
+            <CustomReviewBox key={key} reviewText={val.text} numStars={val.stars}/>
            )
            })}
            </View>
