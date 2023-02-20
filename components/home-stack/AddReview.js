@@ -13,6 +13,7 @@ const AddReview = ({ route, navigation }) => {
 
     // IN PROGRESS: Writing new reviews to database
     function updateReviews() {
+        console.log("addReviews.updateReviews key is: " + key);
         const db = getDatabase();
         const reviewRef = ref(db, '/' + key + '/reviews/');
         onValue(reviewRef, (snapshot) => {
@@ -31,11 +32,15 @@ const AddReview = ({ route, navigation }) => {
         // TODO: Reviews only accepting keys in numeric order? What if we
         // want to generate an unique key? (Multiple users may attempt to
         // generate a review at the same time)
+        // TODO: What if a restaurant doesn't already have existing reviews?
 
         // const newReviewPush = push(child(ref(db), 'reviews')).key;
         // const updates = {};
         // updates['/' + key + '/reviews/' + newReviewPush] = newReview;
+
+
         let nextOpenReview = Object.keys(reviews).length;
+        console.log(nextOpenReview);
         set(ref(db, '/' + key + '/reviews/' + nextOpenReview), {
             stars: stars,
             text: text,

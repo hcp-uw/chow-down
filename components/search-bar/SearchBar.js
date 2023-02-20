@@ -38,18 +38,14 @@ const SearchBar = ({ navigation }) => {
          
          { // TODO: Filter function and style for search results here
             
-            return ( // TODO: maybe --> Switch .map to something more compatiable for React Native- FlatList
+            return ( 
                <CustomRestaurantButton
                   className="user"
                   key={key}
                   title={val.restaurantName}
                   address={val.addresslocation}
                   img={'../meal.jpg'}
-                  // style={{
-                  //    height: 70,
-                  //    width: '100%',
-                  // }}
-                  onPress={() => navigation.navigate('BusinessPage', { ...val })}
+                  onPress={() => navigation.navigate('BusinessPage', { key, ...val })}
                />
             )
          

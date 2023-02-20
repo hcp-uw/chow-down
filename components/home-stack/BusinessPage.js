@@ -5,7 +5,7 @@ import Stars from "react-native-stars"; // npm install react-native-stars --save
 import { Ionicons, FontAwesome5 } from '@expo/vector-icons'; // for icons
 import CustomAddReviewButton from '../custom-buttons/CustomAddReviewButton';
 import CustomReviewBox from '../custom-buttons/CustomReviewBox';
-import { getDatabase, ref, set, onValue } from "firebase/database";
+import { getDatabase, ref, set, onValue, update } from "firebase/database";
 
 /**
  * Business Page is the default template for a restaurant's page.
@@ -19,17 +19,15 @@ function BusinessPage({ route, navigation }) {
   const { key, restaurantName, rating, numberOfRatings, cuisine,
     addresslocation, phoneNumber, acceptsApplePay, img, reviews } = route.params;
 
-// IN PROGRESS: Writing new reviews to database
-  function updateData() {
-    const db = getDatabase();
-    const reviewRef = ref(db, '/' + key + '/');
-    onValue(reviewRef, (snapshot) => {
-      const data = snapshot.val();
-//      updateStarCount(postElement, data);
-    });
-    console.log(data);
+  function renderReviews() {
+    return(
+        reviews.map((val, key) => {
+          return(
+            <CustomReviewBox key={key} reviewText={val.text} numStars={val.stars}/>
+          )
+        })
+    )
   }
-
 
   return (
     // Allows for scrolling
@@ -94,11 +92,7 @@ function BusinessPage({ route, navigation }) {
           onPress={() => navigation.navigate('Add Review', { key, numberOfRatings, restaurantName, reviews })}
         />
         <Text style={styles.textStyle}>All Reviews</Text>
-        {reviews.map((val, key) => {
-           return (
-            <CustomReviewBox key={key} reviewText={val.text} numStars={val.stars}/>
-           )
-           })}
+        {renderReviews()}
            </View>
     </ScrollView>
   );
