@@ -1,6 +1,12 @@
 import React from "react";
-import { ScrollView, View, Text, StyleSheet, Button, ImageBackground } from "react-native";
-import JSONDATA from '../search-bar/MOCK_DATA.json';
+import {
+  ScrollView,
+  View,
+  Text,
+  StyleSheet,
+  Button,
+  ImageBackground,
+} from "react-native";
 import Stars from "react-native-stars"; // npm install react-native-stars --save
 import { Ionicons, FontAwesome5 } from '@expo/vector-icons'; // for icons
 import CustomAddReviewButton from '../custom-buttons/CustomAddReviewButton';
@@ -9,15 +15,23 @@ import { getDatabase, ref, set, onValue, update } from "firebase/database";
 
 /**
  * Business Page is the default template for a restaurant's page.
- * @requires props passed in through React Navigation. 
+ * @requires props passed in through React Navigation.
  * @returns Business/Restaurant Page Display
  */
-
 function BusinessPage({ route, navigation }) {
-
   // props passed in from React Navigation
-  const { key, restaurantName, rating, numberOfRatings, cuisine,
-    addresslocation, phoneNumber, acceptsApplePay, img, reviews } = route.params;
+  const {
+    key,
+    restaurantName,
+    rating,
+    numberOfRatings,
+    cuisine,
+    addresslocation,
+    phoneNumber,
+    acceptsApplePay,
+    img,
+    reviews,
+  } = route.params;
 
   function renderReviews() {
     if (reviews !== undefined) {
@@ -36,7 +50,11 @@ function BusinessPage({ route, navigation }) {
     <ScrollView key={key} style={styles.restaurantView}>
 
       {/** Displays an image behind restaurant text */}
-      <ImageBackground source={{ uri: img }} resizeMode="cover" style={styles.imageBox}>
+      <ImageBackground
+        source={{ uri: img }}
+        resizeMode="cover"
+        style={styles.imageBox}
+      >
         <View style={styles.imageBackgroundText}>
           <Text style={styles.headerText}>
             {restaurantName}
@@ -59,18 +77,20 @@ function BusinessPage({ route, navigation }) {
               emptyStar={require("../../images/starEmpty.png")}
             />
             {/** TODO: get num count and stars to align vertically */}
-            <Text style={styles.numCountText}> ({JSON.stringify(numberOfRatings)}) </Text>
+            <Text style={styles.numCountText}>
+              {" "}
+              ({JSON.stringify(numberOfRatings)}){" "}
+            </Text>
           </View>
         </View>
-
       </ImageBackground>
 
       <View style={styles.smallSpace} />
 
       <View style={styles.belowImageBackground}>
-        {/** Displays some details about the restaurant (address, phone number etc.) 
-       * ToDo (low priority): rewrite this code to make more readable
-      */}
+        {/** Displays some details about the restaurant (address, phone number etc.)
+         * ToDo (low priority): rewrite this code to make more readable
+         */}
         <View style={styles.detailsBox}>
           <View style={styles.restaurantDetails}>
             <Ionicons name="location" size={20} color="black" />
@@ -86,32 +106,50 @@ function BusinessPage({ route, navigation }) {
           </View>
           <View style={styles.restaurantDetails}>
             <Ionicons name="phone-portrait-outline" size={20} color="black" />
-            <Text style={styles.restaurantDetailsText}> {mobilePayments(acceptsApplePay)} </Text>
+            <Text style={styles.restaurantDetailsText}>
+              {" "}
+              {mobilePayments(acceptsApplePay)}{" "}
+            </Text>
           </View>
         </View>
         <View style={styles.largeSpace} />
-        <CustomAddReviewButton title="Add Your Review"
-          onPress={() => navigation.navigate('Add Review', { key, numberOfRatings, restaurantName, reviews })}
+        <CustomAddReviewButton
+          title="Add Your Review"
+          onPress={() =>
+            navigation.navigate("Add Review", { restaurantName, reviews })
+          }
         />
         <Text style={styles.textStyle}>All Reviews</Text>
-        {renderReviews()}
-           </View>
+        {/** Below lines are for testing purposes. Will turn into review "components" in future meetings */}
+        {!reviews ? (
+          // TODO: Add styling to "No reviews"
+          <Text>No reviews</Text>
+        ) : (
+          reviews.map((val, key) => {
+            return (
+              <CustomReviewBox
+                key={key}
+                reviewText={JSON.stringify(val.text).replace(/\"/g, "")}
+                numStars={val.stars}
+              />
+            );
+          })
+        )}
+      </View>
     </ScrollView>
   );
-};
-
-
+}
 
 // Text to display on whether a restaurant accepts Apple Pay
 const mobilePayments = (acceptsApplePay) => {
   if (JSON.stringify(acceptsApplePay) == undefined) {
-    return (<Text>No Data about Mobile Payments </Text>)
+    return <Text>No Data about Mobile Payments </Text>;
   } else if (JSON.stringify(acceptsApplePay).replace(/\"/g, "") == "Yes") {
-    return (<Text>Accepts Apple Pay </Text>)
+    return <Text>Accepts Apple Pay </Text>;
   } else {
-    return (<Text>No Data about Mobile Payments </Text>)
+    return <Text>No Data about Mobile Payments </Text>;
   }
-}
+};
 
 const styles = StyleSheet.create({
   // Top-level container
@@ -130,22 +168,22 @@ const styles = StyleSheet.create({
   },
   // Text that is above image background
   imageBackgroundText: {
-    backgroundColor: 'rgba(0,0,0,0.5)',
+    backgroundColor: "rgba(0,0,0,0.5)",
     paddingTop: 10,
   },
   // Restaurant Name text
   headerText: {
     fontSize: 32,
     fontWeight: "bold",
-    color: 'white',
-    textAlign: 'center',
+    color: "white",
+    textAlign: "center",
   },
   // Displays cuisine text
   cuisineText: {
     fontSize: 14,
-    fontWeight: 'bold',
-    color: 'white',
-    textAlign: 'center'
+    fontWeight: "bold",
+    color: "white",
+    textAlign: "center",
   },
   // line with stars & num of reviews
   starDisplay: {
@@ -155,7 +193,7 @@ const styles = StyleSheet.create({
   // nested within starDisplay - num of reviews text
   numCountText: {
     fontSize: 12,
-    color: 'white',
+    color: "white",
   },
   // Box with restaurant details
   detailsBox: {
@@ -167,15 +205,15 @@ const styles = StyleSheet.create({
   // individual restaurant detail categories
   restaurantDetails: {
     flex: 1,
-    flexDirection: 'row',
+    flexDirection: "row",
     marginVertical: 3,
-    alignContent: 'center',
+    alignContent: "center",
   },
   // text nested within above component
   restaurantDetailsText: {
     paddingLeft: 10,
   },
-  // Adds small space between objects for readability purposes 
+  // Adds small space between objects for readability purposes
   smallSpace: {
     marginVertical: 8,
   },
@@ -184,12 +222,11 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   textStyle: {
-    fontWeight: 'bold',
+    fontWeight: "bold",
     fontSize: 30,
     marginTop: 25,
     marginBottom: 30,
     marginLeft: 28,
   },
 });
-
 export default BusinessPage;
