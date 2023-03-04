@@ -33,13 +33,13 @@ function BusinessPage({ route, navigation }) {
 
   return (
     // Allows for scrolling
-    <ScrollView key={JSON.stringify(key)} style={styles.restaurantView}>
+    <ScrollView key={key} style={styles.restaurantView}>
 
       {/** Displays an image behind restaurant text */}
       <ImageBackground source={{ uri: img }} resizeMode="cover" style={styles.imageBox}>
         <View style={styles.imageBackgroundText}>
           <Text style={styles.headerText}>
-            {JSON.stringify(restaurantName).replace(/\"/g, "")}
+            {restaurantName}
           </Text>
 
           <Text style={styles.cuisineText}>
