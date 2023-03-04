@@ -25,7 +25,6 @@ const SearchBar = ({ navigation }) => {
             <TouchableOpacity>
                <TextInput style={styles.textInputSpace}
                   autoFocus={true}
-                  //type="text"
                   placeholder="Search..."
                   onChangeText={setSearchTerm}
                >

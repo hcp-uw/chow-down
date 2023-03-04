@@ -20,13 +20,15 @@ function BusinessPage({ route, navigation }) {
     addresslocation, phoneNumber, acceptsApplePay, img, reviews } = route.params;
 
   function renderReviews() {
-    return(
+    if (reviews !== undefined) {
+      return(
         reviews.map((val, key) => {
           return(
             <CustomReviewBox key={key} reviewText={val.text} numStars={val.stars}/>
           )
         })
-    )
+      )
+    }
   }
 
   return (
