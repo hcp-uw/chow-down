@@ -8,9 +8,10 @@ import {
   ImageBackground,
 } from "react-native";
 import Stars from "react-native-stars"; // npm install react-native-stars --save
-import { Ionicons, FontAwesome5 } from "@expo/vector-icons"; // for icons
-import CustomAddReviewButton from "../custom-buttons/CustomAddReviewButton";
-import CustomReviewBox from "../custom-buttons/CustomReviewBox";
+import { Ionicons, FontAwesome5 } from '@expo/vector-icons'; // for icons
+import CustomAddReviewButton from '../custom-buttons/CustomAddReviewButton';
+import CustomReviewBox from '../custom-buttons/CustomReviewBox';
+import { getDatabase, ref, set, onValue } from "firebase/database";
 
 /**
  * Business Page is the default template for a restaurant's page.
@@ -31,6 +32,17 @@ function BusinessPage({ route, navigation }) {
     img,
     reviews,
   } = route.params;
+
+// IN PROGRESS: Writing new reviews to database
+  function updateData() {
+    const db = getDatabase();
+    const reviewRef = ref(db, '/' + key + '/');
+    onValue(reviewRef, (snapshot) => {
+      const data = snapshot.val();
+//      updateStarCount(postElement, data);
+    });
+  }
+
 
   return (
     // Allows for scrolling
