@@ -121,7 +121,10 @@ function BusinessPage({ route, navigation }) {
         {/** Below lines are for testing purposes. Will turn into review "components" in future meetings */}
         {!reviews ? (
           // TODO: Add styling to "No reviews"
-          <Text>No reviews</Text>
+          <>
+            <Text style={styles.textStyle}>Be the first to add a review!</Text>
+            <Image source={require("../../images/sadHusky.png")} />
+          </>
         ) : (
           reviews.map((val, key) => {
             return (
