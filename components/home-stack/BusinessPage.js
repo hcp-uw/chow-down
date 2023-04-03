@@ -11,7 +11,7 @@ import Stars from "react-native-stars"; // npm install react-native-stars --save
 import { Ionicons, FontAwesome5 } from '@expo/vector-icons'; // for icons
 import CustomAddReviewButton from '../custom-buttons/CustomAddReviewButton';
 import CustomReviewBox from '../custom-buttons/CustomReviewBox';
-import { getDatabase, ref, set, onValue, update } from "firebase/database";
+import { getDatabase, ref, set, onValue, update, get, child } from "firebase/database";
 
 /**
  * Business Page is the default template for a restaurant's page.
@@ -33,17 +33,24 @@ function BusinessPage({ route, navigation }) {
     reviews,
   } = route.params;
 
-  function renderReviews() {
-    if (reviews !== undefined) {
-      return(
-        reviews.map((val, key) => {
-          return(
-            <CustomReviewBox key={key} reviewText={val.text} numStars={val.stars}/>
-          )
-        })
-      )
-    }
-  }
+  // function renderReviews() {
+  //  if (reviews !== undefined) {
+  //   const dbRef = ref(getDatabase());
+  //   let reviewBoxes: JSX.Element[] = []; 
+  //   console.log("address is: /" + key + '/' + "reviews");
+  //    get(child(dbRef, '/' + key + '/' + "reviews").then((snapshot) => {
+  //      if (snapshot.exists()) {
+  //          console.log("snapshot is at " + snapshot.val());
+  //          reviewBoxes.push(snapshot);
+  //      } else {
+  //          console.log("uhhhhh")
+  //      }
+  //    }).catch((error) => {console.error(error);
+  //    }))
+  //    console.log(reviewBoxes);
+  //    return (reviewBoxes);
+  //  }
+  // }
 
   return (
     // Allows for scrolling
@@ -69,7 +76,7 @@ function BusinessPage({ route, navigation }) {
           {/** Stars to display restaurant rating */}
           <View style={styles.starDisplay}>
             <Stars
-              display={parseFloat(JSON.stringify(rating))}
+              display={parseFloat(rating)}
               spacing={8}
               count={5}
               starSize={40}
@@ -79,7 +86,7 @@ function BusinessPage({ route, navigation }) {
             {/** TODO: get num count and stars to align vertically */}
             <Text style={styles.numCountText}>
               {" "}
-              ({JSON.stringify(numberOfRatings)}){" "}
+              ({reviews.length}){" "}
             </Text>
           </View>
         </View>
@@ -95,7 +102,7 @@ function BusinessPage({ route, navigation }) {
           <View style={styles.restaurantDetails}>
             <Ionicons name="location" size={20} color="black" />
             <Text style={styles.restaurantDetailsText}>
-              {JSON.stringify(addresslocation).replace(/\"/g, "")}
+              {addresslocation}
             </Text>
           </View>
           <View style={styles.restaurantDetails}>
@@ -116,7 +123,7 @@ function BusinessPage({ route, navigation }) {
         <CustomAddReviewButton
           title="Add Your Review"
           onPress={() =>
-            navigation.navigate("Add Review", { restaurantName, reviews })
+            navigation.navigate("Add Review", { key, numberOfRatings, restaurantName, reviews })
           }
         />
         <Text style={styles.textStyle}>All Reviews</Text>
@@ -129,12 +136,13 @@ function BusinessPage({ route, navigation }) {
             return (
               <CustomReviewBox
                 key={key}
-                reviewText={JSON.stringify(val.text).replace(/\"/g, "")}
+                reviewText={val.text}
                 numStars={val.stars}
               />
             );
-          })
-        )}
+          }
+        ))}
+        {/* <View>{renderReviews()}</View> */}
       </View>
     </ScrollView>
   );

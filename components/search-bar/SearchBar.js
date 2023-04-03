@@ -39,43 +39,6 @@ const SearchBar = ({ navigation }) => {
         </TouchableOpacity>
       </KeyboardAvoidingView>
 
-<<<<<<< HEAD
-   return ( 
-      <ScrollView className="search" style={styles.container}>
-         <KeyboardAvoidingView style={styles.searchInputContainer}>
-            <TouchableOpacity>
-               <TextInput style={styles.textInputSpace}
-                  autoFocus={true}
-                  placeholder="Search..."
-                  onChangeText={setSearchTerm}
-               >
-               </TextInput>
-            </TouchableOpacity>
-         </KeyboardAvoidingView>
-         
-         {/** Powers the search bar */}
-         {data.map((val, key) =>
-         
-         { // TODO: Filter function and style for search results here
-            
-            return ( 
-               <CustomRestaurantButton
-                  className="user"
-                  key={key}
-                  title={val.restaurantName}
-                  address={val.addresslocation}
-                  img={'../meal.jpg'}
-                  onPress={() => navigation.navigate('BusinessPage', { key, ...val })}
-               />
-            )
-         
-         }
-         
-         )}
-      </ScrollView>
-   );
-}
-=======
       {/** Powers the search bar */}
       {data
         .filter((val) => {
@@ -111,7 +74,6 @@ const SearchBar = ({ navigation }) => {
     </ScrollView>
   );
 };
->>>>>>> e08aa4239f894ebf19b4128fdfa449a627903bac
 
 const styles = StyleSheet.create({
   container: {

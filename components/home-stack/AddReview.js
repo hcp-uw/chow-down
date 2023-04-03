@@ -34,9 +34,11 @@ const AddReview = ({ route, navigation }) => {
         // generate a review at the same time)
         // TODO: What if a restaurant doesn't already have existing reviews?
 
-        // const newReviewPush = push(child(ref(db), 'reviews')).key;
-        // const updates = {};
-        // updates['/' + key + '/reviews/' + newReviewPush] = newReview;
+//         const newReviewPush = push(child(ref(db), 'reviews')).key;
+//         console.log("new review push key is: " + newReviewPush)
+//         const updates = {};
+//         updates['/' + key + '/reviews/' + newReviewPush] = newReview;
+//         set(ref(db, '/' + key + '/reviews/' + newReviewPush), newReview);
 
 
         let nextOpenReview = Object.keys(reviews).length;
@@ -57,7 +59,7 @@ const AddReview = ({ route, navigation }) => {
                 merge: true
             });
         }
-        // return update(ref(db), updates);
+//         return update(ref(db), updates);
     }
 
     return (
