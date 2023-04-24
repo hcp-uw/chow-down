@@ -12,6 +12,7 @@ import { Ionicons, FontAwesome5 } from '@expo/vector-icons'; // for icons
 import CustomAddReviewButton from '../custom-buttons/CustomAddReviewButton';
 import CustomReviewBox from '../custom-buttons/CustomReviewBox';
 import { getDatabase, ref, set, onValue } from "firebase/database";
+import { Image, Dimensions } from 'react-native';
 
 /**
  * Business Page is the default template for a restaurant's page.
@@ -120,8 +121,11 @@ function BusinessPage({ route, navigation }) {
         <Text style={styles.textStyle}>All Reviews</Text>
         {/** Below lines are for testing purposes. Will turn into review "components" in future meetings */}
         {!reviews ? (
-          // TODO: Add styling to "No reviews"
-          <Text>No reviews</Text>
+          <>
+            <Text style={styles.noReviewText}>Be the first to add a review!</Text>
+            <Image style = {styles.reviewImageStyle} source={require("../../images/sadHuskyReview.png")} />
+            
+          </>
         ) : (
           reviews.map((val, key) => {
             return (
@@ -226,5 +230,16 @@ const styles = StyleSheet.create({
     marginBottom: 30,
     marginLeft: 28,
   },
+  noReviewText: {
+    fontWeight: "bold",
+    fontSize: 20,
+    marginTop: 10,
+    marginBottom: 20,
+    marginLeft: 28,
+  },
+  reviewImageStyle: {
+    alignSelf: "center"
+  },
+  
 });
 export default BusinessPage;
