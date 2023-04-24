@@ -12,6 +12,7 @@ import { Ionicons, FontAwesome5 } from '@expo/vector-icons'; // for icons
 import CustomAddReviewButton from '../custom-buttons/CustomAddReviewButton';
 import CustomReviewBox from '../custom-buttons/CustomReviewBox';
 import { getDatabase, ref, set, onValue, update, get, child } from "firebase/database";
+import { render } from "react-dom";
 
 /**
  * Business Page is the default template for a restaurant's page.
@@ -33,24 +34,41 @@ function BusinessPage({ route, navigation }) {
     reviews,
   } = route.params;
 
-  // function renderReviews() {
-  //  if (reviews !== undefined) {
-  //   const dbRef = ref(getDatabase());
-  //   let reviewBoxes: JSX.Element[] = []; 
-  //   console.log("address is: /" + key + '/' + "reviews");
-  //    get(child(dbRef, '/' + key + '/' + "reviews").then((snapshot) => {
-  //      if (snapshot.exists()) {
-  //          console.log("snapshot is at " + snapshot.val());
-  //          reviewBoxes.push(snapshot);
-  //      } else {
-  //          console.log("uhhhhh")
-  //      }
-  //    }).catch((error) => {console.error(error);
-  //    }))
-  //    console.log(reviewBoxes);
-  //    return (reviewBoxes);
-  //  }
-  // }
+  // TODO: sync error - reviewsToRender is returning before data is retrieved from database
+  async function renderReviews() {
+   if (reviews !== undefined) {
+    const dbRef = ref(getDatabase());
+    let reviewBoxes = []; 
+    let reviewsToRender = [];
+    let i = 0;
+    console.log("address is: /" + key + '/' + "reviews");
+     get(child(dbRef, '/' + key + '/' + "reviews")).then((snapshot) => {
+       if (snapshot.exists()) {
+           console.log("snapshot is at " + snapshot.val());
+           reviewBoxes = Object.values(snapshot.val());
+           console.log("review box contains: " + reviewBoxes)
+           reviewBoxes.forEach(element => { 
+              console.log(element);
+              reviewsToRender.push(
+              <CustomReviewBox
+                key={i}
+                reviewText={element.text}
+                numStars={element.stars}
+              />)
+                i = i + 1;
+            })
+            console.log("reviews to Render are: " + reviewsToRender);
+            reviewsToRender.forEach(element => console.log(element))
+            // return (<View>{reviewsToRender}</View>)
+            return (<Text>help</Text>)
+       } else {
+           console.log("uhhhhh")
+       }
+     }).catch((error) => {console.error(error);
+     })
+    //  return (reviewsToRender)
+   }
+  }
 
   return (
     // Allows for scrolling
@@ -132,16 +150,20 @@ function BusinessPage({ route, navigation }) {
           // TODO: Add styling to "No reviews"
           <Text>No reviews</Text>
         ) : (
-          reviews.map((val, key) => {
-            return (
-              <CustomReviewBox
-                key={key}
-                reviewText={val.text}
-                numStars={val.stars}
-              />
-            );
-          }
-        ))}
+        //   reviews.map((val, key) => {
+        //     return (
+        //       <CustomReviewBox
+        //         key={key}
+        //         reviewText={val.text}
+        //         numStars={val.stars}
+        //       />
+        //     );
+        //   }
+        // )
+        <View>{renderReviews()}</View>
+
+        )
+        }
         {/* <View>{renderReviews()}</View> */}
       </View>
     </ScrollView>
