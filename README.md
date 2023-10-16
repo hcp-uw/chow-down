@@ -6,7 +6,9 @@ Chow Down helps UW students narrow down their restaurant search by allowing a ti
 ## Developers
 - Johnathan Busoso
 - Minyoung Cho
+- Nicholas Chung
 - Steven Cui
+- Nicolas Hitosis
 - Kevin Wang
 - Kevin Xu
 
