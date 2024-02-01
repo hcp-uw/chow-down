@@ -11,7 +11,8 @@ import Stars from "react-native-stars"; // npm install react-native-stars --save
 import { Ionicons, FontAwesome5 } from '@expo/vector-icons'; // for icons
 import CustomAddReviewButton from '../custom-buttons/CustomAddReviewButton';
 import CustomReviewBox from '../custom-buttons/CustomReviewBox';
-import { getDatabase, ref, set, onValue } from "firebase/database";
+import { getDatabase, ref, set, onValue, update, get, child } from "firebase/database";
+import { render } from "react-dom";
 import { Image, Dimensions } from 'react-native';
 
 /**
@@ -34,20 +35,46 @@ function BusinessPage({ route, navigation }) {
     reviews,
   } = route.params;
 
-// IN PROGRESS: Writing new reviews to database
-  function updateData() {
-    const db = getDatabase();
-    const reviewRef = ref(db, '/' + key + '/');
-    onValue(reviewRef, (snapshot) => {
-      const data = snapshot.val();
-//      updateStarCount(postElement, data);
-    });
+  // TODO: sync error - reviewsToRender is returning before data is retrieved from database
+  async function renderReviews() {
+   if (reviews !== undefined) {
+    const dbRef = ref(getDatabase());
+    let reviewBoxes = []; 
+    let reviewsToRender = [];
+    let i = 0;
+    console.log("address is: /" + key + '/' + "reviews");
+     get(child(dbRef, '/' + key + '/' + "reviews")).then((snapshot) => {
+       if (snapshot.exists()) {
+           console.log("snapshot is at " + snapshot.val());
+           reviewBoxes = Object.values(snapshot.val());
+           console.log("review box contains: " + reviewBoxes)
+           reviewBoxes.forEach(element => { 
+              console.log(element);
+              reviewsToRender.push(
+              <CustomReviewBox
+                key={i}
+                reviewText={element.text}
+                numStars={element.stars}
+              />)
+                i = i + 1;
+            })
+            console.log("reviews to Render are: " + reviewsToRender);
+            reviewsToRender.forEach(element => console.log(element))
+            // return (<View>{reviewsToRender}</View>)
+            return (<Text>help</Text>)
+       } else {
+           console.log("uhhhhh")
+       }
+     }).catch((error) => {console.error(error);
+     })
+    //  return (reviewsToRender)
+   }
   }
-
 
   return (
     // Allows for scrolling
-    <ScrollView key={JSON.stringify(key)} style={styles.restaurantView}>
+    <ScrollView key={key} style={styles.restaurantView}>
+
       {/** Displays an image behind restaurant text */}
       <ImageBackground
         source={{ uri: img }}
@@ -56,7 +83,7 @@ function BusinessPage({ route, navigation }) {
       >
         <View style={styles.imageBackgroundText}>
           <Text style={styles.headerText}>
-            {JSON.stringify(restaurantName).replace(/\"/g, "")}
+            {restaurantName}
           </Text>
 
           <Text style={styles.cuisineText}>
@@ -68,7 +95,7 @@ function BusinessPage({ route, navigation }) {
           {/** Stars to display restaurant rating */}
           <View style={styles.starDisplay}>
             <Stars
-              display={parseFloat(JSON.stringify(rating))}
+              display={parseFloat(rating)}
               spacing={8}
               count={5}
               starSize={40}
@@ -78,7 +105,7 @@ function BusinessPage({ route, navigation }) {
             {/** TODO: get num count and stars to align vertically */}
             <Text style={styles.numCountText}>
               {" "}
-              ({JSON.stringify(numberOfRatings)}){" "}
+              ({reviews.length}){" "}
             </Text>
           </View>
         </View>
@@ -94,7 +121,7 @@ function BusinessPage({ route, navigation }) {
           <View style={styles.restaurantDetails}>
             <Ionicons name="location" size={20} color="black" />
             <Text style={styles.restaurantDetailsText}>
-              {JSON.stringify(addresslocation).replace(/\"/g, "")}
+              {addresslocation}
             </Text>
           </View>
           <View style={styles.restaurantDetails}>
@@ -115,7 +142,7 @@ function BusinessPage({ route, navigation }) {
         <CustomAddReviewButton
           title="Add Your Review"
           onPress={() =>
-            navigation.navigate("Add Review", { restaurantName, reviews })
+            navigation.navigate("Add Review", { key, numberOfRatings, restaurantName, reviews })
           }
         />
         <Text style={styles.textStyle}>All Reviews</Text>
@@ -127,16 +154,21 @@ function BusinessPage({ route, navigation }) {
             
           </>
         ) : (
-          reviews.map((val, key) => {
-            return (
-              <CustomReviewBox
-                key={key}
-                reviewText={JSON.stringify(val.text).replace(/\"/g, "")}
-                numStars={val.stars}
-              />
-            );
-          })
-        )}
+        //   reviews.map((val, key) => {
+        //     return (
+        //       <CustomReviewBox
+        //         key={key}
+        //         reviewText={val.text}
+        //         numStars={val.stars}
+        //       />
+        //     );
+        //   }
+        // )
+        <View>{renderReviews()}</View>
+
+        )
+        }
+        {/* <View>{renderReviews()}</View> */}
       </View>
     </ScrollView>
   );
