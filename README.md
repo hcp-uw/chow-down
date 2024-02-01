@@ -4,7 +4,7 @@
 Chow Down helps UW students narrow down their restaurant search by allowing a tight-knit community to share reviews, opinions, and favorites of all local restaurants and eateries. We started working on our project over Summer 2022 as a way for to learn the ins and outs of mobile development. 
 
 ## Developers
-- Johnathan Busoso
+- Jonathan Bustamante Osorio
 - Minyoung Cho
 - Nicholas Chung
 - Steven Cui
